@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transfer Value Board — FPL 2026-27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #F7F5EE;
+    --bg-alt: #FFFFFF;
+    --surface: #FFFFFF;
+    --surface-2: #F0EEE4;
+    --line: #E1DECF;
+    --chalk: #1C2318;
+    --chalk-dim: #565F51;
+    --chalk-faint: #8B927F;
+    --pitch: #3B7A1F;
+    --pitch-dim: #E1EFD5;
+    --gold: #9C6A16;
+    --gold-dim: #F6E8CD;
+    --red: #A5393D;
+    --red-dim: #F6DCDD;
+  }
+  *{ box-sizing: border-box; }
+  body{
+    margin:0;
+    background: radial-gradient(ellipse 900px 500px at 50% -10%, var(--bg-alt), var(--bg) 60%);
+    color: var(--chalk);
+    font-family: 'Inter', sans-serif;
+    min-height:100vh;
+  }
+  .wrap{ max-width: 1040px; margin: 0 auto; padding: 0 24px 80px; }
+
+  /* hero */
+  header.hero{
+    padding: 64px 24px 40px;
+    text-align:center;
+    position:relative;
+    border-bottom: 1px solid var(--line);
+  }
+  header.hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background:
+      repeating-linear-gradient(90deg, transparent 0 78px, rgba(59,122,31,0.06) 78px 79px),
+      repeating-linear-gradient(0deg, transparent 0 78px, rgba(59,122,31,0.06) 78px 79px);
+    pointer-events:none;
+    mask-image: radial-gradient(ellipse 700px 300px at 50% 0%, black, transparent 75%);
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--pitch);
+    margin: 0 0 14px;
+  }
+  h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    color: var(--chalk);
+  }
+  h1 span{ color: var(--pitch); }
+  .sub{
+    max-width: 560px;
+    margin: 0 auto;
+    color: var(--chalk-dim);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .statstrip{
+    display:flex;
+    justify-content:center;
+    gap: 40px;
+    margin-top: 36px;
+    flex-wrap: wrap;
+  }
+  .stat{ text-align:center; }
+  .stat .num{
+    font-family:'JetBrains Mono', monospace;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--chalk);
+  }
+  .stat .lbl{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--chalk-faint);
+    margin-top: 4px;
+  }
+
+  /* controls */
+  .controls{
+    margin: 40px 0 20px;
+    display:flex;
+    align-items:center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .tabs{ display:flex; gap: 6px; flex-wrap: wrap; }
+  .tab{
+    font-family:'JetBrains Mono', monospace;
+    font-size: 13px;
+    padding: 9px 16px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--chalk-dim);
+    cursor:pointer;
+    border-radius: 4px;
+    transition: all .12s ease;
+  }
+  .tab:hover{ border-color: var(--pitch); color: var(--chalk); }
+  .tab.active{
+    background: var(--pitch-dim);
+    border-color: var(--pitch);
+    color: var(--pitch);
+  }
+  .search{
+    margin-left:auto;
+    position:relative;
+  }
+  .search input{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    color: var(--chalk);
+    padding: 9px 14px 9px 34px;
+    border-radius: 4px;
+    font-family:'Inter', sans-serif;
+    font-size: 14px;
+    width: 200px;
+    outline: none;
+  }
+  .search input:focus{ border-color: var(--pitch); }
+  .search::before{
+    content:"⌕";
+    position:absolute; left:12px; top:50%; transform:translateY(-50%);
+    color: var(--chalk-faint);
+    font-size:14px;
+  }
+
+  .legend{
+    font-size: 12px;
+    color: var(--chalk-dim);
+    margin-bottom: 18px;
+    line-height: 1.6;
+    border-left: 2px solid var(--pitch);
+    padding-left: 12px;
+  }
+  .legend b{ color: var(--chalk); font-weight: 600; }
+
+  /* table */
+  .tablewrap{
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--surface);
+    box-shadow: 0 1px 2px rgba(28,35,24,0.04);
+  }
+  table{ width:100%; border-collapse: collapse; }
+  thead th{
+    text-align:left;
+    padding: 14px 16px;
+    font-family:'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--chalk-faint);
+    background: var(--surface-2);
+    border-bottom: 1px solid var(--line);
+    cursor:pointer;
+    white-space: nowrap;
+    user-select:none;
+  }
+  thead th:hover{ color: var(--pitch); }
+  thead th.num{ text-align:right; }
+  tbody td{
+    padding: 12px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--line);
+  }
+  tbody tr:last-child td{ border-bottom:none; }
+  tbody tr:hover{ background: var(--surface-2); }
+  td.num{ text-align:right; font-family:'JetBrains Mono', monospace; }
+  td.player{ font-weight: 500; }
+  td.team{ color: var(--chalk-faint); font-size:13px; }
+  td.ratio{ font-weight: 700; color: var(--pitch); font-family:'JetBrains Mono', monospace; }
+
+  .badge{
+    display:inline-block;
+    font-family:'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+  }
+  .badge.consistent{ background: var(--pitch-dim); color: var(--pitch); border-color: var(--pitch-dim); }
+  .badge.balanced{ background: #E1EAF3; color: #2D5F8F; border-color: #E1EAF3; }
+  .badge.boombust{ background: var(--gold-dim); color: var(--gold); border-color: var(--gold-dim); }
+  .badge.na{ background: transparent; color: var(--chalk-faint); border-color: var(--line); }
+
+  .count{
+    margin-top:14px;
+    font-size:12px;
+    color: var(--chalk-faint);
+    font-family:'JetBrains Mono', monospace;
+  }
+
+  footer{
+    text-align:center;
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--chalk-faint);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 640px){
+    .tablewrap{ overflow-x:auto; }
+    table{ min-width: 560px; }
+    .search{ margin-left:0; width:100%; }
+    .search input{ width:100%; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="eyebrow">2026-27 Season · Pre-Gameweek 1</div>
+  <h1>Transfer <span>Value</span> Board</h1>
+  <p class="sub">Every rostered player, priced for 2026-27, scored against their final 2025-26 points tally — and rated for week-to-week reliability.</p>
+  <div class="statstrip" id="statstrip"></div>
+</header>
+
+<div class="wrap">
+  <div class="controls">
+    <div class="tabs" id="tabs"></div>
+    <div class="search"><input type="text" id="searchbox" placeholder="Search player or team…"></div>
+  </div>
+
+  <div class="legend">
+    <b>Pts / £m</b> — 2025-26 final points divided by current 2026-27 price. &nbsp;
+    <b>Consistency</b> — based on week-to-week point variance in games played 60+ minutes.
+    Consistent = steady returner. Balanced = normal spread. Boom/bust = big haul or blank most weeks.
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead id="thead"></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+  <div class="count" id="count"></div>
+
+  <footer>
+    Prices reflect 2026-27 season costs. Points are final 2025-26 season tallies — the new season kicks off Gameweek 1, Aug 21 2026.<br>
+    Source data: official FPL API &amp; the vaastav/Fantasy-Premier-League and olbauday/FPL-Core-Insights open datasets.
+  </footer>
+</div>
+
+<script>
+const DATA = {"MID":[{"name":"Adli","team":"BOU","pos":"MID","price":5.0,"points_2526":67,"ratio":13.4,"cv":0.54,"consistency":"Consistent"},{"name":"Kroupi.Jr","team":"BOU","pos":"MID","price":7.5,"points_2526":113,"ratio":15.07,"cv":0.72,"consistency":"Balanced"},{"name":"Lewis-Potter","team":"BRE","pos":"MID","price":5.5,"points_2526":115,"ratio":20.91,"cv":0.96,"consistency":"Boom/bust"},{"name":"Schade","team":"BRE","pos":"MID","price":6.0,"points_2526":125,"ratio":20.83,"cv":0.9,"consistency":"Boom/bust"},{"name":"O.Dango","team":"BRE","pos":"MID","price":6.5,"points_2526":136,"ratio":20.92,"cv":0.83,"consistency":"Boom/bust"},{"name":"Damsgaard","team":"BRE","pos":"MID","price":5.5,"points_2526":113,"ratio":20.55,"cv":0.86,"consistency":"Boom/bust"},{"name":"Jensen","team":"BRE","pos":"MID","price":5.5,"points_2526":98,"ratio":17.82,"cv":0.65,"consistency":"Consistent"},{"name":"Janelt","team":"BRE","pos":"MID","price":5.0,"points_2526":74,"ratio":14.8,"cv":0.72,"consistency":"Balanced"},{"name":"Henderson","team":"BRE","pos":"MID","price":5.0,"points_2526":76,"ratio":15.2,"cv":0.66,"consistency":"Consistent"},{"name":"Yarmoliuk","team":"BRE","pos":"MID","price":5.0,"points_2526":104,"ratio":20.8,"cv":0.56,"consistency":"Consistent"},{"name":"Anthony","team":"BRE","pos":"MID","price":6.0,"points_2526":127,"ratio":21.17,"cv":0.8,"consistency":"Balanced"},{"name":"Mitoma","team":"BHA","pos":"MID","price":6.0,"points_2526":62,"ratio":10.33,"cv":0.64,"consistency":"Consistent"},{"name":"Minteh","team":"BHA","pos":"MID","price":6.0,"points_2526":117,"ratio":19.5,"cv":0.68,"consistency":"Balanced"},{"name":"Hinshelwood","team":"BHA","pos":"MID","price":6.0,"points_2526":91,"ratio":15.17,"cv":0.61,"consistency":"Consistent"},{"name":"Groß","team":"BHA","pos":"MID","price":5.5,"points_2526":78,"ratio":14.18,"cv":0.7,"consistency":"Balanced"},{"name":"Gomez","team":"BHA","pos":"MID","price":5.0,"points_2526":97,"ratio":19.4,"cv":0.92,"consistency":"Boom/bust"},{"name":"Ayari","team":"BHA","pos":"MID","price":5.5,"points_2526":98,"ratio":17.82,"cv":0.66,"consistency":"Consistent"},{"name":"Baleba","team":"BHA","pos":"MID","price":5.0,"points_2526":56,"ratio":11.2,"cv":0.32,"consistency":"Consistent"},{"name":"Rogers","team":"CHE","pos":"MID","price":7.5,"points_2526":169,"ratio":22.53,"cv":0.89,"consistency":"Boom/bust"},{"name":"Palmer","team":"CHE","pos":"MID","price":9.5,"points_2526":114,"ratio":12.0,"cv":1.0,"consistency":"Boom/bust"},{"name":"Enzo","team":"CHE","pos":"MID","price":7.0,"points_2526":157,"ratio":22.43,"cv":0.83,"consistency":"Boom/bust"},{"name":"Neto","team":"CHE","pos":"MID","price":6.5,"points_2526":125,"ratio":19.23,"cv":0.73,"consistency":"Balanced"},{"name":"Estêvão","team":"CHE","pos":"MID","price":6.5,"points_2526":58,"ratio":8.92,"cv":0.77,"consistency":"Balanced"},{"name":"Gittens","team":"CHE","pos":"MID","price":6.0,"points_2526":25,"ratio":4.17,"cv":0,"consistency":"N/A"},{"name":"Caicedo","team":"CHE","pos":"MID","price":5.5,"points_2526":110,"ratio":20.0,"cv":0.77,"consistency":"Balanced"},{"name":"Tchaouna","team":"COV","pos":"MID","price":5.5,"points_2526":59,"ratio":10.73,"cv":0.45,"consistency":"Consistent"},{"name":"Sarr","team":"CRY","pos":"MID","price":6.5,"points_2526":117,"ratio":18.0,"cv":0.68,"consistency":"Balanced"},{"name":"Johnson","team":"CRY","pos":"MID","price":6.0,"points_2526":65,"ratio":10.83,"cv":0.81,"consistency":"Boom/bust"},{"name":"Wharton","team":"CRY","pos":"MID","price":5.5,"points_2526":112,"ratio":20.36,"cv":0.71,"consistency":"Balanced"},{"name":"Yeremy","team":"CRY","pos":"MID","price":5.5,"points_2526":77,"ratio":14.0,"cv":0.68,"consistency":"Balanced"},{"name":"Hughes","team":"CRY","pos":"MID","price":4.5,"points_2526":45,"ratio":10.0,"cv":0.44,"consistency":"Consistent"},{"name":"Lerma","team":"CRY","pos":"MID","price":5.0,"points_2526":69,"ratio":13.8,"cv":0.75,"consistency":"Balanced"},{"name":"Kamada","team":"CRY","pos":"MID","price":5.0,"points_2526":67,"ratio":13.4,"cv":0.45,"consistency":"Consistent"},{"name":"Devenny","team":"CRY","pos":"MID","price":5.0,"points_2526":36,"ratio":7.2,"cv":0.3,"consistency":"Consistent"},{"name":"Dewsbury-Hall","team":"EVE","pos":"MID","price":6.5,"points_2526":151,"ratio":23.23,"cv":0.82,"consistency":"Boom/bust"},{"name":"Ndiaye","team":"EVE","pos":"MID","price":6.0,"points_2526":128,"ratio":21.33,"cv":0.64,"consistency":"Consistent"},{"name":"Garner","team":"EVE","pos":"MID","price":6.0,"points_2526":159,"ratio":26.5,"cv":0.68,"consistency":"Balanced"},{"name":"Iroegbunam","team":"EVE","pos":"MID","price":5.0,"points_2526":68,"ratio":13.6,"cv":0.46,"consistency":"Consistent"},{"name":"McNeil","team":"EVE","pos":"MID","price":5.5,"points_2526":53,"ratio":9.64,"cv":0.45,"consistency":"Consistent"},{"name":"Alcaraz","team":"EVE","pos":"MID","price":5.0,"points_2526":29,"ratio":5.8,"cv":0.46,"consistency":"Consistent"},{"name":"Armstrong","team":"EVE","pos":"MID","price":5.0,"points_2526":21,"ratio":4.2,"cv":0.31,"consistency":"Consistent"},{"name":"Röhl","team":"EVE","pos":"MID","price":5.0,"points_2526":36,"ratio":7.2,"cv":0.56,"consistency":"Consistent"},{"name":"Iwobi","team":"FUL","pos":"MID","price":5.5,"points_2526":103,"ratio":18.73,"cv":0.89,"consistency":"Boom/bust"},{"name":"Smith Rowe","team":"FUL","pos":"MID","price":5.5,"points_2526":80,"ratio":14.55,"cv":0.58,"consistency":"Consistent"},{"name":"Kevin","team":"FUL","pos":"MID","price":5.5,"points_2526":49,"ratio":8.91,"cv":0.42,"consistency":"Consistent"},{"name":"Bobb","team":"FUL","pos":"MID","price":5.5,"points_2526":42,"ratio":7.64,"cv":0.45,"consistency":"Consistent"},{"name":"Berge","team":"FUL","pos":"MID","price":5.0,"points_2526":91,"ratio":18.2,"cv":0.62,"consistency":"Consistent"},{"name":"Cairney","team":"FUL","pos":"MID","price":5.0,"points_2526":41,"ratio":8.2,"cv":0.2,"consistency":"Consistent"},{"name":"Lukić","team":"FUL","pos":"MID","price":5.0,"points_2526":67,"ratio":13.4,"cv":0.66,"consistency":"Consistent"},{"name":"King","team":"FUL","pos":"MID","price":5.5,"points_2526":63,"ratio":11.45,"cv":0.9,"consistency":"Boom/bust"},{"name":"Wilson","team":"LEE","pos":"MID","price":6.5,"points_2526":168,"ratio":25.85,"cv":0.73,"consistency":"Balanced"},{"name":"Stach","team":"LEE","pos":"MID","price":6.0,"points_2526":137,"ratio":22.83,"cv":0.74,"consistency":"Balanced"},{"name":"Okafor","team":"LEE","pos":"MID","price":6.0,"points_2526":109,"ratio":18.17,"cv":0.87,"consistency":"Boom/bust"},{"name":"Aaronson","team":"LEE","pos":"MID","price":5.5,"points_2526":126,"ratio":22.91,"cv":0.7,"consistency":"Balanced"},{"name":"Ampadu","team":"LEE","pos":"MID","price":5.5,"points_2526":134,"ratio":24.36,"cv":0.66,"consistency":"Consistent"},{"name":"Longstaff","team":"LEE","pos":"MID","price":5.0,"points_2526":56,"ratio":11.2,"cv":1.01,"consistency":"Boom/bust"},{"name":"Gnonto","team":"LEE","pos":"MID","price":5.0,"points_2526":32,"ratio":6.4,"cv":0,"consistency":"N/A"},{"name":"James","team":"LEE","pos":"MID","price":5.0,"points_2526":23,"ratio":4.6,"cv":0,"consistency":"N/A"},{"name":"Gruev","team":"LEE","pos":"MID","price":5.0,"points_2526":56,"ratio":11.2,"cv":0.79,"consistency":"Balanced"},{"name":"Tanaka","team":"LEE","pos":"MID","price":5.0,"points_2526":67,"ratio":13.4,"cv":0.53,"consistency":"Consistent"},{"name":"Wirtz","team":"LIV","pos":"MID","price":7.5,"points_2526":125,"ratio":16.67,"cv":0.7,"consistency":"Balanced"},{"name":"Gakpo","team":"LIV","pos":"MID","price":7.0,"points_2526":131,"ratio":18.71,"cv":0.68,"consistency":"Balanced"},{"name":"Szoboszlai","team":"LIV","pos":"MID","price":7.0,"points_2526":160,"ratio":22.86,"cv":0.82,"consistency":"Boom/bust"},{"name":"Ngumoha","team":"LIV","pos":"MID","price":6.0,"points_2526":43,"ratio":7.17,"cv":0.71,"consistency":"Balanced"},{"name":"Gravenberch","team":"LIV","pos":"MID","price":6.0,"points_2526":144,"ratio":24.0,"cv":0.76,"consistency":"Balanced"},{"name":"Mac Allister","team":"LIV","pos":"MID","price":5.5,"points_2526":108,"ratio":19.64,"cv":0.94,"consistency":"Boom/bust"},{"name":"C.Jones","team":"LIV","pos":"MID","price":5.5,"points_2526":81,"ratio":14.73,"cv":0.64,"consistency":"Consistent"},{"name":"Grealish","team":"MCI","pos":"MID","price":6.5,"points_2526":79,"ratio":12.15,"cv":0.91,"consistency":"Boom/bust"},{"name":"Semenyo","team":"MCI","pos":"MID","price":8.5,"points_2526":202,"ratio":23.76,"cv":0.77,"consistency":"Balanced"},{"name":"Foden","team":"MCI","pos":"MID","price":7.0,"points_2526":131,"ratio":18.71,"cv":0.9,"consistency":"Boom/bust"},{"name":"Cherki","team":"MCI","pos":"MID","price":7.5,"points_2526":135,"ratio":18.0,"cv":0.48,"consistency":"Consistent"},{"name":"Doku","team":"MCI","pos":"MID","price":7.5,"points_2526":120,"ratio":16.0,"cv":0.68,"consistency":"Balanced"},{"name":"Rodrigo","team":"MCI","pos":"MID","price":6.5,"points_2526":69,"ratio":10.62,"cv":0.46,"consistency":"Consistent"},{"name":"Savinho","team":"MCI","pos":"MID","price":6.5,"points_2526":43,"ratio":6.62,"cv":0.73,"consistency":"Balanced"},{"name":"Reijnders","team":"MCI","pos":"MID","price":6.0,"points_2526":92,"ratio":15.33,"cv":0.64,"consistency":"Consistent"},{"name":"N.Gonzalez","team":"MCI","pos":"MID","price":5.5,"points_2526":63,"ratio":11.45,"cv":0.47,"consistency":"Consistent"},{"name":"Anderson","team":"MCI","pos":"MID","price":6.5,"points_2526":180,"ratio":27.69,"cv":0.61,"consistency":"Consistent"},{"name":"Tielemans","team":"MUN","pos":"MID","price":6.0,"points_2526":68,"ratio":11.33,"cv":0.55,"consistency":"Consistent"},{"name":"Andrey Santos","team":"MUN","pos":"MID","price":5.0,"points_2526":47,"ratio":9.4,"cv":0.76,"consistency":"Balanced"},{"name":"Dorgu","team":"MUN","pos":"MID","price":6.0,"points_2526":95,"ratio":15.83,"cv":0.98,"consistency":"Boom/bust"},{"name":"B.Fernandes","team":"MUN","pos":"MID","price":12.0,"points_2526":235,"ratio":19.58,"cv":0.63,"consistency":"Consistent"},{"name":"Mbeumo","team":"MUN","pos":"MID","price":8.0,"points_2526":148,"ratio":18.5,"cv":0.76,"consistency":"Balanced"},{"name":"Cunha","team":"MUN","pos":"MID","price":8.0,"points_2526":143,"ratio":17.88,"cv":0.61,"consistency":"Consistent"},{"name":"Mount","team":"MUN","pos":"MID","price":5.5,"points_2526":58,"ratio":10.55,"cv":0.58,"consistency":"Consistent"},{"name":"Amad","team":"MUN","pos":"MID","price":6.0,"points_2526":91,"ratio":15.17,"cv":0.64,"consistency":"Consistent"},{"name":"Mainoo","team":"MUN","pos":"MID","price":5.5,"points_2526":73,"ratio":13.27,"cv":0.47,"consistency":"Consistent"},{"name":"Ugarte","team":"MUN","pos":"MID","price":5.0,"points_2526":38,"ratio":7.6,"cv":0.44,"consistency":"Consistent"},{"name":"Bruno G.","team":"NEW","pos":"MID","price":7.0,"points_2526":154,"ratio":22.0,"cv":0.7,"consistency":"Balanced"},{"name":"Barnes","team":"NEW","pos":"MID","price":6.0,"points_2526":106,"ratio":17.67,"cv":0.97,"consistency":"Boom/bust"},{"name":"Elanga","team":"NEW","pos":"MID","price":6.0,"points_2526":48,"ratio":8.0,"cv":0.36,"consistency":"Consistent"},{"name":"J.Ramsey","team":"NEW","pos":"MID","price":5.0,"points_2526":62,"ratio":12.4,"cv":0.73,"consistency":"Balanced"},{"name":"J.Murphy","team":"NEW","pos":"MID","price":6.0,"points_2526":82,"ratio":13.67,"cv":0.59,"consistency":"Consistent"},{"name":"Joelinton","team":"NEW","pos":"MID","price":5.5,"points_2526":73,"ratio":13.27,"cv":0.55,"consistency":"Consistent"},{"name":"L.Miley","team":"NEW","pos":"MID","price":5.5,"points_2526":72,"ratio":13.09,"cv":0.81,"consistency":"Boom/bust"},{"name":"Willock","team":"NEW","pos":"MID","price":5.0,"points_2526":38,"ratio":7.6,"cv":0.47,"consistency":"Consistent"},{"name":"Tonali","team":"TOT","pos":"MID","price":5.5,"points_2526":81,"ratio":14.73,"cv":0.45,"consistency":"Consistent"},{"name":"Guessand","team":"AVL","pos":"MID","price":5.5,"points_2526":44,"ratio":8.0,"cv":0.65,"consistency":"Consistent"},{"name":"Bailey","team":"AVL","pos":"MID","price":5.5,"points_2526":21,"ratio":3.82,"cv":0,"consistency":"N/A"},{"name":"McGinn","team":"AVL","pos":"MID","price":5.5,"points_2526":103,"ratio":18.73,"cv":0.82,"consistency":"Boom/bust"},{"name":"Barkley","team":"AVL","pos":"MID","price":5.0,"points_2526":56,"ratio":11.2,"cv":0.79,"consistency":"Balanced"},{"name":"Kamara","team":"AVL","pos":"MID","price":5.0,"points_2526":61,"ratio":12.2,"cv":0.79,"consistency":"Balanced"},{"name":"Onana","team":"AVL","pos":"MID","price":5.0,"points_2526":76,"ratio":15.2,"cv":0.71,"consistency":"Balanced"},{"name":"Gomes","team":"AVL","pos":"MID","price":5.5,"points_2526":107,"ratio":19.45,"cv":0.71,"consistency":"Balanced"},{"name":"Garnacho","team":"AVL","pos":"MID","price":6.0,"points_2526":56,"ratio":9.33,"cv":0.8,"consistency":"Balanced"},{"name":"Rayan","team":"BOU","pos":"MID","price":6.5,"points_2526":67,"ratio":10.31,"cv":0.6,"consistency":"Consistent"},{"name":"Tavernier","team":"BOU","pos":"MID","price":6.0,"points_2526":137,"ratio":22.83,"cv":0.73,"consistency":"Balanced"},{"name":"Scott","team":"BOU","pos":"MID","price":6.0,"points_2526":136,"ratio":22.67,"cv":0.65,"consistency":"Consistent"},{"name":"Kluivert","team":"BOU","pos":"MID","price":6.0,"points_2526":41,"ratio":6.83,"cv":0.72,"consistency":"Balanced"},{"name":"Adams","team":"BOU","pos":"MID","price":5.0,"points_2526":77,"ratio":15.4,"cv":0.62,"consistency":"Consistent"},{"name":"Brooks","team":"BOU","pos":"MID","price":5.0,"points_2526":59,"ratio":11.8,"cv":0.74,"consistency":"Balanced"},{"name":"Christie","team":"BOU","pos":"MID","price":5.0,"points_2526":47,"ratio":9.4,"cv":0.68,"consistency":"Balanced"},{"name":"Gray","team":"TOT","pos":"MID","price":5.0,"points_2526":61,"ratio":12.2,"cv":0.76,"consistency":"Balanced"},{"name":"Fernandes","team":"TOT","pos":"MID","price":6.0,"points_2526":135,"ratio":22.5,"cv":0.63,"consistency":"Consistent"},{"name":"E.Le Fée","team":"SUN","pos":"MID","price":6.0,"points_2526":147,"ratio":24.5,"cv":0.77,"consistency":"Balanced"},{"name":"Diarra","team":"SUN","pos":"MID","price":5.5,"points_2526":65,"ratio":11.82,"cv":0.82,"consistency":"Boom/bust"},{"name":"Xhaka","team":"SUN","pos":"MID","price":5.5,"points_2526":124,"ratio":22.55,"cv":0.58,"consistency":"Consistent"},{"name":"Sadiki","team":"SUN","pos":"MID","price":5.0,"points_2526":80,"ratio":16.0,"cv":0.42,"consistency":"Consistent"},{"name":"Adingra","team":"SUN","pos":"MID","price":5.0,"points_2526":34,"ratio":6.8,"cv":0.75,"consistency":"Balanced"},{"name":"Rigg","team":"SUN","pos":"MID","price":5.0,"points_2526":36,"ratio":7.2,"cv":0.52,"consistency":"Consistent"},{"name":"Talbi","team":"SUN","pos":"MID","price":5.5,"points_2526":83,"ratio":15.09,"cv":0.67,"consistency":"Consistent"},{"name":"Lewis-Skelly","team":"ARS","pos":"MID","price":5.5,"points_2526":29,"ratio":5.27,"cv":0.72,"consistency":"Balanced"},{"name":"Saka","team":"ARS","pos":"MID","price":9.5,"points_2526":157,"ratio":16.53,"cv":0.6,"consistency":"Consistent"},{"name":"Rice","team":"ARS","pos":"MID","price":7.5,"points_2526":184,"ratio":24.53,"cv":0.65,"consistency":"Consistent"},{"name":"Eze","team":"ARS","pos":"MID","price":6.5,"points_2526":113,"ratio":17.38,"cv":0.96,"consistency":"Boom/bust"},{"name":"Ødegaard","team":"ARS","pos":"MID","price":6.5,"points_2526":74,"ratio":11.38,"cv":0.56,"consistency":"Consistent"},{"name":"Madueke","team":"ARS","pos":"MID","price":6.5,"points_2526":72,"ratio":11.08,"cv":0.82,"consistency":"Boom/bust"},{"name":"Merino","team":"ARS","pos":"MID","price":6.0,"points_2526":67,"ratio":11.17,"cv":0.69,"consistency":"Balanced"},{"name":"Martinelli","team":"ARS","pos":"MID","price":6.5,"points_2526":57,"ratio":8.77,"cv":0.45,"consistency":"Consistent"},{"name":"Zubimendi","team":"ARS","pos":"MID","price":5.5,"points_2526":133,"ratio":24.18,"cv":0.76,"consistency":"Balanced"},{"name":"Bogarde","team":"AVL","pos":"MID","price":5.0,"points_2526":40,"ratio":8.0,"cv":1.1,"consistency":"Boom/bust"},{"name":"Buendía","team":"AVL","pos":"MID","price":6.0,"points_2526":102,"ratio":17.0,"cv":0.97,"consistency":"Boom/bust"},{"name":"Cook","team":"BOU","pos":"MID","price":5.0,"points_2526":40,"ratio":8.0,"cv":0.12,"consistency":"Consistent"},{"name":"Gibbs-White","team":"NFO","pos":"MID","price":8.0,"points_2526":188,"ratio":23.5,"cv":0.77,"consistency":"Balanced"},{"name":"Hudson-Odoi","team":"NFO","pos":"MID","price":6.0,"points_2526":88,"ratio":14.67,"cv":1.01,"consistency":"Boom/bust"},{"name":"Ndoye","team":"NFO","pos":"MID","price":5.5,"points_2526":50,"ratio":9.09,"cv":0.68,"consistency":"Balanced"},{"name":"Hutchinson","team":"NFO","pos":"MID","price":5.5,"points_2526":82,"ratio":14.91,"cv":0.57,"consistency":"Consistent"},{"name":"Bakwa","team":"NFO","pos":"MID","price":5.5,"points_2526":26,"ratio":4.73,"cv":0,"consistency":"N/A"},{"name":"Dominguez","team":"NFO","pos":"MID","price":5.0,"points_2526":48,"ratio":9.6,"cv":0.69,"consistency":"Balanced"},{"name":"Sangaré","team":"NFO","pos":"MID","price":5.0,"points_2526":89,"ratio":17.8,"cv":0.93,"consistency":"Boom/bust"},{"name":"Yates","team":"NFO","pos":"MID","price":4.5,"points_2526":30,"ratio":6.67,"cv":0,"consistency":"N/A"},{"name":"Kudus","team":"TOT","pos":"MID","price":6.5,"points_2526":75,"ratio":11.54,"cv":0.73,"consistency":"Balanced"},{"name":"Xavi","team":"TOT","pos":"MID","price":6.0,"points_2526":80,"ratio":13.33,"cv":0.83,"consistency":"Boom/bust"},{"name":"Tel","team":"TOT","pos":"MID","price":6.0,"points_2526":78,"ratio":13.0,"cv":0.72,"consistency":"Balanced"},{"name":"Bentancur","team":"TOT","pos":"MID","price":5.5,"points_2526":86,"ratio":15.64,"cv":0.62,"consistency":"Consistent"},{"name":"Odobert","team":"TOT","pos":"MID","price":5.5,"points_2526":46,"ratio":8.36,"cv":0.65,"consistency":"Consistent"},{"name":"P.M.Sarr","team":"TOT","pos":"MID","price":5.0,"points_2526":71,"ratio":14.2,"cv":0.6,"consistency":"Consistent"},{"name":"Gallagher","team":"TOT","pos":"MID","price":5.5,"points_2526":44,"ratio":8.0,"cv":0.69,"consistency":"Balanced"},{"name":"Bergvall","team":"TOT","pos":"MID","price":5.5,"points_2526":49,"ratio":8.91,"cv":0.77,"consistency":"Balanced"}],"FWD":[{"name":"Evanilson","team":"BOU","pos":"FWD","price":6.0,"points_2526":115,"ratio":19.17,"cv":0.6,"consistency":"Consistent"},{"name":"Thiago","team":"BRE","pos":"FWD","price":8.0,"points_2526":181,"ratio":22.62,"cv":0.87,"consistency":"Boom/bust"},{"name":"Wilson","team":"BRE","pos":"FWD","price":5.5,"points_2526":80,"ratio":14.55,"cv":0.6,"consistency":"Consistent"},{"name":"Georginio","team":"BHA","pos":"FWD","price":5.5,"points_2526":87,"ratio":15.82,"cv":0.66,"consistency":"Consistent"},{"name":"Welbeck","team":"BHA","pos":"FWD","price":6.0,"points_2526":126,"ratio":21.0,"cv":0.88,"consistency":"Boom/bust"},{"name":"João Pedro","team":"CHE","pos":"FWD","price":7.5,"points_2526":177,"ratio":23.6,"cv":0.83,"consistency":"Boom/bust"},{"name":"Delap","team":"CHE","pos":"FWD","price":5.5,"points_2526":45,"ratio":8.18,"cv":0.64,"consistency":"Consistent"},{"name":"Strand Larsen","team":"CRY","pos":"FWD","price":6.0,"points_2526":75,"ratio":12.5,"cv":0.96,"consistency":"Boom/bust"},{"name":"Mateta","team":"CRY","pos":"FWD","price":6.5,"points_2526":114,"ratio":17.54,"cv":0.98,"consistency":"Boom/bust"},{"name":"Beto","team":"EVE","pos":"FWD","price":5.5,"points_2526":104,"ratio":18.91,"cv":0.87,"consistency":"Boom/bust"},{"name":"Barry","team":"EVE","pos":"FWD","price":5.5,"points_2526":95,"ratio":17.27,"cv":0.69,"consistency":"Balanced"},{"name":"Muniz","team":"FUL","pos":"FWD","price":5.5,"points_2526":36,"ratio":6.55,"cv":0.62,"consistency":"Consistent"},{"name":"Calvert-Lewin","team":"LEE","pos":"FWD","price":6.0,"points_2526":142,"ratio":23.67,"cv":0.76,"consistency":"Balanced"},{"name":"Nmecha","team":"LEE","pos":"FWD","price":5.5,"points_2526":73,"ratio":13.27,"cv":0.73,"consistency":"Balanced"},{"name":"Isak","team":"LIV","pos":"FWD","price":9.0,"points_2526":41,"ratio":4.56,"cv":0.64,"consistency":"Consistent"},{"name":"Ekitiké","team":"LIV","pos":"FWD","price":7.5,"points_2526":125,"ratio":16.67,"cv":0.78,"consistency":"Balanced"},{"name":"Marmoush","team":"MCI","pos":"FWD","price":7.0,"points_2526":56,"ratio":8.0,"cv":0.51,"consistency":"Consistent"},{"name":"Haaland","team":"MCI","pos":"FWD","price":15.5,"points_2526":239,"ratio":15.42,"cv":0.68,"consistency":"Balanced"},{"name":"Šeško","team":"MUN","pos":"FWD","price":7.0,"points_2526":111,"ratio":15.86,"cv":0.76,"consistency":"Balanced"},{"name":"Zirkzee","team":"MUN","pos":"FWD","price":5.5,"points_2526":42,"ratio":7.64,"cv":0,"consistency":"N/A"},{"name":"Woltemade","team":"NEW","pos":"FWD","price":6.0,"points_2526":108,"ratio":18.0,"cv":0.69,"consistency":"Balanced"},{"name":"Wissa","team":"NEW","pos":"FWD","price":6.0,"points_2526":27,"ratio":4.5,"cv":0,"consistency":"N/A"},{"name":"Osula","team":"NEW","pos":"FWD","price":6.0,"points_2526":76,"ratio":12.67,"cv":0.7,"consistency":"Balanced"},{"name":"Awoniyi","team":"NFO","pos":"FWD","price":5.5,"points_2526":43,"ratio":7.82,"cv":0,"consistency":"N/A"},{"name":"Watkins","team":"AVL","pos":"FWD","price":8.0,"points_2526":167,"ratio":20.88,"cv":0.9,"consistency":"Boom/bust"},{"name":"Solanke","team":"TOT","pos":"FWD","price":6.0,"points_2526":40,"ratio":6.67,"cv":0.91,"consistency":"Boom/bust"},{"name":"Richarlison","team":"TOT","pos":"FWD","price":6.0,"points_2526":119,"ratio":19.83,"cv":0.67,"consistency":"Consistent"},{"name":"Gyökeres","team":"ARS","pos":"FWD","price":7.5,"points_2526":128,"ratio":17.07,"cv":0.99,"consistency":"Boom/bust"},{"name":"Havertz","team":"ARS","pos":"FWD","price":7.5,"points_2526":36,"ratio":4.8,"cv":0.51,"consistency":"Consistent"},{"name":"Wood","team":"NFO","pos":"FWD","price":6.0,"points_2526":41,"ratio":6.83,"cv":0.96,"consistency":"Boom/bust"},{"name":"Igor Jesus","team":"NFO","pos":"FWD","price":6.0,"points_2526":114,"ratio":19.0,"cv":0.83,"consistency":"Boom/bust"},{"name":"Brobbey","team":"SUN","pos":"FWD","price":6.0,"points_2526":92,"ratio":15.33,"cv":0.83,"consistency":"Boom/bust"},{"name":"Isidor","team":"SUN","pos":"FWD","price":5.5,"points_2526":74,"ratio":13.45,"cv":0.76,"consistency":"Balanced"}],"GKP":[{"name":"Kelleher","team":"BRE","pos":"GKP","price":5.0,"points_2526":143,"ratio":28.6,"cv":0.85,"consistency":"Boom/bust"},{"name":"Verbruggen","team":"BHA","pos":"GKP","price":4.5,"points_2526":130,"ratio":28.89,"cv":0.76,"consistency":"Balanced"},{"name":"Sánchez","team":"CHE","pos":"GKP","price":5.0,"points_2526":113,"ratio":22.6,"cv":0.74,"consistency":"Balanced"},{"name":"Henderson","team":"CRY","pos":"GKP","price":5.0,"points_2526":131,"ratio":26.2,"cv":0.91,"consistency":"Boom/bust"},{"name":"Pickford","team":"EVE","pos":"GKP","price":5.5,"points_2526":135,"ratio":24.55,"cv":0.94,"consistency":"Boom/bust"},{"name":"Leno","team":"FUL","pos":"GKP","price":4.5,"points_2526":122,"ratio":27.11,"cv":0.74,"consistency":"Balanced"},{"name":"Perri","team":"LEE","pos":"GKP","price":4.5,"points_2526":43,"ratio":9.56,"cv":0.92,"consistency":"Boom/bust"},{"name":"A.Becker","team":"LIV","pos":"GKP","price":5.5,"points_2526":91,"ratio":16.55,"cv":0.75,"consistency":"Balanced"},{"name":"Mamardashvili","team":"LIV","pos":"GKP","price":5.0,"points_2526":34,"ratio":6.8,"cv":0.79,"consistency":"Balanced"},{"name":"Donnarumma","team":"MCI","pos":"GKP","price":5.5,"points_2526":135,"ratio":24.55,"cv":0.63,"consistency":"Consistent"},{"name":"Darlow","team":"MUN","pos":"GKP","price":4.5,"points_2526":71,"ratio":15.78,"cv":0.74,"consistency":"Balanced"},{"name":"Lammens","team":"MUN","pos":"GKP","price":5.0,"points_2526":109,"ratio":21.8,"cv":0.83,"consistency":"Boom/bust"},{"name":"Bayindir","team":"MUN","pos":"GKP","price":4.5,"points_2526":11,"ratio":2.44,"cv":0.2,"consistency":"Consistent"},{"name":"Pope","team":"NEW","pos":"GKP","price":5.0,"points_2526":96,"ratio":19.2,"cv":0.59,"consistency":"Consistent"},{"name":"Sels","team":"NFO","pos":"GKP","price":5.0,"points_2526":105,"ratio":21.0,"cv":0.66,"consistency":"Consistent"},{"name":"Vicario","team":"TOT","pos":"GKP","price":4.5,"points_2526":90,"ratio":20.0,"cv":0.87,"consistency":"Boom/bust"},{"name":"Petrović","team":"BOU","pos":"GKP","price":4.5,"points_2526":124,"ratio":27.56,"cv":0.78,"consistency":"Balanced"},{"name":"Kinsky","team":"TOT","pos":"GKP","price":4.5,"points_2526":20,"ratio":4.44,"cv":0.63,"consistency":"Consistent"},{"name":"Dubravka","team":"TOT","pos":"GKP","price":4.0,"points_2526":96,"ratio":24.0,"cv":0.84,"consistency":"Boom/bust"},{"name":"Roefs","team":"SUN","pos":"GKP","price":5.0,"points_2526":136,"ratio":27.2,"cv":0.79,"consistency":"Balanced"},{"name":"Raya","team":"ARS","pos":"GKP","price":6.0,"points_2526":162,"ratio":27.0,"cv":0.62,"consistency":"Consistent"},{"name":"Martinez","team":"AVL","pos":"GKP","price":5.0,"points_2526":120,"ratio":24.0,"cv":0.78,"consistency":"Balanced"},{"name":"M.Bizot","team":"AVL","pos":"GKP","price":4.5,"points_2526":16,"ratio":3.56,"cv":0.98,"consistency":"Boom/bust"}],"DEF":[{"name":"Collins","team":"BRE","pos":"DEF","price":5.5,"points_2526":129,"ratio":23.45,"cv":0.84,"consistency":"Boom/bust"},{"name":"Van den Berg","team":"BRE","pos":"DEF","price":5.0,"points_2526":113,"ratio":22.6,"cv":0.64,"consistency":"Consistent"},{"name":"Ajer","team":"BRE","pos":"DEF","price":4.5,"points_2526":76,"ratio":16.89,"cv":0.64,"consistency":"Consistent"},{"name":"Kayode","team":"BRE","pos":"DEF","price":4.5,"points_2526":113,"ratio":25.11,"cv":0.91,"consistency":"Boom/bust"},{"name":"Henry","team":"BRE","pos":"DEF","price":4.5,"points_2526":52,"ratio":11.56,"cv":0.67,"consistency":"Consistent"},{"name":"Hickey","team":"BRE","pos":"DEF","price":4.5,"points_2526":37,"ratio":8.22,"cv":0.68,"consistency":"Balanced"},{"name":"F.Kadıoğlu","team":"BHA","pos":"DEF","price":4.5,"points_2526":118,"ratio":26.22,"cv":0.95,"consistency":"Boom/bust"},{"name":"Boscagli","team":"BHA","pos":"DEF","price":4.5,"points_2526":39,"ratio":8.67,"cv":0.71,"consistency":"Balanced"},{"name":"De Cuyper","team":"BHA","pos":"DEF","price":4.5,"points_2526":84,"ratio":18.67,"cv":1.04,"consistency":"Boom/bust"},{"name":"Dunk","team":"BHA","pos":"DEF","price":4.5,"points_2526":100,"ratio":22.22,"cv":0.99,"consistency":"Boom/bust"},{"name":"Wieffer","team":"BHA","pos":"DEF","price":5.0,"points_2526":94,"ratio":18.8,"cv":0.92,"consistency":"Boom/bust"},{"name":"Struijk","team":"BHA","pos":"DEF","price":5.0,"points_2526":108,"ratio":21.6,"cv":0.75,"consistency":"Balanced"},{"name":"James","team":"CHE","pos":"DEF","price":5.5,"points_2526":115,"ratio":20.91,"cv":0.65,"consistency":"Consistent"},{"name":"Chalobah","team":"CHE","pos":"DEF","price":5.5,"points_2526":136,"ratio":24.73,"cv":0.73,"consistency":"Balanced"},{"name":"Gusto","team":"CHE","pos":"DEF","price":5.0,"points_2526":96,"ratio":19.2,"cv":1.17,"consistency":"Boom/bust"},{"name":"Fofana","team":"CHE","pos":"DEF","price":5.0,"points_2526":65,"ratio":13.0,"cv":0.91,"consistency":"Boom/bust"},{"name":"B.Badiashile","team":"CHE","pos":"DEF","price":4.5,"points_2526":7,"ratio":1.56,"cv":0,"consistency":"N/A"},{"name":"Tosin","team":"CHE","pos":"DEF","price":4.5,"points_2526":34,"ratio":7.56,"cv":1.08,"consistency":"Boom/bust"},{"name":"Hato","team":"CHE","pos":"DEF","price":4.5,"points_2526":19,"ratio":4.22,"cv":0.6,"consistency":"Consistent"},{"name":"Acheampong","team":"CHE","pos":"DEF","price":4.5,"points_2526":39,"ratio":8.67,"cv":1.07,"consistency":"Boom/bust"},{"name":"Disasi","team":"CHE","pos":"DEF","price":4.5,"points_2526":49,"ratio":10.89,"cv":0.83,"consistency":"Boom/bust"},{"name":"Lacroix","team":"CRY","pos":"DEF","price":6.0,"points_2526":154,"ratio":25.67,"cv":0.75,"consistency":"Balanced"},{"name":"Muñoz","team":"CRY","pos":"DEF","price":5.5,"points_2526":136,"ratio":24.73,"cv":0.72,"consistency":"Balanced"},{"name":"Richards","team":"CRY","pos":"DEF","price":5.0,"points_2526":128,"ratio":25.6,"cv":0.67,"consistency":"Consistent"},{"name":"Canvot","team":"CRY","pos":"DEF","price":5.0,"points_2526":72,"ratio":14.4,"cv":0.82,"consistency":"Boom/bust"},{"name":"Mitchell","team":"CRY","pos":"DEF","price":4.5,"points_2526":135,"ratio":30.0,"cv":0.79,"consistency":"Balanced"},{"name":"Chadi Riad","team":"CRY","pos":"DEF","price":4.5,"points_2526":20,"ratio":4.44,"cv":0.59,"consistency":"Consistent"},{"name":"Tarkowski","team":"EVE","pos":"DEF","price":6.0,"points_2526":170,"ratio":28.33,"cv":0.8,"consistency":"Balanced"},{"name":"Branthwaite","team":"EVE","pos":"DEF","price":5.5,"points_2526":32,"ratio":5.82,"cv":0.6,"consistency":"Consistent"},{"name":"Keane","team":"EVE","pos":"DEF","price":5.0,"points_2526":131,"ratio":26.2,"cv":0.83,"consistency":"Boom/bust"},{"name":"O'Brien","team":"EVE","pos":"DEF","price":5.0,"points_2526":116,"ratio":23.2,"cv":0.85,"consistency":"Boom/bust"},{"name":"Mykolenko","team":"EVE","pos":"DEF","price":4.5,"points_2526":95,"ratio":21.11,"cv":0.84,"consistency":"Boom/bust"},{"name":"Andersen","team":"FUL","pos":"DEF","price":5.0,"points_2526":123,"ratio":24.6,"cv":0.71,"consistency":"Balanced"},{"name":"Robinson","team":"FUL","pos":"DEF","price":4.5,"points_2526":65,"ratio":14.44,"cv":0.93,"consistency":"Boom/bust"},{"name":"J.Cuenca","team":"FUL","pos":"DEF","price":4.5,"points_2526":39,"ratio":8.67,"cv":0.59,"consistency":"Consistent"},{"name":"Tete","team":"FUL","pos":"DEF","price":4.5,"points_2526":81,"ratio":18.0,"cv":0.67,"consistency":"Consistent"},{"name":"Bassey","team":"FUL","pos":"DEF","price":4.5,"points_2526":103,"ratio":22.89,"cv":0.8,"consistency":"Balanced"},{"name":"Castagne","team":"FUL","pos":"DEF","price":4.5,"points_2526":61,"ratio":13.56,"cv":0.8,"consistency":"Balanced"},{"name":"Sessegnon","team":"FUL","pos":"DEF","price":4.5,"points_2526":95,"ratio":21.11,"cv":0.75,"consistency":"Balanced"},{"name":"Diop","team":"IPS","pos":"DEF","price":4.0,"points_2526":31,"ratio":7.75,"cv":1.37,"consistency":"Boom/bust"},{"name":"Bijol","team":"LEE","pos":"DEF","price":5.0,"points_2526":99,"ratio":19.8,"cv":0.66,"consistency":"Consistent"},{"name":"Rodon","team":"LEE","pos":"DEF","price":4.5,"points_2526":109,"ratio":24.22,"cv":0.84,"consistency":"Boom/bust"},{"name":"Bogle","team":"LEE","pos":"DEF","price":4.5,"points_2526":96,"ratio":21.33,"cv":0.77,"consistency":"Balanced"},{"name":"Gudmundsson","team":"LEE","pos":"DEF","price":4.5,"points_2526":68,"ratio":15.11,"cv":1.15,"consistency":"Boom/bust"},{"name":"Justin","team":"LEE","pos":"DEF","price":4.5,"points_2526":94,"ratio":20.89,"cv":0.88,"consistency":"Boom/bust"},{"name":"Virgil","team":"LIV","pos":"DEF","price":6.5,"points_2526":175,"ratio":26.92,"cv":0.81,"consistency":"Boom/bust"},{"name":"Frimpong","team":"LIV","pos":"DEF","price":5.5,"points_2526":63,"ratio":11.45,"cv":0.59,"consistency":"Consistent"},{"name":"Kerkez","team":"LIV","pos":"DEF","price":5.5,"points_2526":85,"ratio":15.45,"cv":0.8,"consistency":"Balanced"},{"name":"Gomez","team":"LIV","pos":"DEF","price":5.0,"points_2526":33,"ratio":6.6,"cv":1.04,"consistency":"Boom/bust"},{"name":"Bradley","team":"LIV","pos":"DEF","price":5.0,"points_2526":42,"ratio":8.4,"cv":0.55,"consistency":"Consistent"},{"name":"O'Reilly","team":"MCI","pos":"DEF","price":6.5,"points_2526":160,"ratio":24.62,"cv":0.76,"consistency":"Balanced"},{"name":"Guéhi","team":"MCI","pos":"DEF","price":6.0,"points_2526":179,"ratio":29.83,"cv":0.75,"consistency":"Balanced"},{"name":"Matheus N.","team":"MCI","pos":"DEF","price":6.0,"points_2526":154,"ratio":25.67,"cv":0.75,"consistency":"Balanced"},{"name":"Rúben","team":"MCI","pos":"DEF","price":5.5,"points_2526":113,"ratio":20.55,"cv":0.69,"consistency":"Balanced"},{"name":"Gvardiol","team":"MCI","pos":"DEF","price":5.5,"points_2526":79,"ratio":14.36,"cv":0.68,"consistency":"Balanced"},{"name":"Aït-Nouri","team":"MCI","pos":"DEF","price":5.5,"points_2526":60,"ratio":10.91,"cv":0.68,"consistency":"Balanced"},{"name":"Khusanov","team":"MCI","pos":"DEF","price":5.5,"points_2526":67,"ratio":12.18,"cv":0.68,"consistency":"Balanced"},{"name":"De Ligt","team":"MUN","pos":"DEF","price":5.0,"points_2526":43,"ratio":8.6,"cv":0.82,"consistency":"Boom/bust"},{"name":"Dalot","team":"MUN","pos":"DEF","price":5.0,"points_2526":111,"ratio":22.2,"cv":1.04,"consistency":"Boom/bust"},{"name":"Maguire","team":"MUN","pos":"DEF","price":5.0,"points_2526":90,"ratio":18.0,"cv":0.77,"consistency":"Balanced"},{"name":"Martinez","team":"MUN","pos":"DEF","price":5.0,"points_2526":51,"ratio":10.2,"cv":0.78,"consistency":"Balanced"},{"name":"Yoro","team":"MUN","pos":"DEF","price":5.0,"points_2526":56,"ratio":11.2,"cv":0.75,"consistency":"Balanced"},{"name":"Heaven","team":"MUN","pos":"DEF","price":4.5,"points_2526":42,"ratio":9.33,"cv":0.92,"consistency":"Boom/bust"},{"name":"Mazraoui","team":"MUN","pos":"DEF","price":4.5,"points_2526":53,"ratio":11.78,"cv":0.72,"consistency":"Balanced"},{"name":"Shaw","team":"MUN","pos":"DEF","price":4.5,"points_2526":113,"ratio":25.11,"cv":0.84,"consistency":"Boom/bust"},{"name":"Thiaw","team":"NEW","pos":"DEF","price":5.0,"points_2526":126,"ratio":25.2,"cv":1.07,"consistency":"Boom/bust"},{"name":"Schär","team":"NEW","pos":"DEF","price":5.0,"points_2526":51,"ratio":10.2,"cv":0.67,"consistency":"Consistent"},{"name":"Botman","team":"NEW","pos":"DEF","price":5.0,"points_2526":89,"ratio":17.8,"cv":0.64,"consistency":"Consistent"},{"name":"Burn","team":"NEW","pos":"DEF","price":5.0,"points_2526":93,"ratio":18.6,"cv":0.86,"consistency":"Boom/bust"},{"name":"Hall","team":"NEW","pos":"DEF","price":5.0,"points_2526":79,"ratio":15.8,"cv":0.74,"consistency":"Balanced"},{"name":"Livramento","team":"NEW","pos":"DEF","price":5.0,"points_2526":59,"ratio":11.8,"cv":0.6,"consistency":"Consistent"},{"name":"N.Williams","team":"NFO","pos":"DEF","price":5.0,"points_2526":128,"ratio":25.6,"cv":1.03,"consistency":"Boom/bust"},{"name":"Morato","team":"NFO","pos":"DEF","price":5.0,"points_2526":53,"ratio":10.6,"cv":0.82,"consistency":"Boom/bust"},{"name":"Van Hecke","team":"TOT","pos":"DEF","price":5.0,"points_2526":148,"ratio":29.6,"cv":0.7,"consistency":"Balanced"},{"name":"Hill","team":"BOU","pos":"DEF","price":5.5,"points_2526":110,"ratio":20.0,"cv":0.62,"consistency":"Consistent"},{"name":"Truffert","team":"BOU","pos":"DEF","price":5.5,"points_2526":165,"ratio":30.0,"cv":0.71,"consistency":"Balanced"},{"name":"Diakité","team":"BOU","pos":"DEF","price":5.0,"points_2526":46,"ratio":9.2,"cv":0.83,"consistency":"Boom/bust"},{"name":"Smith","team":"BOU","pos":"DEF","price":4.5,"points_2526":58,"ratio":12.89,"cv":0.7,"consistency":"Balanced"},{"name":"Senesi","team":"TOT","pos":"DEF","price":6.0,"points_2526":175,"ratio":29.17,"cv":0.74,"consistency":"Balanced"},{"name":"Pedro Porro","team":"TOT","pos":"DEF","price":5.5,"points_2526":117,"ratio":21.27,"cv":0.91,"consistency":"Boom/bust"},{"name":"Romero","team":"TOT","pos":"DEF","price":5.0,"points_2526":91,"ratio":18.2,"cv":0.98,"consistency":"Boom/bust"},{"name":"Danso","team":"TOT","pos":"DEF","price":5.0,"points_2526":63,"ratio":12.6,"cv":0.63,"consistency":"Consistent"},{"name":"Robertson","team":"TOT","pos":"DEF","price":4.5,"points_2526":55,"ratio":12.22,"cv":0.55,"consistency":"Consistent"},{"name":"Van de Ven","team":"TOT","pos":"DEF","price":5.0,"points_2526":116,"ratio":23.2,"cv":1.35,"consistency":"Boom/bust"},{"name":"Spence","team":"TOT","pos":"DEF","price":4.5,"points_2526":78,"ratio":17.33,"cv":0.82,"consistency":"Boom/bust"},{"name":"Udogie","team":"TOT","pos":"DEF","price":4.5,"points_2526":29,"ratio":6.44,"cv":1.02,"consistency":"Boom/bust"},{"name":"O'Nien","team":"SUN","pos":"DEF","price":4.0,"points_2526":26,"ratio":6.5,"cv":0.57,"consistency":"Consistent"},{"name":"Gabriel","team":"ARS","pos":"DEF","price":8.0,"points_2526":209,"ratio":26.12,"cv":0.56,"consistency":"Consistent"},{"name":"J.Timber","team":"ARS","pos":"DEF","price":6.5,"points_2526":149,"ratio":22.92,"cv":0.87,"consistency":"Boom/bust"},{"name":"Saliba","team":"ARS","pos":"DEF","price":6.0,"points_2526":137,"ratio":22.83,"cv":0.63,"consistency":"Consistent"},{"name":"Calafiori","team":"ARS","pos":"DEF","price":5.5,"points_2526":109,"ratio":19.82,"cv":0.63,"consistency":"Consistent"},{"name":"Hincapie","team":"ARS","pos":"DEF","price":5.5,"points_2526":87,"ratio":15.82,"cv":0.76,"consistency":"Balanced"},{"name":"White","team":"ARS","pos":"DEF","price":5.5,"points_2526":45,"ratio":8.18,"cv":0.7,"consistency":"Balanced"},{"name":"Mosquera","team":"ARS","pos":"DEF","price":5.5,"points_2526":40,"ratio":7.27,"cv":0.63,"consistency":"Consistent"},{"name":"Digne","team":"AVL","pos":"DEF","price":4.5,"points_2526":97,"ratio":21.56,"cv":0.61,"consistency":"Consistent"},{"name":"Konsa","team":"AVL","pos":"DEF","price":4.5,"points_2526":100,"ratio":22.22,"cv":0.81,"consistency":"Boom/bust"},{"name":"Cash","team":"AVL","pos":"DEF","price":4.5,"points_2526":117,"ratio":26.0,"cv":0.95,"consistency":"Boom/bust"},{"name":"Mings","team":"AVL","pos":"DEF","price":4.5,"points_2526":50,"ratio":11.11,"cv":1.0,"consistency":"Boom/bust"},{"name":"Pau","team":"AVL","pos":"DEF","price":4.5,"points_2526":64,"ratio":14.22,"cv":0.69,"consistency":"Balanced"},{"name":"Maatsen","team":"AVL","pos":"DEF","price":4.5,"points_2526":54,"ratio":12.0,"cv":0.81,"consistency":"Boom/bust"},{"name":"Lindelöf","team":"AVL","pos":"DEF","price":4.5,"points_2526":29,"ratio":6.44,"cv":0.73,"consistency":"Balanced"},{"name":"Milenković","team":"NFO","pos":"DEF","price":5.5,"points_2526":119,"ratio":21.64,"cv":0.81,"consistency":"Boom/bust"},{"name":"Murillo","team":"NFO","pos":"DEF","price":5.5,"points_2526":83,"ratio":15.09,"cv":1.12,"consistency":"Boom/bust"},{"name":"Aina","team":"NFO","pos":"DEF","price":4.5,"points_2526":67,"ratio":14.89,"cv":0.9,"consistency":"Boom/bust"},{"name":"Jair Cunha","team":"NFO","pos":"DEF","price":4.5,"points_2526":13,"ratio":2.89,"cv":0,"consistency":"N/A"},{"name":"Savona","team":"NFO","pos":"DEF","price":4.5,"points_2526":39,"ratio":8.67,"cv":0.92,"consistency":"Boom/bust"},{"name":"Ballard","team":"SUN","pos":"DEF","price":5.0,"points_2526":116,"ratio":23.2,"cv":0.81,"consistency":"Boom/bust"},{"name":"Mukiele","team":"SUN","pos":"DEF","price":5.5,"points_2526":151,"ratio":27.45,"cv":0.87,"consistency":"Boom/bust"},{"name":"Hume","team":"SUN","pos":"DEF","price":4.5,"points_2526":110,"ratio":24.44,"cv":0.97,"consistency":"Boom/bust"},{"name":"Alderete","team":"SUN","pos":"DEF","price":5.0,"points_2526":125,"ratio":25.0,"cv":0.95,"consistency":"Boom/bust"},{"name":"Reinildo","team":"SUN","pos":"DEF","price":4.5,"points_2526":74,"ratio":16.44,"cv":0.85,"consistency":"Boom/bust"}]};
+
+const posLabels = {GKP:'Goalkeepers', DEF:'Defenders', MID:'Midfielders', FWD:'Forwards'};
+const posOrder = ['GKP','DEF','MID','FWD'];
+const badgeClass = {
+  'Consistent':'consistent',
+  'Balanced':'balanced',
+  'Boom/bust':'boombust',
+  'N/A':'na'
+};
+
+let currentPos = 'MID';
+let sortKey = 'ratio';
+let sortDir = -1;
+let query = '';
+
+function renderStats(){
+  const strip = document.getElementById('statstrip');
+  const totalPlayers = posOrder.reduce((s,p)=>s+DATA[p].length,0);
+  const allRatios = posOrder.flatMap(p=>DATA[p].map(r=>r.ratio));
+  const best = Math.max(...allRatios);
+  strip.innerHTML = `
+    <div class="stat"><div class="num">${totalPlayers}</div><div class="lbl">Players tracked</div></div>
+    <div class="stat"><div class="num">${best.toFixed(1)}</div><div class="lbl">Best pts / £m</div></div>
+    <div class="stat"><div class="num">4</div><div class="lbl">Positions</div></div>
+  `;
+}
+
+function renderTabs(){
+  const tabs = document.getElementById('tabs');
+  tabs.innerHTML = '';
+  posOrder.forEach(p=>{
+    const btn = document.createElement('button');
+    btn.className = 'tab' + (p===currentPos ? ' active' : '');
+    btn.textContent = posLabels[p];
+    btn.onclick = () => { currentPos = p; render(); };
+    tabs.appendChild(btn);
+  });
+}
+
+const cols = [
+  {key:'name', label:'Player', align:'left'},
+  {key:'team', label:'Team', align:'left'},
+  {key:'price', label:'Price', align:'right'},
+  {key:'points_2526', label:'2025-26 Pts', align:'right'},
+  {key:'ratio', label:'Pts / £m', align:'right'},
+  {key:'consistency', label:'Consistency', align:'left'}
+];
+
+function renderHead(){
+  const thead = document.getElementById('thead');
+  const tr = document.createElement('tr');
+  cols.forEach(c=>{
+    const th = document.createElement('th');
+    th.className = c.align === 'right' ? 'num' : '';
+    th.textContent = c.label + (sortKey===c.key ? (sortDir===-1?' ↓':' ↑') : '');
+    th.onclick = () => {
+      if(sortKey===c.key){ sortDir *= -1; } else { sortKey = c.key; sortDir = -1; }
+      render();
+    };
+    tr.appendChild(th);
+  });
+  thead.innerHTML=''; thead.appendChild(tr);
+}
+
+function render(){
+  renderTabs();
+  renderHead();
+  let rows = [...DATA[currentPos]];
+  if(query){
+    const q = query.toLowerCase();
+    rows = rows.filter(r => r.name.toLowerCase().includes(q) || r.team.toLowerCase().includes(q));
+  }
+  rows.sort((a,b)=>{
+    const av=a[sortKey], bv=b[sortKey];
+    if(typeof av==='string') return sortDir*String(av).localeCompare(String(bv));
+    return sortDir*(bv-av);
+  });
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
+  rows.forEach(r=>{
+    const tr = document.createElement('tr');
+    const bc = badgeClass[r.consistency] || 'na';
+    tr.innerHTML = `
+      <td class="player">${r.name}</td>
+      <td class="team">${r.team}</td>
+      <td class="num">£${r.price.toFixed(1)}</td>
+      <td class="num">${r.points_2526}</td>
+      <td class="num ratio">${r.ratio.toFixed(2)}</td>
+      <td><span class="badge ${bc}">${r.consistency}</span></td>
+    `;
+    tbody.appendChild(tr);
+  });
+  document.getElementById('count').textContent = `Showing ${rows.length} of ${DATA[currentPos].length} ${posLabels[currentPos].toLowerCase()}`;
+}
+
+document.getElementById('searchbox').addEventListener('input', e=>{
+  query = e.target.value;
+  render();
+});
+
+renderStats();
+render();
+</script>
+</body>
+</html>

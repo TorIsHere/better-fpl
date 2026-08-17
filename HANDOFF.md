@@ -96,6 +96,8 @@ defcon_rate   float  share of recent starts hitting the DefCon threshold, or nul
 defcon_avg    float  mean defensive actions per start (recent window), or null
 overperf      float  (goals+assists) − (xG+xA) over the recent window, or null
 luck          str    "hot" | "unlucky" | ""
+fix_avg       float  mean FDR over the next 5 gameweeks, or null
+fix_ops       list   upcoming opponents, e.g. ["CHE (A) 4", ...]
 trend         str    "rising" | "falling" | ""
 season_share  int    % of season minutes
 recent_share  int    % of last-8-GW minutes, or null
@@ -177,12 +179,15 @@ alongside so sustainability is visible at a glance.
 
 Implement as a fifth tab beside the position tabs.
 
-### 4. Fixture difficulty (P3)
+### ~~4. Fixture difficulty~~ ✅ done (P3)
 
-The largest remaining gap. `https://fantasy.premierleague.com/api/fixtures/`
-gives fixtures with `team_h_difficulty` / `team_a_difficulty`. Compute each
-club's mean difficulty over the next 5–6 gameweeks and attach to every player.
-Early season this often matters more than any per-player metric.
+Was the largest remaining gap. `fixture_outlook()` computes each club's mean
+FDR over the next `FIXTURE_HORIZON` (5) gameweeks — windowed by gameweek, so
+a double gameweek weighs both matches and a blank contributes nothing. Emits
+`fix_avg` and `fix_ops` (opponent list for the hover). A failed fixtures
+fetch degrades to an empty column rather than killing the build; offline it
+reads `fixtures.json` beside the bootstrap fixture (a real payload is
+committed at `tests/fixtures.json`).
 
 ### 5. Robustness (P3)
 

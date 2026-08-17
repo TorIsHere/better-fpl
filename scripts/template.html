@@ -97,6 +97,9 @@
   .luck{font-family:'JetBrains Mono',monospace;cursor:help}
   .luck.luck-hot{color:var(--red);font-weight:700}
   .luck.luck-cold{color:var(--pitch);font-weight:700}
+  .fix{font-family:'JetBrains Mono',monospace;cursor:help}
+  .fix.fix-easy{color:var(--pitch);font-weight:700}
+  .fix.fix-hard{color:var(--red);font-weight:700}
 
   .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-left:6px;vertical-align:1px}
   .dot.news{background:var(--red)}
@@ -161,6 +164,7 @@
     <b>Security</b> — judged on the <em>final 8 gameweeks</em>, not the season as a whole, so a player who broke into the side late is not written off as a bench player. <span style="color:var(--pitch)">▲</span>/<span style="color:var(--red)">▼</span> marks minutes rising or falling against his season average. Nailed 80%+ of recent available minutes · Solid 60-80% · Rotation risk 35-60% · Bench risk under 35% · Doubt/Injured from the live FPL feed. <b>Contested</b> means the club carries more than one credible goalkeeper, so prior minutes settle nothing.
     <br><b>DefCon</b> — mean defensive actions per start, with the % of starts hitting the 2-pt threshold (10 for defenders, 12 for midfielders and forwards). <span style="color:var(--gold);font-weight:700">Gold</span> marks the interesting band: averaging just under the threshold, one role tweak from regular returns. &nbsp;
     <b>Luck</b> — goal involvements minus expected (xG+xA) over the recent window. <span style="color:var(--red);font-weight:700">Hot</span> (over +2) is a sell-high trap; <span style="color:var(--pitch);font-weight:700">negative</span> (under −1) marks a player finishing normally but unrewarded — a buy-low candidate. &nbsp;
+    <b>Fix (5)</b> — average fixture difficulty (2 easiest → 5 hardest) over the next five gameweeks; hover for the run of opponents. Early season this outweighs any per-player number. &nbsp;
     <b>★ Risers</b> — the saved screen that found the good picks: minutes rising, 60%+ recent share, secure, no injury news, above the positional median on Pts/90.
     <br><b>↷ moved</b> — changed club since last season, so the security label was <em>earned somewhere else</em>. It says the player is durable, not that he has won a place in this squad. Shown dashed and faded for that reason.
     <br><span style="color:var(--red)">●</span> active injury news &nbsp;
@@ -261,6 +265,7 @@ const baseCols = [
   {key:'p90',         label:'Pts / 90',   align:'right'},
   {key:'defcon_avg',  label:'DefCon',     align:'right'},
   {key:'overperf',    label:'Luck',       align:'right'},
+  {key:'fix_avg',     label:'Fix (5)',    align:'right'},
   {key:'consistency', label:'Consistency',align:'left'},
   {key:'proj_min',    label:'Proj min',   align:'right'},
   {key:'security',    label:'Security',   align:'left'}
@@ -329,6 +334,17 @@ function luckCell(r){
   return `<span class="luck ${cls}" title="${esc(title)}">${v}</span>`;
 }
 
+function fixCell(r){
+  if(r.fix_avg === null || r.fix_avg === undefined)
+    return '<span class="none">—</span>';
+  // FDR runs 2 (easiest) to 5. Anything averaging under 2.7 is a genuinely
+  // kind run; over 3.5 is a schedule to wait out.
+  const cls = r.fix_avg <= 2.7 ? 'fix-easy' : (r.fix_avg >= 3.5 ? 'fix-hard' : '');
+  const title = `Average fixture difficulty over the next ${r.fix_ops.length} match(es): `
+    + r.fix_ops.join(' · ');
+  return `<span class="fix ${cls}" title="${esc(title)}">${r.fix_avg.toFixed(1)}</span>`;
+}
+
 function minbar(row){
   const pct = Math.min(100, Math.round(row.proj_min / 90 * 100));
   const cls = row.proj_min < 45 ? 'bad' : (row.proj_min < 65 ? 'warn' : '');
@@ -387,6 +403,7 @@ function render(){
       `<td class="num p90">${r.p90.toFixed(2)}</td>` +
       `<td class="num">${defconCell(r)}</td>` +
       `<td class="num">${luckCell(r)}</td>` +
+      `<td class="num">${fixCell(r)}</td>` +
       `<td><span class="badge ${badgeClass[r.consistency] || 'na'}">${esc(r.consistency)}</span></td>` +
       `<td class="num">${minbar(r)}</td>` +
       `<td><span class="badge ${secClass}"${contested}>${esc(r.security)}</span></td>`;

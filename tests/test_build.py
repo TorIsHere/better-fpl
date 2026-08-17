@@ -175,6 +175,39 @@ class OverperfStats(unittest.TestCase):
         self.assertEqual(build.overperf_stats(extras), (0.0, ""))
 
 
+class FixtureOutlook(unittest.TestCase):
+    TEAMS = [{"id": 1, "short_name": "ARS"}, {"id": 2, "short_name": "CHE"},
+             {"id": 3, "short_name": "LEE"}]
+
+    @staticmethod
+    def _fx(event, h, a, hd, ad, finished=False):
+        return {"event": event, "team_h": h, "team_a": a,
+                "team_h_difficulty": hd, "team_a_difficulty": ad,
+                "finished": finished}
+
+    def test_home_and_away_difficulty_assignment(self):
+        outlook = build.fixture_outlook([self._fx(1, 1, 2, 2, 5)], self.TEAMS)
+        self.assertEqual(outlook[1], (2.0, ["CHE (H) 2"]))
+        self.assertEqual(outlook[2], (5.0, ["ARS (A) 5"]))
+
+    def test_windowed_by_gameweek_not_fixture_count(self):
+        # A double gameweek weighs both matches; beyond the horizon is cut.
+        fixtures = [self._fx(gw, 1, 2, 2, 2) for gw in range(1, 5)]
+        fixtures.append(self._fx(4, 1, 3, 4, 4))            # DGW4
+        fixtures.append(self._fx(build.FIXTURE_HORIZON + 1, 1, 3, 5, 5))
+        avg, ops = build.fixture_outlook(fixtures, self.TEAMS)[1]
+        self.assertEqual(len(ops), 5)
+        self.assertEqual(avg, round((2 * 4 + 4) / 5, 1))
+
+    def test_finished_fixtures_are_ignored(self):
+        fixtures = [self._fx(1, 1, 2, 5, 5, finished=True), self._fx(2, 1, 2, 2, 3)]
+        avg, ops = build.fixture_outlook(fixtures, self.TEAMS)[1]
+        self.assertEqual((avg, ops), (2.0, ["CHE (H) 2"]))
+
+    def test_empty_fixtures(self):
+        self.assertEqual(build.fixture_outlook([], self.TEAMS), {})
+
+
 class Overrides(unittest.TestCase):
     def _row(self, name="Doe", team="ARS"):
         return {

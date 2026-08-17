@@ -3,7 +3,7 @@
   "basis": "2025-26 final season totals",
   "use_current": false,
   "finished_gws": 0,
-  "built_at": "2026-08-17 19:36 UTC"
+  "built_at": "2026-08-17 19:40 UTC"
  },
  "players": {
   "GKP": [
@@ -24,6 +24,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -50,6 +58,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "",
     "season_share": 97,
     "recent_share": 100,
@@ -76,6 +92,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -102,6 +126,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "",
     "season_share": 92,
     "recent_share": 88,
@@ -128,6 +160,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -154,6 +194,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "",
     "season_share": 97,
     "recent_share": 88,
@@ -180,6 +228,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "",
     "season_share": 97,
     "recent_share": 100,
@@ -206,6 +262,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -232,6 +296,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 89,
     "recent_share": 88,
@@ -258,6 +330,14 @@
     "defcon_avg": null,
     "overperf": 1.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 83,
     "recent_share": 75,
@@ -284,6 +364,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "falling",
     "season_share": 92,
     "recent_share": 62,
@@ -313,6 +401,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 89,
     "recent_share": 84,
@@ -339,6 +435,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "rising",
     "season_share": 84,
     "recent_share": 100,
@@ -367,6 +471,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "rising",
     "season_share": 78,
     "recent_share": 100,
@@ -393,6 +505,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "falling",
     "season_share": 82,
     "recent_share": 12,
@@ -422,6 +542,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 71,
     "recent_share": 62,
@@ -448,6 +576,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "falling",
     "season_share": 68,
     "recent_share": 12,
@@ -476,6 +612,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "rising",
     "season_share": 58,
     "recent_share": 100,
@@ -504,6 +648,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "falling",
     "season_share": 42,
     "recent_share": 0,
@@ -530,6 +682,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "rising",
     "season_share": 25,
     "recent_share": 58,
@@ -558,6 +718,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "rising",
     "season_share": 18,
     "recent_share": 88,
@@ -587,6 +755,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 17,
     "recent_share": 25,
@@ -613,6 +789,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "falling",
     "season_share": 16,
     "recent_share": 0,
@@ -641,6 +825,14 @@
     "defcon_avg": 6.8,
     "overperf": 3.3,
     "luck": "hot",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "",
     "season_share": 99,
     "recent_share": 100,
@@ -667,6 +859,14 @@
     "defcon_avg": 6.8,
     "overperf": 0.6,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "",
     "season_share": 95,
     "recent_share": 81,
@@ -693,6 +893,14 @@
     "defcon_avg": 7.4,
     "overperf": 1.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 92,
     "recent_share": 88,
@@ -719,6 +927,14 @@
     "defcon_avg": 9.1,
     "overperf": -0.6,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "",
     "season_share": 94,
     "recent_share": 100,
@@ -745,6 +961,14 @@
     "defcon_avg": 8.6,
     "overperf": 1.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "",
     "season_share": 96,
     "recent_share": 100,
@@ -771,6 +995,14 @@
     "defcon_avg": 9.0,
     "overperf": 1.7,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "",
     "season_share": 97,
     "recent_share": 100,
@@ -797,6 +1029,14 @@
     "defcon_avg": 6.9,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "",
     "season_share": 81,
     "recent_share": 86,
@@ -823,6 +1063,14 @@
     "defcon_avg": 9.1,
     "overperf": 1.6,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -849,6 +1097,14 @@
     "defcon_avg": 4.4,
     "overperf": -0.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "",
     "season_share": 92,
     "recent_share": 100,
@@ -875,6 +1131,14 @@
     "defcon_avg": 9.0,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "",
     "season_share": 76,
     "recent_share": 75,
@@ -901,6 +1165,14 @@
     "defcon_avg": 8.3,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "",
     "season_share": 80,
     "recent_share": 94,
@@ -927,6 +1199,14 @@
     "defcon_avg": 5.0,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 88,
     "recent_share": 92,
@@ -953,6 +1233,14 @@
     "defcon_avg": 10.6,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 90,
     "recent_share": 83,
@@ -979,6 +1267,14 @@
     "defcon_avg": 5.0,
     "overperf": 0.6,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 84,
     "recent_share": 83,
@@ -1005,6 +1301,14 @@
     "defcon_avg": 8.6,
     "overperf": -1.4,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "",
     "season_share": 83,
     "recent_share": 68,
@@ -1031,6 +1335,14 @@
     "defcon_avg": 6.7,
     "overperf": 1.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "",
     "season_share": 94,
     "recent_share": 94,
@@ -1057,6 +1369,14 @@
     "defcon_avg": 7.1,
     "overperf": -1.1,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 87,
     "recent_share": 92,
@@ -1083,6 +1403,14 @@
     "defcon_avg": 4.4,
     "overperf": 0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "",
     "season_share": 95,
     "recent_share": 100,
@@ -1109,6 +1437,14 @@
     "defcon_avg": 7.9,
     "overperf": 0.3,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 94,
     "recent_share": 96,
@@ -1135,6 +1471,14 @@
     "defcon_avg": 7.6,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "",
     "season_share": 82,
     "recent_share": 74,
@@ -1161,6 +1505,14 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "falling",
     "season_share": 81,
     "recent_share": 32,
@@ -1187,6 +1539,14 @@
     "defcon_avg": 6.8,
     "overperf": 0.9,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "rising",
     "season_share": 70,
     "recent_share": 86,
@@ -1213,6 +1573,14 @@
     "defcon_avg": 5.2,
     "overperf": -1.1,
     "luck": "unlucky",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 77,
     "recent_share": 71,
@@ -1239,6 +1607,14 @@
     "defcon_avg": 8.7,
     "overperf": -0.5,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "",
     "season_share": 84,
     "recent_share": 70,
@@ -1265,6 +1641,14 @@
     "defcon_avg": 4.3,
     "overperf": 0.3,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "",
     "season_share": 89,
     "recent_share": 75,
@@ -1291,6 +1675,14 @@
     "defcon_avg": 6.2,
     "overperf": -0.5,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "falling",
     "season_share": 86,
     "recent_share": 69,
@@ -1317,6 +1709,14 @@
     "defcon_avg": 9.1,
     "overperf": -1.1,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "",
     "season_share": 87,
     "recent_share": 100,
@@ -1343,6 +1743,14 @@
     "defcon_avg": 5.0,
     "overperf": 1.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "",
     "season_share": 91,
     "recent_share": 92,
@@ -1369,6 +1777,14 @@
     "defcon_avg": 4.2,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "",
     "season_share": 89,
     "recent_share": 94,
@@ -1395,6 +1811,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "falling",
     "season_share": 63,
     "recent_share": 19,
@@ -1421,6 +1845,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "falling",
     "season_share": 72,
     "recent_share": 5,
@@ -1447,6 +1879,14 @@
     "defcon_avg": 6.0,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "rising",
     "season_share": 74,
     "recent_share": 100,
@@ -1473,6 +1913,14 @@
     "defcon_avg": 7.9,
     "overperf": -0.6,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "",
     "season_share": 76,
     "recent_share": 88,
@@ -1499,6 +1947,14 @@
     "defcon_avg": 8.0,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "",
     "season_share": 81,
     "recent_share": 76,
@@ -1525,6 +1981,14 @@
     "defcon_avg": 4.4,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "falling",
     "season_share": 89,
     "recent_share": 62,
@@ -1551,6 +2015,14 @@
     "defcon_avg": 4.2,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "falling",
     "season_share": 83,
     "recent_share": 50,
@@ -1577,6 +2049,14 @@
     "defcon_avg": 7.0,
     "overperf": -0.8,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 76,
     "recent_share": 65,
@@ -1603,6 +2083,14 @@
     "defcon_avg": 10.0,
     "overperf": 0.7,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "",
     "season_share": 99,
     "recent_share": 94,
@@ -1629,6 +2117,14 @@
     "defcon_avg": 8.0,
     "overperf": -0.8,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "",
     "season_share": 86,
     "recent_share": 82,
@@ -1655,6 +2151,14 @@
     "defcon_avg": 6.0,
     "overperf": 1.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 54,
     "recent_share": 53,
@@ -1681,6 +2185,14 @@
     "defcon_avg": 5.5,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "",
     "season_share": 82,
     "recent_share": 67,
@@ -1707,6 +2219,14 @@
     "defcon_avg": 8.0,
     "overperf": -0.9,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "rising",
     "season_share": 82,
     "recent_share": 100,
@@ -1733,6 +2253,14 @@
     "defcon_avg": 7.4,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "",
     "season_share": 87,
     "recent_share": 100,
@@ -1759,6 +2287,14 @@
     "defcon_avg": null,
     "overperf": 0.5,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "falling",
     "season_share": 53,
     "recent_share": 29,
@@ -1785,6 +2321,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "falling",
     "season_share": 57,
     "recent_share": 9,
@@ -1811,6 +2355,14 @@
     "defcon_avg": 9.6,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "rising",
     "season_share": 55,
     "recent_share": 100,
@@ -1837,6 +2389,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "falling",
     "season_share": 63,
     "recent_share": 12,
@@ -1863,6 +2423,14 @@
     "defcon_avg": 10.2,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "rising",
     "season_share": 61,
     "recent_share": 100,
@@ -1889,6 +2457,14 @@
     "defcon_avg": 1.8,
     "overperf": -0.9,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "",
     "season_share": 50,
     "recent_share": 45,
@@ -1915,6 +2491,14 @@
     "defcon_avg": 10.8,
     "overperf": 0.7,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "rising",
     "season_share": 55,
     "recent_share": 93,
@@ -1941,6 +2525,14 @@
     "defcon_avg": 4.6,
     "overperf": -1.2,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 66,
     "recent_share": 79,
@@ -1967,6 +2559,14 @@
     "defcon_avg": 6.2,
     "overperf": 1.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "",
     "season_share": 56,
     "recent_share": 59,
@@ -1993,6 +2593,14 @@
     "defcon_avg": 2.7,
     "overperf": 1.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "",
     "season_share": 41,
     "recent_share": 36,
@@ -2019,6 +2627,14 @@
     "defcon_avg": 9.6,
     "overperf": 0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 64,
     "recent_share": 66,
@@ -2045,6 +2661,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "falling",
     "season_share": 55,
     "recent_share": 22,
@@ -2071,6 +2695,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "falling",
     "season_share": 52,
     "recent_share": 0,
@@ -2097,6 +2729,14 @@
     "defcon_avg": 10.7,
     "overperf": 0.3,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "rising",
     "season_share": 48,
     "recent_share": 73,
@@ -2123,6 +2763,14 @@
     "defcon_avg": 12.6,
     "overperf": -1.0,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "rising",
     "season_share": 54,
     "recent_share": 95,
@@ -2149,6 +2797,14 @@
     "defcon_avg": 5.0,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "falling",
     "season_share": 60,
     "recent_share": 40,
@@ -2175,6 +2831,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "falling",
     "season_share": 53,
     "recent_share": 25,
@@ -2201,6 +2865,14 @@
     "defcon_avg": 6.3,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "rising",
     "season_share": 57,
     "recent_share": 75,
@@ -2227,6 +2899,14 @@
     "defcon_avg": 9.7,
     "overperf": 0.6,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "",
     "season_share": 52,
     "recent_share": 42,
@@ -2253,6 +2933,14 @@
     "defcon_avg": 4.8,
     "overperf": -1.0,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 64,
     "recent_share": 72,
@@ -2279,6 +2967,14 @@
     "defcon_avg": 2.3,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "falling",
     "season_share": 66,
     "recent_share": 42,
@@ -2305,6 +3001,14 @@
     "defcon_avg": 7.3,
     "overperf": -0.9,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "falling",
     "season_share": 77,
     "recent_share": 38,
@@ -2331,6 +3035,14 @@
     "defcon_avg": 8.3,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "falling",
     "season_share": 62,
     "recent_share": 31,
@@ -2357,6 +3069,14 @@
     "defcon_avg": 7.0,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "",
     "season_share": 46,
     "recent_share": 50,
@@ -2383,6 +3103,14 @@
     "defcon_avg": 8.0,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "rising",
     "season_share": 43,
     "recent_share": 70,
@@ -2409,6 +3137,14 @@
     "defcon_avg": 10.4,
     "overperf": -0.8,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "rising",
     "season_share": 39,
     "recent_share": 88,
@@ -2435,6 +3171,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "falling",
     "season_share": 40,
     "recent_share": 10,
@@ -2461,6 +3205,14 @@
     "defcon_avg": 3.8,
     "overperf": 0.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 49,
     "recent_share": 52,
@@ -2487,6 +3239,14 @@
     "defcon_avg": 5.9,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "rising",
     "season_share": 54,
     "recent_share": 99,
@@ -2513,6 +3273,14 @@
     "defcon_avg": 8.4,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "rising",
     "season_share": 50,
     "recent_share": 74,
@@ -2539,6 +3307,14 @@
     "defcon_avg": 5.7,
     "overperf": 1.0,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "",
     "season_share": 31,
     "recent_share": 40,
@@ -2565,6 +3341,14 @@
     "defcon_avg": 10.1,
     "overperf": -0.5,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "rising",
     "season_share": 44,
     "recent_share": 90,
@@ -2591,6 +3375,14 @@
     "defcon_avg": 3.0,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "rising",
     "season_share": 34,
     "recent_share": 58,
@@ -2617,6 +3409,14 @@
     "defcon_avg": 7.0,
     "overperf": -1.3,
     "luck": "unlucky",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "rising",
     "season_share": 42,
     "recent_share": 75,
@@ -2643,6 +3443,14 @@
     "defcon_avg": 6.8,
     "overperf": 0.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 46,
     "recent_share": 47,
@@ -2669,6 +3477,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 39,
     "recent_share": 26,
@@ -2695,6 +3511,14 @@
     "defcon_avg": 6.8,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "rising",
     "season_share": 29,
     "recent_share": 51,
@@ -2721,6 +3545,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "falling",
     "season_share": 39,
     "recent_share": 0,
@@ -2747,6 +3579,14 @@
     "defcon_avg": 1.8,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "rising",
     "season_share": 30,
     "recent_share": 48,
@@ -2773,6 +3613,14 @@
     "defcon_avg": null,
     "overperf": -0.6,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "falling",
     "season_share": 51,
     "recent_share": 30,
@@ -2799,6 +3647,14 @@
     "defcon_avg": 6.8,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 39,
     "recent_share": 50,
@@ -2825,6 +3681,14 @@
     "defcon_avg": null,
     "overperf": -0.5,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 28,
     "recent_share": 27,
@@ -2851,6 +3715,14 @@
     "defcon_avg": 6.9,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "rising",
     "season_share": 37,
     "recent_share": 99,
@@ -2877,6 +3749,14 @@
     "defcon_avg": 8.8,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "rising",
     "season_share": 39,
     "recent_share": 56,
@@ -2903,6 +3783,14 @@
     "defcon_avg": 7.5,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 36,
     "recent_share": 45,
@@ -2929,6 +3817,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "falling",
     "season_share": 32,
     "recent_share": 0,
@@ -2955,6 +3851,14 @@
     "defcon_avg": 6.7,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 27,
     "recent_share": 39,
@@ -2981,6 +3885,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "falling",
     "season_share": 37,
     "recent_share": 0,
@@ -3007,6 +3919,14 @@
     "defcon_avg": 9.2,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "rising",
     "season_share": 23,
     "recent_share": 50,
@@ -3033,6 +3953,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 19,
     "recent_share": 12,
@@ -3059,6 +3987,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "falling",
     "season_share": 27,
     "recent_share": 1,
@@ -3085,6 +4021,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "falling",
     "season_share": 30,
     "recent_share": 0,
@@ -3111,6 +4055,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "falling",
     "season_share": 34,
     "recent_share": 0,
@@ -3137,6 +4089,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "falling",
     "season_share": 27,
     "recent_share": 0,
@@ -3163,6 +4123,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "",
     "season_share": 20,
     "recent_share": 13,
@@ -3189,6 +4157,14 @@
     "defcon_avg": 4.0,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "rising",
     "season_share": 20,
     "recent_share": 40,
@@ -3215,6 +4191,14 @@
     "defcon_avg": null,
     "overperf": 0.2,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "SUN (H) 2",
+     "MUN (A) 4",
+     "LIV (H) 4",
+     "CRY (A) 3",
+     "EVE (A) 3"
+    ],
     "trend": "",
     "season_share": 24,
     "recent_share": 31,
@@ -3241,6 +4225,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "falling",
     "season_share": 23,
     "recent_share": 8,
@@ -3267,6 +4259,14 @@
     "defcon_avg": 7.3,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "rising",
     "season_share": 29,
     "recent_share": 52,
@@ -3293,6 +4293,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "",
     "season_share": 17,
     "recent_share": 14,
@@ -3319,6 +4327,14 @@
     "defcon_avg": 5.8,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "rising",
     "season_share": 17,
     "recent_share": 59,
@@ -3345,6 +4361,14 @@
     "defcon_avg": 3.6,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "rising",
     "season_share": 28,
     "recent_share": 51,
@@ -3371,6 +4395,14 @@
     "defcon_avg": 4.5,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "rising",
     "season_share": 39,
     "recent_share": 75,
@@ -3397,6 +4429,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "",
     "season_share": 20,
     "recent_share": 26,
@@ -3423,6 +4463,14 @@
     "defcon_avg": 9.0,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "rising",
     "season_share": 16,
     "recent_share": 33,
@@ -3449,6 +4497,14 @@
     "defcon_avg": 7.1,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "rising",
     "season_share": 33,
     "recent_share": 82,
@@ -3475,6 +4531,14 @@
     "defcon_avg": 4.5,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "rising",
     "season_share": 15,
     "recent_share": 42,
@@ -3501,6 +4565,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 14,
     "recent_share": 0,
@@ -3529,6 +4601,14 @@
     "defcon_avg": 13.7,
     "overperf": 2.2,
     "luck": "hot",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 97,
     "recent_share": 90,
@@ -3555,6 +4635,14 @@
     "defcon_avg": 11.2,
     "overperf": 0.3,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -3581,6 +4669,14 @@
     "defcon_avg": 5.2,
     "overperf": 0.3,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "",
     "season_share": 78,
     "recent_share": 69,
@@ -3607,6 +4703,14 @@
     "defcon_avg": 9.6,
     "overperf": -1.2,
     "luck": "unlucky",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "",
     "season_share": 90,
     "recent_share": 84,
@@ -3633,6 +4737,14 @@
     "defcon_avg": 9.7,
     "overperf": -0.7,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "",
     "season_share": 86,
     "recent_share": 88,
@@ -3659,6 +4771,14 @@
     "defcon_avg": 11.4,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "",
     "season_share": 91,
     "recent_share": 100,
@@ -3685,6 +4805,14 @@
     "defcon_avg": 9.8,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "falling",
     "season_share": 87,
     "recent_share": 65,
@@ -3711,6 +4839,14 @@
     "defcon_avg": 6.0,
     "overperf": 0.5,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "",
     "season_share": 87,
     "recent_share": 78,
@@ -3737,6 +4873,14 @@
     "defcon_avg": 3.5,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 94,
     "recent_share": 85,
@@ -3763,6 +4907,14 @@
     "defcon_avg": 5.3,
     "overperf": 5.1,
     "luck": "hot",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "",
     "season_share": 91,
     "recent_share": 77,
@@ -3789,6 +4941,14 @@
     "defcon_avg": 8.5,
     "overperf": 1.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "rising",
     "season_share": 77,
     "recent_share": 99,
@@ -3815,6 +4975,14 @@
     "defcon_avg": 5.4,
     "overperf": 0.9,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "",
     "season_share": 72,
     "recent_share": 75,
@@ -3841,6 +5009,14 @@
     "defcon_avg": 8.9,
     "overperf": 2.1,
     "luck": "hot",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "",
     "season_share": 95,
     "recent_share": 100,
@@ -3867,6 +5043,14 @@
     "defcon_avg": 7.8,
     "overperf": -1.6,
     "luck": "unlucky",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "rising",
     "season_share": 80,
     "recent_share": 97,
@@ -3893,6 +5077,14 @@
     "defcon_avg": 7.5,
     "overperf": 0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "falling",
     "season_share": 69,
     "recent_share": 45,
@@ -3919,6 +5111,14 @@
     "defcon_avg": 12.7,
     "overperf": -0.8,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "",
     "season_share": 83,
     "recent_share": 88,
@@ -3945,6 +5145,14 @@
     "defcon_avg": 11.6,
     "overperf": -0.8,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "rising",
     "season_share": 85,
     "recent_share": 100,
@@ -3971,6 +5179,14 @@
     "defcon_avg": 6.1,
     "overperf": 2.5,
     "luck": "hot",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 96,
     "recent_share": 84,
@@ -3997,6 +5213,14 @@
     "defcon_avg": 9.9,
     "overperf": -0.7,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "",
     "season_share": 88,
     "recent_share": 99,
@@ -4023,6 +5247,14 @@
     "defcon_avg": 5.4,
     "overperf": 0.3,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 91,
     "recent_share": 87,
@@ -4049,6 +5281,14 @@
     "defcon_avg": 9.4,
     "overperf": -1.1,
     "luck": "unlucky",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "",
     "season_share": 72,
     "recent_share": 61,
@@ -4075,6 +5315,14 @@
     "defcon_avg": 7.4,
     "overperf": -1.0,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "rising",
     "season_share": 81,
     "recent_share": 100,
@@ -4101,6 +5349,14 @@
     "defcon_avg": 5.4,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "rising",
     "season_share": 79,
     "recent_share": 97,
@@ -4127,6 +5383,14 @@
     "defcon_avg": 5.3,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "",
     "season_share": 66,
     "recent_share": 80,
@@ -4153,6 +5417,14 @@
     "defcon_avg": 3.9,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "rising",
     "season_share": 57,
     "recent_share": 100,
@@ -4179,6 +5451,14 @@
     "defcon_avg": 4.4,
     "overperf": -0.6,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "",
     "season_share": 80,
     "recent_share": 85,
@@ -4205,6 +5485,14 @@
     "defcon_avg": 11.6,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "",
     "season_share": 78,
     "recent_share": 86,
@@ -4231,6 +5519,14 @@
     "defcon_avg": 10.0,
     "overperf": -1.1,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "",
     "season_share": 60,
     "recent_share": 67,
@@ -4257,6 +5553,14 @@
     "defcon_avg": 12.3,
     "overperf": -0.6,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "falling",
     "season_share": 75,
     "recent_share": 54,
@@ -4283,6 +5587,14 @@
     "defcon_avg": 8.9,
     "overperf": -0.6,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 82,
     "recent_share": 96,
@@ -4309,6 +5621,14 @@
     "defcon_avg": 7.2,
     "overperf": 0.9,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "",
     "season_share": 78,
     "recent_share": 79,
@@ -4335,6 +5655,14 @@
     "defcon_avg": 6.8,
     "overperf": 4.9,
     "luck": "hot",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 90,
     "recent_share": 100,
@@ -4361,6 +5689,14 @@
     "defcon_avg": 6.1,
     "overperf": -1.4,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "rising",
     "season_share": 70,
     "recent_share": 88,
@@ -4387,6 +5723,14 @@
     "defcon_avg": 10.7,
     "overperf": 0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 83,
     "recent_share": 86,
@@ -4413,6 +5757,14 @@
     "defcon_avg": 9.0,
     "overperf": -0.7,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "falling",
     "season_share": 62,
     "recent_share": 39,
@@ -4439,6 +5791,14 @@
     "defcon_avg": 3.2,
     "overperf": 0.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 77,
     "recent_share": 68,
@@ -4465,6 +5825,14 @@
     "defcon_avg": 3.3,
     "overperf": 1.7,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 62,
     "recent_share": 67,
@@ -4491,6 +5859,14 @@
     "defcon_avg": 7.6,
     "overperf": -1.6,
     "luck": "unlucky",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "falling",
     "season_share": 71,
     "recent_share": 52,
@@ -4517,6 +5893,14 @@
     "defcon_avg": 3.5,
     "overperf": 0.7,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "",
     "season_share": 80,
     "recent_share": 95,
@@ -4543,6 +5927,14 @@
     "defcon_avg": null,
     "overperf": 0.5,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "falling",
     "season_share": 61,
     "recent_share": 38,
@@ -4569,6 +5961,14 @@
     "defcon_avg": 4.3,
     "overperf": -2.8,
     "luck": "unlucky",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 76,
     "recent_share": 68,
@@ -4595,6 +5995,14 @@
     "defcon_avg": 7.4,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "falling",
     "season_share": 85,
     "recent_share": 56,
@@ -4621,6 +6029,14 @@
     "defcon_avg": 6.5,
     "overperf": 3.6,
     "luck": "hot",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "",
     "season_share": 45,
     "recent_share": 40,
@@ -4647,6 +6063,14 @@
     "defcon_avg": 3.5,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "",
     "season_share": 64,
     "recent_share": 62,
@@ -4673,6 +6097,14 @@
     "defcon_avg": 3.0,
     "overperf": 1.3,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 52,
     "recent_share": 66,
@@ -4699,6 +6131,14 @@
     "defcon_avg": 8.0,
     "overperf": 1.9,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 73,
     "recent_share": 70,
@@ -4725,6 +6165,14 @@
     "defcon_avg": 9.6,
     "overperf": -1.4,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "rising",
     "season_share": 65,
     "recent_share": 95,
@@ -4751,6 +6199,14 @@
     "defcon_avg": null,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "falling",
     "season_share": 56,
     "recent_share": 29,
@@ -4777,6 +6233,14 @@
     "defcon_avg": 12.6,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "",
     "season_share": 61,
     "recent_share": 55,
@@ -4803,6 +6267,14 @@
     "defcon_avg": 4.3,
     "overperf": 1.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 57,
     "recent_share": 52,
@@ -4829,6 +6301,14 @@
     "defcon_avg": 3.5,
     "overperf": -1.0,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "",
     "season_share": 55,
     "recent_share": 67,
@@ -4855,6 +6335,14 @@
     "defcon_avg": 10.3,
     "overperf": 0.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 51,
     "recent_share": 43,
@@ -4881,6 +6369,14 @@
     "defcon_avg": 12.0,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "SUN (H) 2",
+     "MUN (A) 4",
+     "LIV (H) 4",
+     "CRY (A) 3",
+     "EVE (A) 3"
+    ],
     "trend": "",
     "season_share": 61,
     "recent_share": 62,
@@ -4907,6 +6403,14 @@
     "defcon_avg": 6.4,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "",
     "season_share": 69,
     "recent_share": 64,
@@ -4933,6 +6437,14 @@
     "defcon_avg": 6.8,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "falling",
     "season_share": 65,
     "recent_share": 43,
@@ -4959,6 +6471,14 @@
     "defcon_avg": 7.2,
     "overperf": 2.7,
     "luck": "hot",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "rising",
     "season_share": 52,
     "recent_share": 77,
@@ -4985,6 +6505,14 @@
     "defcon_avg": 6.9,
     "overperf": -0.5,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "",
     "season_share": 85,
     "recent_share": 95,
@@ -5011,6 +6539,14 @@
     "defcon_avg": null,
     "overperf": 1.1,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "falling",
     "season_share": 42,
     "recent_share": 15,
@@ -5037,6 +6573,14 @@
     "defcon_avg": 11.8,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "",
     "season_share": 55,
     "recent_share": 66,
@@ -5063,6 +6607,14 @@
     "defcon_avg": 10.7,
     "overperf": 0.7,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "",
     "season_share": 52,
     "recent_share": 50,
@@ -5089,6 +6641,14 @@
     "defcon_avg": null,
     "overperf": 0.3,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "falling",
     "season_share": 47,
     "recent_share": 19,
@@ -5115,6 +6675,14 @@
     "defcon_avg": 12.0,
     "overperf": -0.7,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 51,
     "recent_share": 40,
@@ -5141,6 +6709,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "falling",
     "season_share": 56,
     "recent_share": 26,
@@ -5167,6 +6743,14 @@
     "defcon_avg": 3.4,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "rising",
     "season_share": 51,
     "recent_share": 90,
@@ -5193,6 +6777,14 @@
     "defcon_avg": 5.5,
     "overperf": -1.4,
     "luck": "unlucky",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 68,
     "recent_share": 71,
@@ -5219,6 +6811,14 @@
     "defcon_avg": 4.0,
     "overperf": 0.1,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "",
     "season_share": 45,
     "recent_share": 45,
@@ -5245,6 +6845,14 @@
     "defcon_avg": 3.1,
     "overperf": 1.2,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "rising",
     "season_share": 49,
     "recent_share": 74,
@@ -5271,6 +6879,14 @@
     "defcon_avg": 5.3,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "rising",
     "season_share": 49,
     "recent_share": 66,
@@ -5297,6 +6913,14 @@
     "defcon_avg": null,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "falling",
     "season_share": 42,
     "recent_share": 25,
@@ -5323,6 +6947,14 @@
     "defcon_avg": 12.1,
     "overperf": 0.7,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "rising",
     "season_share": 56,
     "recent_share": 92,
@@ -5349,6 +6981,14 @@
     "defcon_avg": 7.7,
     "overperf": -0.7,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "",
     "season_share": 74,
     "recent_share": 69,
@@ -5375,6 +7015,14 @@
     "defcon_avg": null,
     "overperf": 1.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "falling",
     "season_share": 54,
     "recent_share": 22,
@@ -5401,6 +7049,14 @@
     "defcon_avg": 5.3,
     "overperf": -0.7,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "",
     "season_share": 56,
     "recent_share": 65,
@@ -5427,6 +7083,14 @@
     "defcon_avg": null,
     "overperf": 0.7,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "falling",
     "season_share": 41,
     "recent_share": 22,
@@ -5453,6 +7117,14 @@
     "defcon_avg": 6.8,
     "overperf": 1.6,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "rising",
     "season_share": 48,
     "recent_share": 100,
@@ -5479,6 +7151,14 @@
     "defcon_avg": 5.6,
     "overperf": -0.9,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "",
     "season_share": 61,
     "recent_share": 50,
@@ -5505,6 +7185,14 @@
     "defcon_avg": 11.0,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "rising",
     "season_share": 50,
     "recent_share": 66,
@@ -5531,6 +7219,14 @@
     "defcon_avg": 3.4,
     "overperf": 0.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 47,
     "recent_share": 55,
@@ -5557,6 +7253,14 @@
     "defcon_avg": 9.8,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "",
     "season_share": 43,
     "recent_share": 52,
@@ -5583,6 +7287,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "",
     "season_share": 31,
     "recent_share": 17,
@@ -5609,6 +7321,14 @@
     "defcon_avg": 8.0,
     "overperf": -1.4,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "",
     "season_share": 56,
     "recent_share": 58,
@@ -5635,6 +7355,14 @@
     "defcon_avg": 9.2,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "SUN (H) 2",
+     "MUN (A) 4",
+     "LIV (H) 4",
+     "CRY (A) 3",
+     "EVE (A) 3"
+    ],
     "trend": "rising",
     "season_share": 51,
     "recent_share": 69,
@@ -5661,6 +7389,14 @@
     "defcon_avg": 9.1,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "rising",
     "season_share": 38,
     "recent_share": 79,
@@ -5687,6 +7423,14 @@
     "defcon_avg": null,
     "overperf": 0.9,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "falling",
     "season_share": 51,
     "recent_share": 25,
@@ -5713,6 +7457,14 @@
     "defcon_avg": 10.7,
     "overperf": 0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "rising",
     "season_share": 48,
     "recent_share": 88,
@@ -5739,6 +7491,14 @@
     "defcon_avg": 11.0,
     "overperf": -0.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 57,
     "recent_share": 49,
@@ -5765,6 +7525,14 @@
     "defcon_avg": 8.0,
     "overperf": 0.9,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 44,
     "recent_share": 50,
@@ -5791,6 +7559,14 @@
     "defcon_avg": 5.8,
     "overperf": 0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "rising",
     "season_share": 39,
     "recent_share": 71,
@@ -5817,6 +7593,14 @@
     "defcon_avg": 9.6,
     "overperf": 1.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "rising",
     "season_share": 42,
     "recent_share": 63,
@@ -5843,6 +7627,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "falling",
     "season_share": 41,
     "recent_share": 0,
@@ -5869,6 +7661,14 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "falling",
     "season_share": 43,
     "recent_share": 26,
@@ -5895,6 +7695,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "falling",
     "season_share": 48,
     "recent_share": 0,
@@ -5921,6 +7729,14 @@
     "defcon_avg": 5.0,
     "overperf": -1.7,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "rising",
     "season_share": 57,
     "recent_share": 87,
@@ -5947,6 +7763,14 @@
     "defcon_avg": 5.0,
     "overperf": 1.4,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "",
     "season_share": 41,
     "recent_share": 54,
@@ -5973,6 +7797,14 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "",
     "season_share": 35,
     "recent_share": 23,
@@ -5999,6 +7831,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "falling",
     "season_share": 45,
     "recent_share": 0,
@@ -6025,6 +7865,14 @@
     "defcon_avg": null,
     "overperf": 1.2,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "",
     "season_share": 38,
     "recent_share": 34,
@@ -6051,6 +7899,14 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "falling",
     "season_share": 46,
     "recent_share": 27,
@@ -6077,6 +7933,14 @@
     "defcon_avg": 6.3,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "",
     "season_share": 40,
     "recent_share": 41,
@@ -6103,6 +7967,14 @@
     "defcon_avg": 9.0,
     "overperf": -0.9,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "rising",
     "season_share": 54,
     "recent_share": 78,
@@ -6129,6 +8001,14 @@
     "defcon_avg": 4.7,
     "overperf": 0.6,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "rising",
     "season_share": 25,
     "recent_share": 72,
@@ -6155,6 +8035,14 @@
     "defcon_avg": 11.5,
     "overperf": -0.7,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "",
     "season_share": 48,
     "recent_share": 53,
@@ -6181,6 +8069,14 @@
     "defcon_avg": null,
     "overperf": 0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "falling",
     "season_share": 29,
     "recent_share": 8,
@@ -6207,6 +8103,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "falling",
     "season_share": 39,
     "recent_share": 4,
@@ -6233,6 +8137,14 @@
     "defcon_avg": null,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "falling",
     "season_share": 30,
     "recent_share": 4,
@@ -6259,6 +8171,14 @@
     "defcon_avg": 3.8,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "rising",
     "season_share": 35,
     "recent_share": 52,
@@ -6285,6 +8205,14 @@
     "defcon_avg": 5.5,
     "overperf": -1.0,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "rising",
     "season_share": 50,
     "recent_share": 68,
@@ -6311,6 +8239,14 @@
     "defcon_avg": 4.2,
     "overperf": 1.4,
     "luck": "",
+    "fix_avg": 3.4,
+    "fix_ops": [
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "MCI (A) 5",
+     "BHA (H) 2",
+     "NFO (A) 3"
+    ],
     "trend": "rising",
     "season_share": 37,
     "recent_share": 58,
@@ -6337,6 +8273,14 @@
     "defcon_avg": 10.3,
     "overperf": 0.3,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 44,
     "recent_share": 37,
@@ -6363,6 +8307,14 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 30,
     "recent_share": 28,
@@ -6389,6 +8341,14 @@
     "defcon_avg": 6.0,
     "overperf": -0.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "",
     "season_share": 50,
     "recent_share": 42,
@@ -6415,6 +8375,14 @@
     "defcon_avg": 6.9,
     "overperf": 1.5,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "rising",
     "season_share": 32,
     "recent_share": 80,
@@ -6441,6 +8409,14 @@
     "defcon_avg": 5.8,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "",
     "season_share": 46,
     "recent_share": 38,
@@ -6467,6 +8443,14 @@
     "defcon_avg": 6.8,
     "overperf": -1.4,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "",
     "season_share": 34,
     "recent_share": 41,
@@ -6493,6 +8477,14 @@
     "defcon_avg": 8.3,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "",
     "season_share": 34,
     "recent_share": 33,
@@ -6519,6 +8511,14 @@
     "defcon_avg": 7.2,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "rising",
     "season_share": 29,
     "recent_share": 47,
@@ -6545,6 +8545,14 @@
     "defcon_avg": 6.0,
     "overperf": 0.6,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 36,
     "recent_share": 39,
@@ -6571,6 +8579,14 @@
     "defcon_avg": null,
     "overperf": -0.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 37,
     "recent_share": 26,
@@ -6597,6 +8613,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "falling",
     "season_share": 34,
     "recent_share": 2,
@@ -6623,6 +8647,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 25,
     "recent_share": 14,
@@ -6649,6 +8681,14 @@
     "defcon_avg": null,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "",
     "season_share": 30,
     "recent_share": 18,
@@ -6675,6 +8715,14 @@
     "defcon_avg": null,
     "overperf": 0.7,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "",
     "season_share": 28,
     "recent_share": 22,
@@ -6701,6 +8749,14 @@
     "defcon_avg": null,
     "overperf": 1.0,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "",
     "season_share": 31,
     "recent_share": 35,
@@ -6727,6 +8783,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "falling",
     "season_share": 28,
     "recent_share": 0,
@@ -6753,6 +8817,14 @@
     "defcon_avg": null,
     "overperf": 0.3,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "",
     "season_share": 22,
     "recent_share": 29,
@@ -6779,6 +8851,14 @@
     "defcon_avg": 3.3,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 30,
     "recent_share": 34,
@@ -6805,6 +8885,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "falling",
     "season_share": 25,
     "recent_share": 0,
@@ -6831,6 +8919,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "falling",
     "season_share": 27,
     "recent_share": 4,
@@ -6857,6 +8953,14 @@
     "defcon_avg": null,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "falling",
     "season_share": 38,
     "recent_share": 22,
@@ -6883,6 +8987,14 @@
     "defcon_avg": 9.3,
     "overperf": 0.1,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "rising",
     "season_share": 35,
     "recent_share": 84,
@@ -6909,6 +9021,14 @@
     "defcon_avg": 4.5,
     "overperf": -1.6,
     "luck": "unlucky",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "rising",
     "season_share": 30,
     "recent_share": 46,
@@ -6935,6 +9055,14 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 26,
     "recent_share": 14,
@@ -6961,6 +9089,14 @@
     "defcon_avg": 4.3,
     "overperf": 0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 28,
     "recent_share": 42,
@@ -6987,6 +9123,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "",
     "season_share": 23,
     "recent_share": 27,
@@ -7013,6 +9157,14 @@
     "defcon_avg": 5.0,
     "overperf": 1.7,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "rising",
     "season_share": 20,
     "recent_share": 44,
@@ -7039,6 +9191,14 @@
     "defcon_avg": 5.2,
     "overperf": 1.0,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "rising",
     "season_share": 22,
     "recent_share": 41,
@@ -7065,6 +9225,14 @@
     "defcon_avg": 4.5,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "rising",
     "season_share": 16,
     "recent_share": 49,
@@ -7091,6 +9259,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "falling",
     "season_share": 28,
     "recent_share": 4,
@@ -7117,6 +9293,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "falling",
     "season_share": 19,
     "recent_share": 0,
@@ -7143,6 +9327,14 @@
     "defcon_avg": null,
     "overperf": 0.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "",
     "season_share": 18,
     "recent_share": 30,
@@ -7169,6 +9361,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 24,
     "recent_share": 36,
@@ -7195,6 +9395,14 @@
     "defcon_avg": null,
     "overperf": 0.7,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "",
     "season_share": 15,
     "recent_share": 20,
@@ -7221,6 +9429,14 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "falling",
     "season_share": 20,
     "recent_share": 2,
@@ -7247,6 +9463,14 @@
     "defcon_avg": 2.5,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "rising",
     "season_share": 20,
     "recent_share": 54,
@@ -7273,6 +9497,14 @@
     "defcon_avg": 3.0,
     "overperf": 0.6,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "",
     "season_share": 16,
     "recent_share": 29,
@@ -7299,6 +9531,14 @@
     "defcon_avg": null,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "",
     "season_share": 16,
     "recent_share": 21,
@@ -7325,6 +9565,14 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "",
     "season_share": 15,
     "recent_share": 4,
@@ -7351,6 +9599,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 14,
     "recent_share": 0,
@@ -7377,6 +9633,14 @@
     "defcon_avg": null,
     "overperf": 0.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 13,
     "recent_share": 19,
@@ -7405,6 +9669,14 @@
     "defcon_avg": 4.0,
     "overperf": -0.4,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "rising",
     "season_share": 80,
     "recent_share": 97,
@@ -7431,6 +9703,14 @@
     "defcon_avg": 2.6,
     "overperf": -0.7,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "falling",
     "season_share": 78,
     "recent_share": 59,
@@ -7457,6 +9737,14 @@
     "defcon_avg": 7.0,
     "overperf": -0.3,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "",
     "season_share": 96,
     "recent_share": 100,
@@ -7483,6 +9771,14 @@
     "defcon_avg": 4.0,
     "overperf": 0.6,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 66,
     "recent_share": 71,
@@ -7509,6 +9805,14 @@
     "defcon_avg": 2.7,
     "overperf": 4.4,
     "luck": "hot",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "BHA (A) 3",
+     "ARS (H) 4",
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3"
+    ],
     "trend": "",
     "season_share": 83,
     "recent_share": 88,
@@ -7535,6 +9839,14 @@
     "defcon_avg": 5.3,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "",
     "season_share": 57,
     "recent_share": 72,
@@ -7561,6 +9873,14 @@
     "defcon_avg": 5.5,
     "overperf": 1.2,
     "luck": "",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "MCI (A) 5",
+     "EVE (H) 3",
+     "NEW (A) 3",
+     "BRE (H) 3",
+     "LIV (H) 4"
+    ],
     "trend": "",
     "season_share": 80,
     "recent_share": 89,
@@ -7587,6 +9907,14 @@
     "defcon_avg": 5.0,
     "overperf": 3.6,
     "luck": "hot",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "",
     "season_share": 67,
     "recent_share": 79,
@@ -7613,6 +9941,14 @@
     "defcon_avg": 3.0,
     "overperf": 3.6,
     "luck": "hot",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "rising",
     "season_share": 45,
     "recent_share": 61,
@@ -7639,6 +9975,14 @@
     "defcon_avg": 4.0,
     "overperf": 0.9,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 55,
     "recent_share": 42,
@@ -7665,6 +10009,14 @@
     "defcon_avg": null,
     "overperf": 1.5,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "falling",
     "season_share": 65,
     "recent_share": 38,
@@ -7691,6 +10043,14 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "CRY (H) 3",
+     "BOU (A) 3",
+     "MUN (H) 4",
+     "TOT (A) 3",
+     "IPS (H) 2"
+    ],
     "trend": "falling",
     "season_share": 55,
     "recent_share": 39,
@@ -7717,6 +10077,14 @@
     "defcon_avg": 2.0,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "falling",
     "season_share": 65,
     "recent_share": 50,
@@ -7743,6 +10111,14 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "falling",
     "season_share": 53,
     "recent_share": 1,
@@ -7769,6 +10145,14 @@
     "defcon_avg": 2.5,
     "overperf": -0.1,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 48,
     "recent_share": 44,
@@ -7795,6 +10179,14 @@
     "defcon_avg": null,
     "overperf": 0.7,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "AVL (H) 3",
+     "CHE (A) 4",
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4"
+    ],
     "trend": "falling",
     "season_share": 52,
     "recent_share": 26,
@@ -7821,6 +10213,14 @@
     "defcon_avg": 3.2,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 86,
     "recent_share": 75,
@@ -7847,6 +10247,14 @@
     "defcon_avg": 2.8,
     "overperf": -0.6,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "rising",
     "season_share": 56,
     "recent_share": 90,
@@ -7873,6 +10281,14 @@
     "defcon_avg": null,
     "overperf": 0.6,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "TOT (H) 3",
+     "LEE (A) 3",
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4"
+    ],
     "trend": "",
     "season_share": 36,
     "recent_share": 34,
@@ -7899,6 +10315,14 @@
     "defcon_avg": null,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5"
+    ],
     "trend": "falling",
     "season_share": 34,
     "recent_share": 13,
@@ -7925,6 +10349,14 @@
     "defcon_avg": null,
     "overperf": -1.7,
     "luck": "unlucky",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "NFO (A) 3",
+     "BRE (H) 3",
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3"
+    ],
     "trend": "",
     "season_share": 31,
     "recent_share": 37,
@@ -7951,6 +10383,14 @@
     "defcon_avg": 1.9,
     "overperf": 0.8,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "rising",
     "season_share": 24,
     "recent_share": 75,
@@ -7977,6 +10417,14 @@
     "defcon_avg": 2.8,
     "overperf": -1.6,
     "luck": "unlucky",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3",
+     "IPS (H) 2",
+     "LEE (A) 3"
+    ],
     "trend": "",
     "season_share": 67,
     "recent_share": 61,
@@ -8003,6 +10451,14 @@
     "defcon_avg": 2.3,
     "overperf": -0.6,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "FUL (A) 3",
+     "BHA (H) 2",
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "BRE (A) 3"
+    ],
     "trend": "",
     "season_share": 32,
     "recent_share": 44,
@@ -8029,6 +10485,14 @@
     "defcon_avg": null,
     "overperf": 1.3,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BOU (H) 3",
+     "CRY (A) 3",
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2"
+    ],
     "trend": "",
     "season_share": 20,
     "recent_share": 17,
@@ -8055,6 +10519,14 @@
     "defcon_avg": null,
     "overperf": 2.5,
     "luck": "hot",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "rising",
     "season_share": 14,
     "recent_share": 32,
@@ -8081,6 +10553,14 @@
     "defcon_avg": null,
     "overperf": -0.6,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "IPS (H) 2",
+     "EVE (A) 3",
+     "MCI (H) 4",
+     "FUL (A) 3"
+    ],
     "trend": "",
     "season_share": 18,
     "recent_share": 14,
@@ -8107,6 +10587,14 @@
     "defcon_avg": 2.8,
     "overperf": -0.7,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LEE (H) 2",
+     "LIV (A) 4",
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2"
+    ],
     "trend": "rising",
     "season_share": 26,
     "recent_share": 50,
@@ -8133,6 +10621,14 @@
     "defcon_avg": 6.0,
     "overperf": -0.9,
     "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "BRE (A) 3",
+     "NEW (H) 2",
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3"
+    ],
     "trend": "",
     "season_share": 29,
     "recent_share": 43,
@@ -8159,6 +10655,14 @@
     "defcon_avg": 3.2,
     "overperf": -2.1,
     "luck": "unlucky",
+    "fix_avg": 3.6,
+    "fix_ops": [
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3",
+     "LIV (A) 4",
+     "MUN (H) 4"
+    ],
     "trend": "rising",
     "season_share": 29,
     "recent_share": 69,
@@ -8185,6 +10689,14 @@
     "defcon_avg": 2.6,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "COV (H) 2",
+     "AVL (A) 4",
+     "CHE (H) 4",
+     "SUN (A) 3",
+     "BHA (A) 3"
+    ],
     "trend": "rising",
     "season_share": 17,
     "recent_share": 52,
@@ -8211,6 +10723,14 @@
     "defcon_avg": null,
     "overperf": 0.4,
     "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "NEW (A) 3",
+     "NFO (H) 3",
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3"
+    ],
     "trend": "",
     "season_share": 20,
     "recent_share": 27,
@@ -8237,6 +10757,14 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
+    "fix_avg": 3.0,
+    "fix_ops": [
+     "LIV (H) 4",
+     "TOT (A) 3",
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2"
+    ],
     "trend": "",
     "season_share": 15,
     "recent_share": 13,

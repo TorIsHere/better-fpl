@@ -17,6 +17,7 @@ the official FPL API. Static site, no backend — everything is baked into
 | **Security** | Judged on the **final 8 gameweeks**, not the season as a whole. Nailed (80%+ of recent available minutes) · Solid (60-80%) · Rotation risk (35-60%) · Bench risk (under 35%) · Contested, or the live injury status. |
 | **DefCon** | Mean defensive actions per start over the recent window, with the share of starts hitting the 2-point threshold (10+ for defenders, 12+ for midfielders/forwards). Gold highlights players averaging just under their threshold — one role tweak from regular returns. Worth ~2 pts a hit, this is the biggest scoring source raw price ignores. |
 | **Luck** | Goal involvements minus expected (xG + xA) over the recent window. Above +2 the player is running hot and due regression; below −1 he is finishing normally but unrewarded — the buy-low signal. |
+| **Fix (5)** | Average fixture difficulty (2 easiest → 5 hardest) over the club's next five gameweeks — hover for the run of opponents. Early season this outweighs any per-player number, because those were all earned against last season's fixtures. |
 | **▲ ▼** | Minutes rising or falling against the player's season average — hover for both figures. |
 | **↷ moved** | Changed club since last season, so the security label was earned *somewhere else*. |
 

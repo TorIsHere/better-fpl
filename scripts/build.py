@@ -38,6 +38,12 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 BOOTSTRAP_URL = "https://fantasy.premierleague.com/api/bootstrap-static/"
 LIVE_URL = "https://fantasy.premierleague.com/api/event/{gw}/live/"
+FIXTURES_URL = "https://fantasy.premierleague.com/api/fixtures/"
+
+# How many upcoming gameweeks the fixture-difficulty average looks across.
+# Early season this outlook often matters more than any per-player metric,
+# because every per-player number was earned against last season's fixtures.
+FIXTURE_HORIZON = 5
 
 # Last season's archive, used pre-season and as the consistency basis until
 # enough of the current season has been played.
@@ -250,6 +256,73 @@ def load_previous_season() -> tuple[
         for code, pid in code_to_id.items()
     }
     return totals, history, extras, club_names
+
+
+def fixture_outlook(
+    fixtures: list[dict], teams: list[dict]
+) -> dict[int, tuple[float | None, list[str]]]:
+    """Mean FDR per club over the next FIXTURE_HORIZON gameweeks.
+
+    Windowed by gameweek rather than by fixture count, so a double gameweek
+    weighs both matches and a blank simply contributes nothing. Returns
+    {team_id: (avg_difficulty, ["CHE (A) 4", ...])}.
+    """
+    short = {t["id"]: t["short_name"] for t in teams}
+    upcoming: dict[int, list[tuple[int, int, str]]] = {}
+    for f in fixtures:
+        if f.get("finished") or f.get("event") is None:
+            continue
+        home, away = f["team_h"], f["team_a"]
+        upcoming.setdefault(home, []).append(
+            (f["event"], f["team_h_difficulty"], f"{short.get(away, '?')} (H)")
+        )
+        upcoming.setdefault(away, []).append(
+            (f["event"], f["team_a_difficulty"], f"{short.get(home, '?')} (A)")
+        )
+
+    if not upcoming:
+        return {}
+    first_gw = min(ev for entries in upcoming.values() for ev, _, _ in entries)
+
+    outlook: dict[int, tuple[float | None, list[str]]] = {}
+    for team, entries in upcoming.items():
+        window = sorted(e for e in entries if e[0] < first_gw + FIXTURE_HORIZON)
+        if not window:
+            outlook[team] = (None, [])
+            continue
+        avg = sum(diff for _, diff, _ in window) / len(window)
+        outlook[team] = (round(avg, 1), [f"{opp} {diff}" for _, diff, opp in window])
+    return outlook
+
+
+def load_fixture_outlook(bootstrap: dict) -> dict[int, tuple[float | None, list[str]]]:
+    """Fetch fixtures and compute the outlook; degrade to empty on failure.
+
+    The board is still worth publishing without a difficulty column, so this
+    must never kill the build the way a failed bootstrap fetch does.
+    """
+    fixture_env = os.environ.get("FPL_FIXTURE")
+    try:
+        if fixture_env:
+            path = pathlib.Path(fixture_env).parent / "fixtures.json"
+            if not path.exists():
+                print(
+                    "WARNING: no fixtures.json beside the bootstrap fixture — "
+                    "difficulty column will be empty",
+                    file=sys.stderr,
+                )
+                return {}
+            fixtures = json.loads(path.read_text(encoding="utf-8"))
+        else:
+            print("Fetching fixtures...")
+            fixtures = json.loads(fetch(FIXTURES_URL))
+    except SystemExit:
+        print(
+            "WARNING: could not fetch fixtures — difficulty column will be empty",
+            file=sys.stderr,
+        )
+        return {}
+    return fixture_outlook(fixtures, bootstrap["teams"])
 
 
 # --------------------------------------------------------------------------
@@ -466,6 +539,7 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
     teams = {t["id"]: t["short_name"] for t in bootstrap["teams"]}
     events = bootstrap.get("events", [])
     finished = [e["id"] for e in events if e.get("finished")]
+    outlook = load_fixture_outlook(bootstrap)
 
     use_current = len(finished) >= CURRENT_SEASON_MIN_GWS
     if use_current:
@@ -543,6 +617,7 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
         pos = POSITIONS.get(el["element_type"], "?")
         dc_rate, dc_avg = defcon_stats(extras, pos)
         overperf, luck = overperf_stats(extras)
+        fix_avg, fix_ops = outlook.get(el["team"], (None, []))
 
         rows.append(
             {
@@ -562,6 +637,8 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
                 "defcon_avg": dc_avg,
                 "overperf": overperf,
                 "luck": luck,
+                "fix_avg": fix_avg,
+                "fix_ops": fix_ops,
                 "trend": trend_label(recent, season_share),
                 "season_share": round(season_share * 100),
                 "recent_share": round(recent * 100) if recent is not None else None,

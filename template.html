@@ -110,6 +110,9 @@
   .badge.inherited{opacity:.62;border:1px dashed currentColor}
   .moved{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);
     margin-left:5px;cursor:help;white-space:nowrap}
+  .trend{font-size:11px;margin-left:5px;cursor:help}
+  .trend.rising{color:var(--pitch)}
+  .trend.falling{color:var(--red)}
 
   .count{margin-top:14px;font-size:12px;color:var(--chalk-faint);font-family:'JetBrains Mono',monospace}
 
@@ -144,7 +147,7 @@
     <b>Pts / £m</b> — season points ÷ price. Rewards output but penalises anyone who missed games. &nbsp;
     <b>Pts / 90</b> — points per 90 minutes played. Measures quality independent of availability; a player who is elite but injury-hit will rank far higher here than on Pts / £m, and the gap between the two columns is the signal. &nbsp;
     <b>Proj min</b> — expected minutes per gameweek, discounted for current injury doubt. &nbsp;
-    <b>Security</b> — Nailed 80%+ of available minutes · Solid 60-80% · Rotation risk 35-60% · Bench risk under 35% · Doubt/Injured from the live FPL feed. <b>Contested</b> means the club carries more than one credible goalkeeper, so prior minutes settle nothing.
+    <b>Security</b> — judged on the <em>final 8 gameweeks</em>, not the season as a whole, so a player who broke into the side late is not written off as a bench player. <span style="color:var(--pitch)">▲</span>/<span style="color:var(--red)">▼</span> marks minutes rising or falling against his season average. Nailed 80%+ of recent available minutes · Solid 60-80% · Rotation risk 35-60% · Bench risk under 35% · Doubt/Injured from the live FPL feed. <b>Contested</b> means the club carries more than one credible goalkeeper, so prior minutes settle nothing.
     <br><b>↷ moved</b> — changed club since last season, so the security label was <em>earned somewhere else</em>. It says the player is durable, not that he has won a place in this squad. Shown dashed and faded for that reason.
     <br><span style="color:var(--red)">●</span> active injury news &nbsp;
     <span style="color:var(--violet)">●</span> manually overridden — hover any marker for detail.
@@ -277,13 +280,18 @@ function render(){
     const moved = (r.moved_from && !r.overridden)
       ? `<span class="moved" title="Moved from ${esc(r.moved_from)}. Minutes and security below were earned there, not here — treat them as evidence of durability, not of a starting place.">↷ ${esc(r.moved_from)}</span>`
       : '';
+    const tr_ = r.trend === 'rising'
+      ? `<span class="trend rising" title="Minutes rising: ${r.season_share}% of the season overall, but ${r.recent_share}% across the final gameweeks. Security below reflects the recent window.">▲</span>`
+      : (r.trend === 'falling'
+      ? `<span class="trend falling" title="Minutes falling: ${r.season_share}% of the season overall, but only ${r.recent_share}% across the final gameweeks. Security below reflects the recent window.">▼</span>`
+      : '');
     const contested = (r.contested && r.contested.length)
       ? ` title="Competing with ${esc(r.contested.join(', '))} for one shirt"`
       : '';
     const secClass = (badgeClass[r.security] || 'na')
       + ((r.moved_from && !r.overridden) ? ' inherited' : '');
     tr.innerHTML =
-      `<td class="player">${esc(r.name)}${newsDot}${ovrDot}${moved}</td>` +
+      `<td class="player">${esc(r.name)}${newsDot}${ovrDot}${tr_}${moved}</td>` +
       `<td class="team">${esc(r.team)}</td>` +
       `<td class="num">£${r.price.toFixed(1)}</td>` +
       `<td class="num">${r.points}</td>` +

@@ -59,6 +59,14 @@ PREV_TEAMS_URL = (
 # for the shirt — one slot, so any club with two of these is a coin flip.
 GK_RIVAL_MINUTES = 900
 
+# Security is judged on the most recent gameweeks, not the whole season. A
+# player who breaks into the side in March has a terrible season-wide minutes
+# share and is nonetheless a starter; the reverse is true for someone who lost
+# his place. Needs at least MIN_RECENT_GWS of history before it is trusted.
+RECENT_WINDOW = 8
+MIN_RECENT_GWS = 5
+TREND_DELTA = 0.15  # share gap before a player is called rising or falling
+
 # Switch to current-season numbers once this many gameweeks have finished.
 # Below this, a handful of games is too noisy to rank anyone on.
 CURRENT_SEASON_MIN_GWS = 6
@@ -158,17 +166,23 @@ def load_previous_season() -> tuple[
         print("WARNING: could not load previous-season teams", file=sys.stderr)
 
     gw_raw = fetch(PREV_GW_URL).decode("utf-8", errors="replace")
-    by_element: dict[str, list[tuple[int, int]]] = {}
+    by_element: dict[str, list[tuple[int, int, int]]] = {}
     for row in csv.DictReader(io.StringIO(gw_raw)):
         try:
             by_element.setdefault(row["element"], []).append(
-                (int(row["minutes"]), int(row["total_points"]))
+                (int(row["GW"]), int(row["minutes"]), int(row["total_points"]))
             )
         except (ValueError, KeyError):
             continue
 
+    # Order by gameweek and drop the index — the recency window depends on
+    # these being chronological, and CSV row order is not guaranteed to be.
+    ordered = {
+        eid: [(m, p) for _, m, p in sorted(entries)] for eid, entries in by_element.items()
+    }
+
     # Re-key the history by player code so it survives the season's id reshuffle.
-    history = {code: by_element.get(pid, []) for code, pid in code_to_id.items()}
+    history = {code: ordered.get(pid, []) for code, pid in code_to_id.items()}
     return totals, history, club_names
 
 
@@ -212,6 +226,31 @@ def security_label(share: float, status: str, chance: float | None) -> str:
     return "Bench risk"
 
 
+def recent_share(history: list[tuple[int, int]]) -> float | None:
+    """Minutes share over the most recent gameweeks only.
+
+    A season-wide share describes where a player was, not where he is. Someone
+    who forces his way into the side late reads as a bench player all season
+    despite finishing it as a starter, and someone who lost his place reads as
+    nailed. This window is what the security label should actually be built on.
+    """
+    if len(history) < MIN_RECENT_GWS:
+        return None
+    window = history[-RECENT_WINDOW:]
+    return sum(mins for mins, _ in window) / (len(window) * 90)
+
+
+def trend_label(recent: float | None, season: float) -> str:
+    """Direction of travel between the recent window and the full season."""
+    if recent is None:
+        return ""
+    if recent >= season + TREND_DELTA:
+        return "rising"
+    if recent <= season - TREND_DELTA:
+        return "falling"
+    return ""
+
+
 def mark_contested_keepers(rows: list[dict]) -> None:
     """Flag clubs carrying more than one credible goalkeeper.
 
@@ -222,7 +261,13 @@ def mark_contested_keepers(rows: list[dict]) -> None:
     """
     by_club: dict[str, list[dict]] = {}
     for row in rows:
-        if row["pos"] == "GKP" and row["minutes"] >= GK_RIVAL_MINUTES:
+        if row["pos"] != "GKP":
+            continue
+        # A rival is anyone with a full season behind him OR anyone who held
+        # the shirt recently. Judging on season minutes alone misses the
+        # keeper who took over in March, who is often the likeliest starter.
+        recent = row.get("recent_share")
+        if row["minutes"] >= GK_RIVAL_MINUTES or (recent is not None and recent >= 50):
             by_club.setdefault(row["team"], []).append(row)
 
     for club, keepers in by_club.items():
@@ -372,7 +417,10 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
         if minutes < min_minutes:
             continue
 
-        share = min(1.0, minutes / max_minutes) if max_minutes else 0.0
+        season_share = min(1.0, minutes / max_minutes) if max_minutes else 0.0
+        recent = recent_share(history)
+        # Judge availability on the recent window when there is enough of it.
+        share = recent if recent is not None else season_share
         status = el.get("status", "a")
         chance = el.get("chance_of_playing_next_round")
         chance = float(chance) if chance is not None else None
@@ -392,6 +440,9 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
                 "cv": cv,
                 "proj_min": projected_minutes(share, status, chance),
                 "security": security_label(share, status, chance),
+                "trend": trend_label(recent, season_share),
+                "season_share": round(season_share * 100),
+                "recent_share": round(recent * 100) if recent is not None else None,
                 "moved_from": moved_from,
                 "contested": [],
                 "news": (el.get("news") or "")[:120],

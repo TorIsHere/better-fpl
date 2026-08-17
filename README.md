@@ -14,8 +14,18 @@ the official FPL API. Static site, no backend — everything is baked into
 | **Pts / 90** | Points per 90 minutes played. Measures quality *independent of availability*. |
 | **Consistency** | Spread of returns week to week, from the coefficient of variation across games of 60+ minutes. Consistent / Balanced / Boom-bust. |
 | **Proj min** | Expected minutes per gameweek, from minutes share, discounted by any current injury doubt. |
-| **Security** | Nailed (80%+ of available minutes) · Solid (60-80%) · Rotation risk (35-60%) · Bench risk (under 35%) · Contested, or the live injury status. |
+| **Security** | Judged on the **final 8 gameweeks**, not the season as a whole. Nailed (80%+ of recent available minutes) · Solid (60-80%) · Rotation risk (35-60%) · Bench risk (under 35%) · Contested, or the live injury status. |
+| **▲ ▼** | Minutes rising or falling against the player's season average — hover for both figures. |
 | **↷ moved** | Changed club since last season, so the security label was earned *somewhere else*. |
+
+**A season-wide minutes share describes where a player was, not where he is.**
+Someone who forces his way into the side in March reads as a bench player all
+season despite finishing it as a starter; someone who lost his place reads as
+nailed. Security is therefore computed over the final 8 gameweeks and marked
+▲ or ▼ where that diverges from the season figure. It changes the assessment
+for roughly 45% of the board — Osula goes from a 24% season share ("bench
+risk") to 75% across the closing weeks, and Vicario goes the other way, from
+82% to 12%.
 
 **Minutes security does not transfer with the player.** Someone who played
 3,000 minutes elsewhere last season has proved he is durable, not that he has

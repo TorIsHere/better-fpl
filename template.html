@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transfer Value Board — FPL 2026-27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F5EE; --bg-alt:#FFFFFF; --surface:#FFFFFF; --surface-2:#F0EEE4;
+    --line:#E1DECF; --chalk:#1C2318; --chalk-dim:#565F51; --chalk-faint:#8B927F;
+    --pitch:#3B7A1F; --pitch-dim:#E1EFD5;
+    --gold:#9C6A16; --gold-dim:#F6E8CD;
+    --red:#A5393D; --red-dim:#F6DCDD;
+    --blue:#2D5F8F; --blue-dim:#E1EAF3;
+    --violet:#6B4A9C; --violet-dim:#EBE4F5;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:radial-gradient(ellipse 900px 500px at 50% -10%, var(--bg-alt), var(--bg) 60%);
+    color:var(--chalk); font-family:'Inter',sans-serif; min-height:100vh;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px 80px}
+
+  header.hero{padding:64px 24px 40px;text-align:center;position:relative;border-bottom:1px solid var(--line)}
+  header.hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      repeating-linear-gradient(90deg,transparent 0 78px,rgba(59,122,31,.06) 78px 79px),
+      repeating-linear-gradient(0deg,transparent 0 78px,rgba(59,122,31,.06) 78px 79px);
+    mask-image:radial-gradient(ellipse 700px 300px at 50% 0%,black,transparent 75%);
+  }
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--pitch);margin:0 0 14px}
+  h1{font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(38px,6vw,64px);
+    line-height:1.02;margin:0 0 14px;text-transform:uppercase}
+  h1 span{color:var(--pitch)}
+  .sub{max-width:620px;margin:0 auto;color:var(--chalk-dim);font-size:15px;line-height:1.6}
+
+  .statstrip{display:flex;justify-content:center;gap:40px;margin-top:36px;flex-wrap:wrap}
+  .stat{text-align:center}
+  .stat .num{font-family:'JetBrains Mono',monospace;font-size:26px;font-weight:700}
+  .stat .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--chalk-faint);margin-top:4px}
+
+  .controls{margin:40px 0 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .tabs{display:flex;gap:6px;flex-wrap:wrap}
+  .tab{font-family:'JetBrains Mono',monospace;font-size:13px;padding:9px 16px;
+    border:1px solid var(--line);background:var(--surface);color:var(--chalk-dim);
+    cursor:pointer;border-radius:4px;transition:all .12s}
+  .tab:hover{border-color:var(--pitch);color:var(--chalk)}
+  .tab.active{background:var(--pitch-dim);border-color:var(--pitch);color:var(--pitch)}
+  .chip{font-family:'JetBrains Mono',monospace;font-size:12px;padding:7px 12px;
+    border:1px solid var(--line);background:var(--surface);color:var(--chalk-dim);
+    cursor:pointer;border-radius:20px;transition:all .12s}
+  .chip:hover{border-color:var(--pitch)}
+  .chip.on{background:var(--pitch-dim);border-color:var(--pitch);color:var(--pitch)}
+  .search{margin-left:auto;position:relative}
+  .search input{background:var(--surface);border:1px solid var(--line);color:var(--chalk);
+    padding:9px 14px 9px 34px;border-radius:4px;font-family:'Inter',sans-serif;
+    font-size:14px;width:200px;outline:none}
+  .search input:focus{border-color:var(--pitch)}
+  .search::before{content:"⌕";position:absolute;left:12px;top:50%;transform:translateY(-50%);
+    color:var(--chalk-faint);font-size:14px}
+
+  .legend{font-size:12px;color:var(--chalk-dim);margin-bottom:18px;line-height:1.7;
+    border-left:2px solid var(--pitch);padding-left:12px}
+  .legend b{color:var(--chalk);font-weight:600}
+
+  .tablewrap{border:1px solid var(--line);border-radius:6px;overflow:hidden;
+    background:var(--surface);box-shadow:0 1px 2px rgba(28,35,24,.04)}
+  table{width:100%;border-collapse:collapse}
+  thead th{text-align:left;padding:13px 14px;font-family:'JetBrains Mono',monospace;
+    font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--chalk-faint);
+    background:var(--surface-2);border-bottom:1px solid var(--line);cursor:pointer;
+    white-space:nowrap;user-select:none}
+  thead th:hover{color:var(--pitch)}
+  thead th.num{text-align:right}
+  tbody td{padding:11px 14px;font-size:14px;border-bottom:1px solid var(--line)}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:var(--surface-2)}
+  td.num{text-align:right;font-family:'JetBrains Mono',monospace}
+  td.player{font-weight:500;white-space:nowrap}
+  td.team{color:var(--chalk-faint);font-size:13px}
+  td.ratio{font-weight:700;color:var(--pitch);font-family:'JetBrains Mono',monospace}
+  td.p90{font-weight:600;color:var(--violet);font-family:'JetBrains Mono',monospace}
+
+  .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-left:6px;vertical-align:1px}
+  .dot.news{background:var(--red)}
+  .dot.ovr{background:var(--violet)}
+
+  .minbar{display:inline-flex;align-items:center;gap:8px}
+  .minbar .bar{width:52px;height:6px;border-radius:3px;background:var(--surface-2);
+    overflow:hidden;border:1px solid var(--line)}
+  .minbar .fill{height:100%;background:var(--pitch)}
+  .minbar .fill.warn{background:var(--gold)}
+  .minbar .fill.bad{background:var(--red)}
+  .minbar .val{font-family:'JetBrains Mono',monospace;font-size:12px;
+    color:var(--chalk-dim);min-width:42px}
+
+  .badge{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;
+    padding:3px 10px;border-radius:3px;white-space:nowrap}
+  .badge.consistent,.badge.nailed{background:var(--pitch-dim);color:var(--pitch)}
+  .badge.balanced,.badge.solid{background:var(--blue-dim);color:var(--blue)}
+  .badge.boombust,.badge.rotation{background:var(--gold-dim);color:var(--gold)}
+  .badge.injured,.badge.doubt{background:var(--red-dim);color:var(--red)}
+  .badge.na,.badge.bench{background:transparent;color:var(--chalk-faint);border:1px solid var(--line)}
+
+  .count{margin-top:14px;font-size:12px;color:var(--chalk-faint);font-family:'JetBrains Mono',monospace}
+
+  footer{text-align:center;margin-top:60px;padding-top:24px;border-top:1px solid var(--line);
+    color:var(--chalk-faint);font-size:12px;line-height:1.8}
+
+  @media(max-width:900px){
+    .tablewrap{overflow-x:auto}
+    table{min-width:900px}
+    .search{margin-left:0;width:100%}
+    .search input{width:100%}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="eyebrow">__BASIS__</div>
+  <h1>Transfer <span>Value</span> Board</h1>
+  <p class="sub">Live prices and availability from the official FPL API, scored for value, per-minute output, week-to-week reliability, and minutes security.</p>
+  <div class="statstrip" id="statstrip"></div>
+</header>
+
+<div class="wrap">
+  <div class="controls">
+    <div class="tabs" id="tabs"></div>
+    <button class="chip" id="secureChip">Secure minutes only</button>
+    <div class="search"><input type="text" id="searchbox" placeholder="Search player or team…"></div>
+  </div>
+
+  <div class="legend">
+    <b>Pts / £m</b> — season points ÷ price. Rewards output but penalises anyone who missed games. &nbsp;
+    <b>Pts / 90</b> — points per 90 minutes played. Measures quality independent of availability; a player who is elite but injury-hit will rank far higher here than on Pts / £m, and the gap between the two columns is the signal. &nbsp;
+    <b>Proj min</b> — expected minutes per gameweek, discounted for current injury doubt. &nbsp;
+    <b>Security</b> — Nailed 80%+ of available minutes · Solid 60-80% · Rotation risk 35-60% · Bench risk under 35% · Doubt/Injured from the live FPL feed.
+    <br><span style="color:var(--red)">●</span> active injury news &nbsp;
+    <span style="color:var(--violet)">●</span> manually overridden — hover either for detail.
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead id="thead"></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+  <div class="count" id="count"></div>
+
+  <footer>
+    Basis: __BASIS__. Built __BUILT_AT__ and refreshed daily from the official Fantasy Premier League API.<br>
+    Historical season data from the vaastav/Fantasy-Premier-League archive. Not affiliated with the Premier League.
+  </footer>
+</div>
+
+<script>
+const DATA = __DATA__;
+
+const posLabels = {GKP:'Goalkeepers', DEF:'Defenders', MID:'Midfielders', FWD:'Forwards'};
+const posOrder = ['GKP','DEF','MID','FWD'];
+const badgeClass = {
+  'Consistent':'consistent','Balanced':'balanced','Boom/bust':'boombust','N/A':'na',
+  'Nailed':'nailed','Solid starter':'solid','Rotation risk':'rotation','Bench risk':'bench',
+  'Injured':'injured','Suspended':'injured','Unavailable':'injured','Doubt':'doubt'
+};
+const securityRank = {'Nailed':0,'Solid starter':1,'Rotation risk':2,'Bench risk':3,
+  'Doubt':4,'Suspended':5,'Injured':6,'Unavailable':7};
+
+let currentPos = 'MID', sortKey = 'ratio', sortDir = -1, query = '', onlySecure = false;
+
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')
+  .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+function renderStats(){
+  const all = posOrder.flatMap(p => DATA[p] || []);
+  const nailed = all.filter(r => r.security === 'Nailed').length;
+  const flagged = all.filter(r => ['Injured','Suspended','Doubt','Unavailable'].includes(r.security)).length;
+  document.getElementById('statstrip').innerHTML = `
+    <div class="stat"><div class="num">${all.length}</div><div class="lbl">Players tracked</div></div>
+    <div class="stat"><div class="num" style="color:var(--pitch)">${nailed}</div><div class="lbl">Nailed starters</div></div>
+    <div class="stat"><div class="num" style="color:var(--red)">${flagged}</div><div class="lbl">Availability flags</div></div>`;
+}
+
+function renderTabs(){
+  const tabs = document.getElementById('tabs');
+  tabs.innerHTML = '';
+  posOrder.forEach(p => {
+    const btn = document.createElement('button');
+    btn.className = 'tab' + (p === currentPos ? ' active' : '');
+    btn.textContent = posLabels[p];
+    btn.onclick = () => { currentPos = p; render(); };
+    tabs.appendChild(btn);
+  });
+}
+
+const cols = [
+  {key:'name',        label:'Player',     align:'left'},
+  {key:'team',        label:'Team',       align:'left'},
+  {key:'price',       label:'Price',      align:'right'},
+  {key:'points',      label:'Pts',        align:'right'},
+  {key:'ratio',       label:'Pts / £m',   align:'right'},
+  {key:'p90',         label:'Pts / 90',   align:'right'},
+  {key:'consistency', label:'Consistency',align:'left'},
+  {key:'proj_min',    label:'Proj min',   align:'right'},
+  {key:'security',    label:'Security',   align:'left'}
+];
+
+function renderHead(){
+  const tr = document.createElement('tr');
+  cols.forEach(c => {
+    const th = document.createElement('th');
+    if(c.align === 'right') th.className = 'num';
+    th.textContent = c.label + (sortKey === c.key ? (sortDir === -1 ? ' ↓' : ' ↑') : '');
+    th.onclick = () => {
+      if(sortKey === c.key) sortDir *= -1; else { sortKey = c.key; sortDir = -1; }
+      render();
+    };
+    tr.appendChild(th);
+  });
+  const thead = document.getElementById('thead');
+  thead.innerHTML = '';
+  thead.appendChild(tr);
+}
+
+function sortValue(row, key){
+  if(key === 'security') return securityRank[row.security] ?? 9;
+  return row[key];
+}
+
+function minbar(row){
+  const pct = Math.min(100, Math.round(row.proj_min / 90 * 100));
+  const cls = row.proj_min < 45 ? 'bad' : (row.proj_min < 65 ? 'warn' : '');
+  return `<span class="minbar"><span class="bar"><span class="fill ${cls}" style="width:${pct}%"></span></span><span class="val">${row.proj_min}'</span></span>`;
+}
+
+function render(){
+  renderTabs();
+  renderHead();
+  document.getElementById('secureChip').className = 'chip' + (onlySecure ? ' on' : '');
+
+  let rows = [...(DATA[currentPos] || [])];
+  if(query){
+    const q = query.toLowerCase();
+    rows = rows.filter(r => r.name.toLowerCase().includes(q) || r.team.toLowerCase().includes(q));
+  }
+  if(onlySecure) rows = rows.filter(r => r.security === 'Nailed' || r.security === 'Solid starter');
+
+  rows.sort((a,b) => {
+    const av = sortValue(a, sortKey), bv = sortValue(b, sortKey);
+    if(typeof av === 'string') return sortDir * String(av).localeCompare(String(bv));
+    return sortKey === 'security' ? sortDir * (av - bv) : sortDir * (bv - av);
+  });
+
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML = '';
+  rows.forEach(r => {
+    const tr = document.createElement('tr');
+    const newsDot = r.news ? `<span class="dot news" title="${esc(r.news)}"></span>` : '';
+    const ovrDot  = r.overridden ? `<span class="dot ovr" title="${esc(r.note || 'Manually overridden')}"></span>` : '';
+    tr.innerHTML =
+      `<td class="player">${esc(r.name)}${newsDot}${ovrDot}</td>` +
+      `<td class="team">${esc(r.team)}</td>` +
+      `<td class="num">£${r.price.toFixed(1)}</td>` +
+      `<td class="num">${r.points}</td>` +
+      `<td class="num ratio">${r.ratio.toFixed(2)}</td>` +
+      `<td class="num p90">${r.p90.toFixed(2)}</td>` +
+      `<td><span class="badge ${badgeClass[r.consistency] || 'na'}">${esc(r.consistency)}</span></td>` +
+      `<td class="num">${minbar(r)}</td>` +
+      `<td><span class="badge ${badgeClass[r.security] || 'na'}">${esc(r.security)}</span></td>`;
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById('count').textContent =
+    `Showing ${rows.length} of ${(DATA[currentPos] || []).length} ${posLabels[currentPos].toLowerCase()}`;
+}
+
+document.getElementById('searchbox').addEventListener('input', e => { query = e.target.value; render(); });
+document.getElementById('secureChip').onclick = () => { onlySecure = !onlySecure; render(); };
+
+renderStats();
+render();
+</script>
+</body>
+</html>

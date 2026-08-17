@@ -1,0 +1,41 @@
+# Manual overrides
+# ----------------
+# The computed metrics only know last season's raw numbers plus the live
+# injury feed. They cannot see a role change, a new manager, pre-season form,
+# or a player returning from injury. This file is where your own read goes,
+# and it is re-applied on every nightly rebuild.
+#
+# Match a player by `name` (their FPL short name, e.g. "Ødegaard", "B.Fernandes").
+# Add `team` when the name is ambiguous — there are usually two or three
+# duplicate surnames in any given season.
+#
+# Overridable fields:
+#   security     Nailed | Solid starter | Rotation risk | Bench risk | Doubt | Injured
+#   proj_min     integer, expected minutes per gameweek (0-90)
+#   consistency  Consistent | Balanced | Boom/bust
+#   note         free text; shown on hover behind a violet dot in the table
+#
+# Anything you leave out keeps its computed value. Delete an entry once the
+# real data has caught up — after six gameweeks the board switches to
+# current-season numbers and most of these become unnecessary.
+
+overrides:
+  - name: Ødegaard
+    team: ARS
+    security: Nailed
+    proj_min: 80
+    note: >-
+      Last season's 74-point total reflects 1,370 minutes, not form: he still
+      finished joint-top for Arsenal PL assists (6). Started all 5 World Cup
+      games with 4 assists, led the tournament in line-breaking passes, then
+      scored and took player of the match in the Community Shield.
+
+  - name: James
+    team: CHE
+    security: Nailed
+    proj_min: 78
+    note: >-
+      Moved into the double pivot under Alonso's 3-4-2-1. Far lower sprint
+      load than his wing-back role, which is what drove the hamstring history.
+      Retains the captaincy; Gusto covers right-back. Caveat: still classed as
+      a DEF, so ball recoveries do not count toward his DefCon threshold.

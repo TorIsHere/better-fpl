@@ -105,8 +105,11 @@
   .badge.consistent,.badge.nailed{background:var(--pitch-dim);color:var(--pitch)}
   .badge.balanced,.badge.solid{background:var(--blue-dim);color:var(--blue)}
   .badge.boombust,.badge.rotation{background:var(--gold-dim);color:var(--gold)}
-  .badge.injured,.badge.doubt{background:var(--red-dim);color:var(--red)}
+  .badge.injured,.badge.doubt,.badge.contested{background:var(--red-dim);color:var(--red)}
   .badge.na,.badge.bench{background:transparent;color:var(--chalk-faint);border:1px solid var(--line)}
+  .badge.inherited{opacity:.62;border:1px dashed currentColor}
+  .moved{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);
+    margin-left:5px;cursor:help;white-space:nowrap}
 
   .count{margin-top:14px;font-size:12px;color:var(--chalk-faint);font-family:'JetBrains Mono',monospace}
 
@@ -141,9 +144,10 @@
     <b>Pts / £m</b> — season points ÷ price. Rewards output but penalises anyone who missed games. &nbsp;
     <b>Pts / 90</b> — points per 90 minutes played. Measures quality independent of availability; a player who is elite but injury-hit will rank far higher here than on Pts / £m, and the gap between the two columns is the signal. &nbsp;
     <b>Proj min</b> — expected minutes per gameweek, discounted for current injury doubt. &nbsp;
-    <b>Security</b> — Nailed 80%+ of available minutes · Solid 60-80% · Rotation risk 35-60% · Bench risk under 35% · Doubt/Injured from the live FPL feed.
+    <b>Security</b> — Nailed 80%+ of available minutes · Solid 60-80% · Rotation risk 35-60% · Bench risk under 35% · Doubt/Injured from the live FPL feed. <b>Contested</b> means the club carries more than one credible goalkeeper, so prior minutes settle nothing.
+    <br><b>↷ moved</b> — changed club since last season, so the security label was <em>earned somewhere else</em>. It says the player is durable, not that he has won a place in this squad. Shown dashed and faded for that reason.
     <br><span style="color:var(--red)">●</span> active injury news &nbsp;
-    <span style="color:var(--violet)">●</span> manually overridden — hover either for detail.
+    <span style="color:var(--violet)">●</span> manually overridden — hover any marker for detail.
   </div>
 
   <div class="tablewrap">
@@ -168,10 +172,11 @@ const posOrder = ['GKP','DEF','MID','FWD'];
 const badgeClass = {
   'Consistent':'consistent','Balanced':'balanced','Boom/bust':'boombust','N/A':'na',
   'Nailed':'nailed','Solid starter':'solid','Rotation risk':'rotation','Bench risk':'bench',
-  'Injured':'injured','Suspended':'injured','Unavailable':'injured','Doubt':'doubt'
+  'Injured':'injured','Suspended':'injured','Unavailable':'injured','Doubt':'doubt',
+  'Contested':'contested'
 };
-const securityRank = {'Nailed':0,'Solid starter':1,'Rotation risk':2,'Bench risk':3,
-  'Doubt':4,'Suspended':5,'Injured':6,'Unavailable':7};
+const securityRank = {'Nailed':0,'Solid starter':1,'Rotation risk':2,'Contested':3,
+  'Bench risk':4,'Doubt':5,'Suspended':6,'Injured':7,'Unavailable':8};
 
 let currentPos = 'MID', sortKey = 'ratio', sortDir = -1, query = '', onlySecure = false;
 
@@ -250,7 +255,12 @@ function render(){
     const q = query.toLowerCase();
     rows = rows.filter(r => r.name.toLowerCase().includes(q) || r.team.toLowerCase().includes(q));
   }
-  if(onlySecure) rows = rows.filter(r => r.security === 'Nailed' || r.security === 'Solid starter');
+  // "Secure" must mean secure *here*. A label inherited from a previous club
+  // is not evidence of a starting place, so those are excluded unless you
+  // have overridden them yourself.
+  if(onlySecure) rows = rows.filter(r =>
+    (r.security === 'Nailed' || r.security === 'Solid starter') &&
+    (!r.moved_from || r.overridden));
 
   rows.sort((a,b) => {
     const av = sortValue(a, sortKey), bv = sortValue(b, sortKey);
@@ -264,8 +274,16 @@ function render(){
     const tr = document.createElement('tr');
     const newsDot = r.news ? `<span class="dot news" title="${esc(r.news)}"></span>` : '';
     const ovrDot  = r.overridden ? `<span class="dot ovr" title="${esc(r.note || 'Manually overridden')}"></span>` : '';
+    const moved = (r.moved_from && !r.overridden)
+      ? `<span class="moved" title="Moved from ${esc(r.moved_from)}. Minutes and security below were earned there, not here — treat them as evidence of durability, not of a starting place.">↷ ${esc(r.moved_from)}</span>`
+      : '';
+    const contested = (r.contested && r.contested.length)
+      ? ` title="Competing with ${esc(r.contested.join(', '))} for one shirt"`
+      : '';
+    const secClass = (badgeClass[r.security] || 'na')
+      + ((r.moved_from && !r.overridden) ? ' inherited' : '');
     tr.innerHTML =
-      `<td class="player">${esc(r.name)}${newsDot}${ovrDot}</td>` +
+      `<td class="player">${esc(r.name)}${newsDot}${ovrDot}${moved}</td>` +
       `<td class="team">${esc(r.team)}</td>` +
       `<td class="num">£${r.price.toFixed(1)}</td>` +
       `<td class="num">${r.points}</td>` +
@@ -273,7 +291,7 @@ function render(){
       `<td class="num p90">${r.p90.toFixed(2)}</td>` +
       `<td><span class="badge ${badgeClass[r.consistency] || 'na'}">${esc(r.consistency)}</span></td>` +
       `<td class="num">${minbar(r)}</td>` +
-      `<td><span class="badge ${badgeClass[r.security] || 'na'}">${esc(r.security)}</span></td>`;
+      `<td><span class="badge ${secClass}"${contested}>${esc(r.security)}</span></td>`;
     tbody.appendChild(tr);
   });
 

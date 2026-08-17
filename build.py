@@ -50,6 +50,14 @@ PREV_GW_URL = (
     "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/"
     f"master/data/{PREV_SEASON}/gws/merged_gw.csv"
 )
+PREV_TEAMS_URL = (
+    "https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League/"
+    f"master/data/{PREV_SEASON}/teams.csv"
+)
+
+# A goalkeeper needs this many minutes last season to count as a genuine rival
+# for the shirt — one slot, so any club with two of these is a coin flip.
+GK_RIVAL_MINUTES = 900
 
 # Switch to current-season numbers once this many gameweeks have finished.
 # Below this, a handful of games is too noisy to rank anyone on.
@@ -124,8 +132,15 @@ def fetch_current_gw_history(finished_gws: list[int]) -> dict[int, list[tuple[in
     return history
 
 
-def load_previous_season() -> tuple[dict[str, dict], dict[str, list[tuple[int, int]]]]:
-    """Last season's totals (keyed by player code) and per-gameweek history."""
+def load_previous_season() -> tuple[
+    dict[str, dict], dict[str, list[tuple[int, int]]], dict[str, str]
+]:
+    """Last season's totals and per-gameweek history, keyed by player code.
+
+    Also returns a club-code -> short-name map covering last season, so a
+    player who has since moved can be shown with the club he actually earned
+    his minutes at.
+    """
     print(f"Fetching {PREV_SEASON} archive...")
     raw = fetch(PREV_RAW_URL).decode("utf-8", errors="replace")
     totals: dict[str, dict] = {}
@@ -133,6 +148,14 @@ def load_previous_season() -> tuple[dict[str, dict], dict[str, list[tuple[int, i
     for row in csv.DictReader(io.StringIO(raw)):
         totals[row["code"]] = row
         code_to_id[row["code"]] = row["id"]
+
+    club_names: dict[str, str] = {}
+    try:
+        teams_raw = fetch(PREV_TEAMS_URL).decode("utf-8", errors="replace")
+        for row in csv.DictReader(io.StringIO(teams_raw)):
+            club_names[row["code"]] = row["short_name"]
+    except SystemExit:
+        print("WARNING: could not load previous-season teams", file=sys.stderr)
 
     gw_raw = fetch(PREV_GW_URL).decode("utf-8", errors="replace")
     by_element: dict[str, list[tuple[int, int]]] = {}
@@ -146,7 +169,7 @@ def load_previous_season() -> tuple[dict[str, dict], dict[str, list[tuple[int, i
 
     # Re-key the history by player code so it survives the season's id reshuffle.
     history = {code: by_element.get(pid, []) for code, pid in code_to_id.items()}
-    return totals, history
+    return totals, history, club_names
 
 
 # --------------------------------------------------------------------------
@@ -187,6 +210,31 @@ def security_label(share: float, status: str, chance: float | None) -> str:
         if share >= threshold:
             return label
     return "Bench risk"
+
+
+def mark_contested_keepers(rows: list[dict]) -> None:
+    """Flag clubs carrying more than one credible goalkeeper.
+
+    Only one keeper plays, so prior minutes tell you nothing about who wins
+    the shirt. This is the situation that makes an inherited 'Nailed' label
+    most misleading — a keeper can arrive off a full season elsewhere and
+    still not start a single game.
+    """
+    by_club: dict[str, list[dict]] = {}
+    for row in rows:
+        if row["pos"] == "GKP" and row["minutes"] >= GK_RIVAL_MINUTES:
+            by_club.setdefault(row["team"], []).append(row)
+
+    for club, keepers in by_club.items():
+        if len(keepers) < 2:
+            continue
+        names = sorted(r["name"] for r in keepers)
+        for row in keepers:
+            rivals = [n for n in names if n != row["name"]]
+            row["contested"] = rivals
+            row["security"] = "Contested"
+            row["proj_min"] = int(round(row["proj_min"] / len(keepers)))
+        print(f"  contested GK at {club}: {', '.join(names)}")
 
 
 def projected_minutes(share: float, status: str, chance: float | None) -> int:
@@ -277,17 +325,20 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
         history_by_id = fetch_current_gw_history(finished)
         max_minutes = len(finished) * 90
         min_minutes = len(finished) * MIN_MINUTES_PER_GW
-        prev_totals, prev_history = {}, {}
+        prev_totals, prev_history, prev_clubs = {}, {}, {}
     else:
         basis = f"{PREV_SEASON} final season totals"
         print(
             f"Basis: {PREV_SEASON} ({len(finished)} gameweeks finished this season, "
             f"need {CURRENT_SEASON_MIN_GWS})"
         )
-        prev_totals, prev_history = load_previous_season()
+        prev_totals, prev_history, prev_clubs = load_previous_season()
         history_by_id = {}
         max_minutes = 38 * 90
         min_minutes = MIN_MINUTES_FULL_SEASON
+
+    # Stable club code per current team, for detecting transfers.
+    club_code = {t["id"]: str(t.get("code", t["id"])) for t in bootstrap["teams"]}
 
     rows: list[dict] = []
     unmatched = 0
@@ -298,6 +349,7 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
             continue
 
         code = str(el["code"])
+        moved_from = ""
         if use_current:
             points = int(el.get("total_points", 0))
             minutes = int(el.get("minutes", 0))
@@ -310,6 +362,12 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
             points = int(prev["total_points"])
             minutes = int(prev["minutes"])
             history = prev_history.get(code, [])
+            # Minutes security is not portable. A player who racked up a full
+            # season elsewhere tells you he is durable, not that he has won a
+            # place in this squad.
+            old_club = str(prev.get("team_code", ""))
+            if old_club and old_club != club_code.get(el["team"], ""):
+                moved_from = prev_clubs.get(old_club, "another club")
 
         if minutes < min_minutes:
             continue
@@ -334,6 +392,8 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
                 "cv": cv,
                 "proj_min": projected_minutes(share, status, chance),
                 "security": security_label(share, status, chance),
+                "moved_from": moved_from,
+                "contested": [],
                 "news": (el.get("news") or "")[:120],
                 "overridden": False,
                 "note": "",
@@ -342,6 +402,12 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
 
     if unmatched:
         print(f"  ({unmatched} players skipped: no {PREV_SEASON} top-flight record)")
+
+    if not use_current:
+        moved = [r for r in rows if r["moved_from"]]
+        if moved:
+            print(f"  {len(moved)} player(s) changed club — security marked as inherited")
+        mark_contested_keepers(rows)
 
     meta = {
         "basis": basis,

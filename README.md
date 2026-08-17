@@ -14,7 +14,18 @@ the official FPL API. Static site, no backend — everything is baked into
 | **Pts / 90** | Points per 90 minutes played. Measures quality *independent of availability*. |
 | **Consistency** | Spread of returns week to week, from the coefficient of variation across games of 60+ minutes. Consistent / Balanced / Boom-bust. |
 | **Proj min** | Expected minutes per gameweek, from minutes share, discounted by any current injury doubt. |
-| **Security** | Nailed (80%+ of available minutes) · Solid (60-80%) · Rotation risk (35-60%) · Bench risk (under 35%), or the live injury status. |
+| **Security** | Nailed (80%+ of available minutes) · Solid (60-80%) · Rotation risk (35-60%) · Bench risk (under 35%) · Contested, or the live injury status. |
+| **↷ moved** | Changed club since last season, so the security label was earned *somewhere else*. |
+
+**Minutes security does not transfer with the player.** Someone who played
+3,000 minutes elsewhere last season has proved he is durable, not that he has
+won a place in his new squad. Those players are marked `↷ moved` and their
+security badge is drawn dashed and faded; they are also excluded from the
+"secure minutes only" filter unless you override them. Goalkeepers get a
+harder check: any club carrying two keepers with 900+ prior minutes has both
+marked **Contested**, because only one plays and prior minutes settle nothing.
+Dubravka arriving at Spurs off a full season at Burnley is exactly this case —
+he looks nailed and may not start a game.
 
 **Read the two value columns together.** A big gap between them is the
 interesting signal: a player ranking low on Pts / £m but high on Pts / 90 was

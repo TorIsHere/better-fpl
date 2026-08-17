@@ -497,22 +497,38 @@ def load_overrides() -> list[dict]:
 def apply_overrides(rows: list[dict], overrides: list[dict]) -> None:
     """Overlay manual corrections, tracking which fields were touched."""
     by_name: dict[str, list[dict]] = {}
+    by_code: dict[str, dict] = {}
     for row in rows:
         by_name.setdefault(row["name"].lower(), []).append(row)
+        if row.get("code"):
+            by_code[str(row["code"])] = row
 
     for entry in overrides:
-        name = str(entry.get("name", "")).lower()
-        team = entry.get("team")
-        candidates = by_name.get(name, [])
-        if team:
-            candidates = [r for r in candidates if r["team"].upper() == str(team).upper()]
+        # The stable FPL player code beats name matching: it survives
+        # transfers, name changes and duplicate surnames.
+        if entry.get("code") is not None:
+            row = by_code.get(str(entry["code"]))
+            if not row:
+                print(
+                    f"WARNING: override code {entry['code']} "
+                    f"('{entry.get('name', '?')}') matched no player",
+                    file=sys.stderr,
+                )
+                continue
+            candidates = [row]
+        else:
+            name = str(entry.get("name", "")).lower()
+            team = entry.get("team")
+            candidates = by_name.get(name, [])
+            if team:
+                candidates = [r for r in candidates if r["team"].upper() == str(team).upper()]
         if not candidates:
             print(f"WARNING: override for '{entry.get('name')}' matched no player", file=sys.stderr)
             continue
         if len(candidates) > 1:
             print(
                 f"WARNING: override for '{entry.get('name')}' is ambiguous "
-                f"({len(candidates)} matches) — add a 'team:' key",
+                f"({len(candidates)} matches) — add a 'team:' or 'code:' key",
                 file=sys.stderr,
             )
             continue
@@ -622,6 +638,7 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
         rows.append(
             {
                 "name": el["web_name"],
+                "code": int(el["code"]),
                 "team": teams.get(el["team"], "?"),
                 "pos": pos,
                 "price": round(price, 1),

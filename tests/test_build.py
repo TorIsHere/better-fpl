@@ -232,6 +232,19 @@ class Overrides(unittest.TestCase):
         self.assertEqual(rows[1]["security"], "Nailed")
         self.assertFalse(rows[0]["overridden"])
 
+    def test_code_beats_name_ambiguity(self):
+        rows = [self._row(team="ARS"), self._row(team="CHE")]
+        rows[0]["code"], rows[1]["code"] = 111, 222
+        build.apply_overrides(rows, [{"name": "Doe", "code": 222, "security": "Nailed"}])
+        self.assertEqual(rows[1]["security"], "Nailed")
+        self.assertFalse(rows[0]["overridden"])
+
+    def test_unknown_code_is_skipped(self):
+        row = self._row()
+        row["code"] = 111
+        build.apply_overrides([row], [{"code": 999, "security": "Nailed"}])
+        self.assertFalse(row["overridden"])
+
 
 class ContestedKeepers(unittest.TestCase):
     def _keeper(self, name, team, minutes, recent=None):

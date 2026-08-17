@@ -80,6 +80,7 @@ Every row in `data/snapshot.json` and the embedded blob:
 
 ```
 name          str    FPL web_name, e.g. "B.Fernandes"
+code          int    stable cross-season FPL player code
 team          str    short name, e.g. "MCI"
 pos           str    GKP | DEF | MID | FWD
 price         float  £m
@@ -191,10 +192,10 @@ committed at `tests/fixtures.json`).
 
 ### 5. Robustness (P3)
 
-- **Override matching is by `web_name` + optional `team`.** It warns on
-  ambiguity and skips, which is safe but means a duplicate surname silently
-  gets no override. Adding optional `code:` (the stable FPL player code) would
-  make entries permanent across transfers and name changes.
+- ~~Override matching by `web_name` + optional `team` only.~~ Done — an
+  optional `code:` key (the stable FPL player code) now wins over name
+  matching, making entries permanent across transfers and name changes.
+  Rows also carry `code` in the emitted schema for this reason.
 - ~~**`teams[].code` fallback to `id` is wrong** and will corrupt transfer
   detection. Make it fail loudly instead.~~ Done — missing codes now abort
   the build.

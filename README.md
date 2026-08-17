@@ -97,6 +97,11 @@ overrides:
     note: "Fit post-World Cup, POTM in the Community Shield"
 ```
 
+Matching is by `name` (plus `team` when the surname is shared). For an entry
+you want to survive transfers and name changes, add `code:` — the stable FPL
+player code, visible in the player's photo URL on the official site — and it
+wins over name matching entirely.
+
 Overridable fields are `security`, `proj_min`, `consistency` and `note`.
 Anything omitted keeps its computed value. Overridden players get a violet
 dot in the table; hover it to read the note. Pushing a change to this file

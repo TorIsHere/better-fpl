@@ -87,6 +87,17 @@
   td.ratio{font-weight:700;color:var(--pitch);font-family:'JetBrains Mono',monospace}
   td.p90{font-weight:600;color:var(--violet);font-family:'JetBrains Mono',monospace}
 
+  .none{color:var(--chalk-faint)}
+  .defcon{font-family:'JetBrains Mono',monospace;cursor:help;white-space:nowrap}
+  .defcon small{font-size:10px;color:var(--chalk-faint);margin-left:5px}
+  .defcon.dc-near{color:var(--gold);font-weight:700}
+  .defcon.dc-near small{color:var(--gold)}
+  .defcon.dc-in{color:var(--pitch);font-weight:700}
+  .defcon.dc-in small{color:var(--pitch)}
+  .luck{font-family:'JetBrains Mono',monospace;cursor:help}
+  .luck.luck-hot{color:var(--red);font-weight:700}
+  .luck.luck-cold{color:var(--pitch);font-weight:700}
+
   .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-left:6px;vertical-align:1px}
   .dot.news{background:var(--red)}
   .dot.ovr{background:var(--violet)}
@@ -148,6 +159,9 @@
     <b>Pts / 90</b> — points per 90 minutes played. Measures quality independent of availability; a player who is elite but injury-hit will rank far higher here than on Pts / £m, and the gap between the two columns is the signal. &nbsp;
     <b>Proj min</b> — expected minutes per gameweek, discounted for current injury doubt. &nbsp;
     <b>Security</b> — judged on the <em>final 8 gameweeks</em>, not the season as a whole, so a player who broke into the side late is not written off as a bench player. <span style="color:var(--pitch)">▲</span>/<span style="color:var(--red)">▼</span> marks minutes rising or falling against his season average. Nailed 80%+ of recent available minutes · Solid 60-80% · Rotation risk 35-60% · Bench risk under 35% · Doubt/Injured from the live FPL feed. <b>Contested</b> means the club carries more than one credible goalkeeper, so prior minutes settle nothing.
+    <br><b>DefCon</b> — mean defensive actions per start, with the % of starts hitting the 2-pt threshold (10 for defenders, 12 for midfielders and forwards). <span style="color:var(--gold);font-weight:700">Gold</span> marks the interesting band: averaging just under the threshold, one role tweak from regular returns. &nbsp;
+    <b>Luck</b> — goal involvements minus expected (xG+xA) over the recent window. <span style="color:var(--red);font-weight:700">Hot</span> (over +2) is a sell-high trap; <span style="color:var(--pitch);font-weight:700">negative</span> (under −1) marks a player finishing normally but unrewarded — a buy-low candidate. &nbsp;
+    <b>★ Risers</b> — the saved screen that found the good picks: minutes rising, 60%+ recent share, secure, no injury news, above the positional median on Pts/90.
     <br><b>↷ moved</b> — changed club since last season, so the security label was <em>earned somewhere else</em>. It says the player is durable, not that he has won a place in this squad. Shown dashed and faded for that reason.
     <br><span style="color:var(--red)">●</span> active injury news &nbsp;
     <span style="color:var(--violet)">●</span> manually overridden — hover any marker for detail.
@@ -170,8 +184,33 @@
 <script>
 const DATA = __DATA__;
 
-const posLabels = {GKP:'Goalkeepers', DEF:'Defenders', MID:'Midfielders', FWD:'Forwards'};
+const posLabels = {GKP:'Goalkeepers', DEF:'Defenders', MID:'Midfielders', FWD:'Forwards', RISERS:'★ Risers'};
 const posOrder = ['GKP','DEF','MID','FWD'];
+const tabOrder = [...posOrder, 'RISERS'];
+
+// Per-match DefCon thresholds (2 pts per hit). Keepers are ineligible.
+const defconThreshold = {DEF:10, MID:12, FWD:12};
+
+// Median Pts/90 per position, for the risers filter.
+const p90Median = {};
+posOrder.forEach(p => {
+  const vals = (DATA[p] || []).map(r => r.p90).sort((a,b) => a-b);
+  p90Median[p] = vals.length ? vals[Math.floor(vals.length/2)] : 0;
+});
+
+// The combination that found the good picks last season: minutes trending
+// up, holding a real recent share, no availability doubt, and above-median
+// per-minute output for the position. DefCon and Luck columns then show
+// whether the output is sustainable.
+function riserRows(){
+  return posOrder.flatMap(p => (DATA[p] || []).filter(r =>
+    r.trend === 'rising' &&
+    r.recent_share !== null && r.recent_share >= 60 &&
+    (r.security === 'Nailed' || r.security === 'Solid starter') &&
+    !r.news &&
+    r.p90 > p90Median[p]
+  ));
+}
 const badgeClass = {
   'Consistent':'consistent','Balanced':'balanced','Boom/bust':'boombust','N/A':'na',
   'Nailed':'nailed','Solid starter':'solid','Rotation risk':'rotation','Bench risk':'bench',
@@ -199,30 +238,45 @@ function renderStats(){
 function renderTabs(){
   const tabs = document.getElementById('tabs');
   tabs.innerHTML = '';
-  posOrder.forEach(p => {
+  tabOrder.forEach(p => {
     const btn = document.createElement('button');
     btn.className = 'tab' + (p === currentPos ? ' active' : '');
     btn.textContent = posLabels[p];
-    btn.onclick = () => { currentPos = p; render(); };
+    btn.onclick = () => {
+      currentPos = p;
+      // The risers screen is about per-minute quality, so lead with it.
+      if(p === 'RISERS'){ sortKey = 'p90'; sortDir = -1; }
+      render();
+    };
     tabs.appendChild(btn);
   });
 }
 
-const cols = [
+const baseCols = [
   {key:'name',        label:'Player',     align:'left'},
   {key:'team',        label:'Team',       align:'left'},
   {key:'price',       label:'Price',      align:'right'},
   {key:'points',      label:'Pts',        align:'right'},
   {key:'ratio',       label:'Pts / £m',   align:'right'},
   {key:'p90',         label:'Pts / 90',   align:'right'},
+  {key:'defcon_avg',  label:'DefCon',     align:'right'},
+  {key:'overperf',    label:'Luck',       align:'right'},
   {key:'consistency', label:'Consistency',align:'left'},
   {key:'proj_min',    label:'Proj min',   align:'right'},
   {key:'security',    label:'Security',   align:'left'}
 ];
 
+// The risers view mixes positions, so it needs a position column.
+function activeCols(){
+  if(currentPos !== 'RISERS') return baseCols;
+  const cols = [...baseCols];
+  cols.splice(2, 0, {key:'pos', label:'Pos', align:'left'});
+  return cols;
+}
+
 function renderHead(){
   const tr = document.createElement('tr');
-  cols.forEach(c => {
+  activeCols().forEach(c => {
     const th = document.createElement('th');
     if(c.align === 'right') th.className = 'num';
     th.textContent = c.label + (sortKey === c.key ? (sortDir === -1 ? ' ↓' : ' ↑') : '');
@@ -239,7 +293,40 @@ function renderHead(){
 
 function sortValue(row, key){
   if(key === 'security') return securityRank[row.security] ?? 9;
-  return row[key];
+  const v = row[key];
+  // Nulls (no DefCon for keepers, too little history) sort to the bottom
+  // in the default descending direction rather than interleaving as zeros.
+  if(v === null || v === undefined) return -Infinity;
+  return v;
+}
+
+function defconCell(r){
+  if(r.defcon_avg === null || r.defcon_avg === undefined)
+    return '<span class="none">—</span>';
+  const threshold = defconThreshold[r.pos];
+  const pct = Math.round(r.defcon_rate * 100);
+  // The near-miss band is the interesting one: averaging just under the
+  // threshold means a small role change tips the player into 2 pts most
+  // weeks, and the market prices none of that.
+  const cls = r.defcon_avg >= threshold ? 'dc-in'
+    : (r.defcon_avg >= threshold - 2 ? 'dc-near' : '');
+  const title = `Averages ${r.defcon_avg} defensive actions per start over the recent window `
+    + `(threshold ${threshold} for 2 pts, hit in ${pct}% of starts)`
+    + (cls === 'dc-near' ? '. Just under the threshold — one tackle per game from regular returns.' : '.');
+  return `<span class="defcon ${cls}" title="${esc(title)}">${r.defcon_avg.toFixed(1)}<small>${pct}%</small></span>`;
+}
+
+function luckCell(r){
+  if(r.overperf === null || r.overperf === undefined)
+    return '<span class="none">—</span>';
+  const v = (r.overperf > 0 ? '+' : '') + r.overperf.toFixed(1);
+  const cls = r.luck === 'hot' ? 'luck-hot' : (r.luck === 'unlucky' ? 'luck-cold' : '');
+  const title = r.luck === 'hot'
+    ? `Returned ${v} more goal involvements than the chances justify — running hot; expect regression.`
+    : (r.luck === 'unlucky'
+    ? `Returned ${v} vs expected — the underlying play deserves more than it got. Buy-low candidate.`
+    : `Goal involvements minus expected (xG+xA) over the recent window: ${v}.`);
+  return `<span class="luck ${cls}" title="${esc(title)}">${v}</span>`;
 }
 
 function minbar(row){
@@ -253,7 +340,7 @@ function render(){
   renderHead();
   document.getElementById('secureChip').className = 'chip' + (onlySecure ? ' on' : '');
 
-  let rows = [...(DATA[currentPos] || [])];
+  let rows = currentPos === 'RISERS' ? riserRows() : [...(DATA[currentPos] || [])];
   if(query){
     const q = query.toLowerCase();
     rows = rows.filter(r => r.name.toLowerCase().includes(q) || r.team.toLowerCase().includes(q));
@@ -293,18 +380,22 @@ function render(){
     tr.innerHTML =
       `<td class="player">${esc(r.name)}${newsDot}${ovrDot}${tr_}${moved}</td>` +
       `<td class="team">${esc(r.team)}</td>` +
+      (currentPos === 'RISERS' ? `<td class="team">${esc(r.pos)}</td>` : '') +
       `<td class="num">£${r.price.toFixed(1)}</td>` +
       `<td class="num">${r.points}</td>` +
       `<td class="num ratio">${r.ratio.toFixed(2)}</td>` +
       `<td class="num p90">${r.p90.toFixed(2)}</td>` +
+      `<td class="num">${defconCell(r)}</td>` +
+      `<td class="num">${luckCell(r)}</td>` +
       `<td><span class="badge ${badgeClass[r.consistency] || 'na'}">${esc(r.consistency)}</span></td>` +
       `<td class="num">${minbar(r)}</td>` +
       `<td><span class="badge ${secClass}"${contested}>${esc(r.security)}</span></td>`;
     tbody.appendChild(tr);
   });
 
-  document.getElementById('count').textContent =
-    `Showing ${rows.length} of ${(DATA[currentPos] || []).length} ${posLabels[currentPos].toLowerCase()}`;
+  document.getElementById('count').textContent = currentPos === 'RISERS'
+    ? `${rows.length} riser(s) across all positions`
+    : `Showing ${rows.length} of ${(DATA[currentPos] || []).length} ${posLabels[currentPos].toLowerCase()}`;
 }
 
 document.getElementById('searchbox').addEventListener('input', e => { query = e.target.value; render(); });

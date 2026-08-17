@@ -15,8 +15,16 @@ the official FPL API. Static site, no backend — everything is baked into
 | **Consistency** | Spread of returns week to week, from the coefficient of variation across games of 60+ minutes. Consistent / Balanced / Boom-bust. |
 | **Proj min** | Expected minutes per gameweek, from minutes share, discounted by any current injury doubt. |
 | **Security** | Judged on the **final 8 gameweeks**, not the season as a whole. Nailed (80%+ of recent available minutes) · Solid (60-80%) · Rotation risk (35-60%) · Bench risk (under 35%) · Contested, or the live injury status. |
+| **DefCon** | Mean defensive actions per start over the recent window, with the share of starts hitting the 2-point threshold (10+ for defenders, 12+ for midfielders/forwards). Gold highlights players averaging just under their threshold — one role tweak from regular returns. Worth ~2 pts a hit, this is the biggest scoring source raw price ignores. |
+| **Luck** | Goal involvements minus expected (xG + xA) over the recent window. Above +2 the player is running hot and due regression; below −1 he is finishing normally but unrewarded — the buy-low signal. |
 | **▲ ▼** | Minutes rising or falling against the player's season average — hover for both figures. |
 | **↷ moved** | Changed club since last season, so the security label was earned *somewhere else*. |
+
+The **★ Risers** tab is a saved screen, not a metric: minutes trending up,
+60%+ recent share, secure starting spot, no injury news, and above the
+positional median on Pts / 90 — the combination that surfaced last season's
+good picks before their prices moved. DefCon and Luck sit alongside so you
+can judge whether the rise is sustainable.
 
 **A season-wide minutes share describes where a player was, not where he is.**
 Someone who forces his way into the side in March reads as a bench player all

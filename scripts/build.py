@@ -76,6 +76,23 @@ CURRENT_SEASON_MIN_GWS = 6
 MIN_MINUTES_FULL_SEASON = 450
 MIN_MINUTES_PER_GW = 12  # scales the floor when using a partial season
 
+# Defensive contribution: 2 pts when the action count reaches the positional
+# threshold, at most once per match. The `defensive_contribution` field from
+# both the archive and the live endpoints is already the position-adjusted
+# count (CBIT for defenders, CBIRT for midfielders and forwards) — verified
+# exhaustively against the component columns on a full season. Do NOT
+# recompute it from components, and do NOT treat non-zero as a hit; compare
+# to the threshold. Goalkeepers are ineligible.
+DEFCON_THRESHOLD = {"DEF": 10, "MID": 12, "FWD": 12}
+DEFCON_POINTS = 2
+MIN_DEFCON_STARTS = 3  # below this many starts in the window the rate is noise
+
+# Actual returns vs expected over the recent window. Above HOT the run is
+# unsustainable (sell-high candidate); below COLD the player is finishing
+# normally but unrewarded (buy-low candidate).
+OVERPERF_HOT = 2.0
+OVERPERF_COLD = -1.0
+
 # Minutes share thresholds for the security label.
 SECURITY_BANDS = [(0.80, "Nailed"), (0.60, "Solid starter"), (0.35, "Rotation risk")]
 
@@ -122,13 +139,30 @@ def load_bootstrap() -> dict:
     return json.loads(fetch(BOOTSTRAP_URL))
 
 
-def fetch_current_gw_history(finished_gws: list[int]) -> dict[int, list[tuple[int, int]]]:
-    """Per-gameweek (minutes, points) for every player, from the live endpoints.
+def _extras(starts, defcon, goals, assists, xg, xa) -> dict:
+    """One gameweek of the secondary stats, normalised from either source.
+
+    The archive serves numbers as strings and the live API serves expected
+    stats as strings too, so everything goes through an explicit cast.
+    """
+    return {
+        "start": int(float(starts or 0)),
+        "dc": int(float(defcon or 0)),
+        "ga": int(float(goals or 0)) + int(float(assists or 0)),
+        "xga": float(xg or 0) + float(xa or 0),
+    }
+
+
+def fetch_current_gw_history(
+    finished_gws: list[int],
+) -> tuple[dict[int, list[tuple[int, int]]], dict[int, list[dict]]]:
+    """Per-gameweek (minutes, points) plus secondary stats, from the live endpoints.
 
     One request per finished gameweek — at most 38 — rather than one per
     player, which would be several hundred.
     """
     history: dict[int, list[tuple[int, int]]] = {}
+    extras: dict[int, list[dict]] = {}
     for gw in finished_gws:
         print(f"  gameweek {gw}...")
         payload = json.loads(fetch(LIVE_URL.format(gw=gw)))
@@ -137,11 +171,24 @@ def fetch_current_gw_history(finished_gws: list[int]) -> dict[int, list[tuple[in
             history.setdefault(el["id"], []).append(
                 (int(stats.get("minutes", 0)), int(stats.get("total_points", 0)))
             )
-    return history
+            extras.setdefault(el["id"], []).append(
+                _extras(
+                    stats.get("starts"),
+                    stats.get("defensive_contribution"),
+                    stats.get("goals_scored"),
+                    stats.get("assists"),
+                    stats.get("expected_goals"),
+                    stats.get("expected_assists"),
+                )
+            )
+    return history, extras
 
 
 def load_previous_season() -> tuple[
-    dict[str, dict], dict[str, list[tuple[int, int]]], dict[str, str]
+    dict[str, dict],
+    dict[str, list[tuple[int, int]]],
+    dict[str, list[dict]],
+    dict[str, str],
 ]:
     """Last season's totals and per-gameweek history, keyed by player code.
 
@@ -166,11 +213,23 @@ def load_previous_season() -> tuple[
         print("WARNING: could not load previous-season teams", file=sys.stderr)
 
     gw_raw = fetch(PREV_GW_URL).decode("utf-8", errors="replace")
-    by_element: dict[str, list[tuple[int, int, int]]] = {}
+    by_element: dict[str, list[tuple[int, int, int, dict]]] = {}
     for row in csv.DictReader(io.StringIO(gw_raw)):
         try:
             by_element.setdefault(row["element"], []).append(
-                (int(row["GW"]), int(row["minutes"]), int(row["total_points"]))
+                (
+                    int(row["GW"]),
+                    int(row["minutes"]),
+                    int(row["total_points"]),
+                    _extras(
+                        row.get("starts"),
+                        row.get("defensive_contribution"),
+                        row.get("goals_scored"),
+                        row.get("assists"),
+                        row.get("expected_goals"),
+                        row.get("expected_assists"),
+                    ),
+                )
             )
         except (ValueError, KeyError):
             continue
@@ -178,12 +237,19 @@ def load_previous_season() -> tuple[
     # Order by gameweek and drop the index — the recency window depends on
     # these being chronological, and CSV row order is not guaranteed to be.
     ordered = {
-        eid: [(m, p) for _, m, p in sorted(entries)] for eid, entries in by_element.items()
+        eid: sorted(entries, key=lambda e: e[0]) for eid, entries in by_element.items()
     }
 
     # Re-key the history by player code so it survives the season's id reshuffle.
-    history = {code: ordered.get(pid, []) for code, pid in code_to_id.items()}
-    return totals, history, club_names
+    history = {
+        code: [(m, p) for _, m, p, _ in ordered.get(pid, [])]
+        for code, pid in code_to_id.items()
+    }
+    extras = {
+        code: [x for _, _, _, x in ordered.get(pid, [])]
+        for code, pid in code_to_id.items()
+    }
+    return totals, history, extras, club_names
 
 
 # --------------------------------------------------------------------------
@@ -249,6 +315,44 @@ def trend_label(recent: float | None, season: float) -> str:
     if recent <= season - TREND_DELTA:
         return "falling"
     return ""
+
+
+def defcon_stats(extras: list[dict], pos: str) -> tuple[float | None, float | None]:
+    """Hit rate and mean actions per start, over the recent window.
+
+    The average is the more interesting number: a player sitting just under
+    his threshold (8-9.9 for a defender) is one small role change away from
+    banking 2 pts most weeks, and the market prices none of that.
+    """
+    threshold = DEFCON_THRESHOLD.get(pos)
+    if threshold is None:
+        return None, None
+    started = [e for e in extras[-RECENT_WINDOW:] if e["start"]]
+    if len(started) < MIN_DEFCON_STARTS:
+        return None, None
+    hits = sum(1 for e in started if e["dc"] >= threshold)
+    avg = sum(e["dc"] for e in started) / len(started)
+    return round(hits / len(started), 2), round(avg, 1)
+
+
+def overperf_stats(extras: list[dict]) -> tuple[float | None, str]:
+    """(goals + assists) − (xG + xA) over the recent window, plus a label.
+
+    Positive means the returns outran the chances — points that came from
+    finishing luck rather than repeatable output. Extreme overperformers look
+    like the best players on the board on points alone; they are the traps.
+    """
+    if len(extras) < MIN_RECENT_GWS:
+        return None, ""
+    window = extras[-RECENT_WINDOW:]
+    diff = sum(e["ga"] - e["xga"] for e in window)
+    if diff > OVERPERF_HOT:
+        label = "hot"
+    elif diff < OVERPERF_COLD:
+        label = "unlucky"
+    else:
+        label = ""
+    return round(diff, 1), label
 
 
 def mark_contested_keepers(rows: list[dict]) -> None:
@@ -367,18 +471,18 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
     if use_current:
         basis = f"2026-27 season, gameweeks 1-{max(finished)}"
         print(f"Basis: current season ({len(finished)} gameweeks finished)")
-        history_by_id = fetch_current_gw_history(finished)
+        history_by_id, extras_by_id = fetch_current_gw_history(finished)
         max_minutes = len(finished) * 90
         min_minutes = len(finished) * MIN_MINUTES_PER_GW
-        prev_totals, prev_history, prev_clubs = {}, {}, {}
+        prev_totals, prev_history, prev_extras, prev_clubs = {}, {}, {}, {}
     else:
         basis = f"{PREV_SEASON} final season totals"
         print(
             f"Basis: {PREV_SEASON} ({len(finished)} gameweeks finished this season, "
             f"need {CURRENT_SEASON_MIN_GWS})"
         )
-        prev_totals, prev_history, prev_clubs = load_previous_season()
-        history_by_id = {}
+        prev_totals, prev_history, prev_extras, prev_clubs = load_previous_season()
+        history_by_id, extras_by_id = {}, {}
         max_minutes = 38 * 90
         min_minutes = MIN_MINUTES_FULL_SEASON
 
@@ -408,6 +512,7 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
             points = int(el.get("total_points", 0))
             minutes = int(el.get("minutes", 0))
             history = history_by_id.get(el["id"], [])
+            extras = extras_by_id.get(el["id"], [])
         else:
             prev = prev_totals.get(code)
             if not prev:
@@ -416,6 +521,7 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
             points = int(prev["total_points"])
             minutes = int(prev["minutes"])
             history = prev_history.get(code, [])
+            extras = prev_extras.get(code, [])
             # Minutes security is not portable. A player who racked up a full
             # season elsewhere tells you he is durable, not that he has won a
             # place in this squad.
@@ -434,12 +540,15 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
         chance = el.get("chance_of_playing_next_round")
         chance = float(chance) if chance is not None else None
         cons, cv = consistency_label(history)
+        pos = POSITIONS.get(el["element_type"], "?")
+        dc_rate, dc_avg = defcon_stats(extras, pos)
+        overperf, luck = overperf_stats(extras)
 
         rows.append(
             {
                 "name": el["web_name"],
                 "team": teams.get(el["team"], "?"),
-                "pos": POSITIONS.get(el["element_type"], "?"),
+                "pos": pos,
                 "price": round(price, 1),
                 "points": points,
                 "minutes": minutes,
@@ -449,6 +558,10 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
                 "cv": cv,
                 "proj_min": projected_minutes(share, status, chance),
                 "security": security_label(share, status, chance),
+                "defcon_rate": dc_rate,
+                "defcon_avg": dc_avg,
+                "overperf": overperf,
+                "luck": luck,
                 "trend": trend_label(recent, season_share),
                 "season_share": round(season_share * 100),
                 "recent_share": round(recent * 100) if recent is not None else None,

@@ -92,6 +92,10 @@ cv            float  coefficient of variation, or null
 proj_min      int    projected minutes per gameweek
 security      str    Nailed | Solid starter | Rotation risk | Bench risk |
                      Contested | Doubt | Injured | Suspended | Unavailable
+defcon_rate   float  share of recent starts hitting the DefCon threshold, or null
+defcon_avg    float  mean defensive actions per start (recent window), or null
+overperf      float  (goals+assists) − (xG+xA) over the recent window, or null
+luck          str    "hot" | "unlucky" | ""
 trend         str    "rising" | "falling" | ""
 season_share  int    % of season minutes
 recent_share  int    % of last-8-GW minutes, or null
@@ -118,7 +122,12 @@ real in-season data exists — 8 may be too long in a congested run of fixtures.
 
 ## Backlog
 
-### 1. DefCon rate column (P1 — highest analytical value)
+Items 1-3 below were implemented on 2026-08-18 and are kept for the
+reasoning; the acceptance checks all passed (Bijol 62%/10.8, Osula 0%/1.9,
+23 risers pre-GW1). `defensive_contribution` in `event/{gw}/live/` stats
+still needs a re-check once GW1 finishes — the pre-season payload is empty.
+
+### ~~1. DefCon rate column~~ ✅ done (P1 — highest analytical value)
 
 Defensive contribution points are worth ~2 per hit, so a defender converting at
 60% banks roughly 46 points across a season. This is currently the single
@@ -147,7 +156,7 @@ defender threshold where a small role change tips them into regular returns.
 is present in `event/{gw}/live/` stats — if it is not, derive from components
 and branch on position.
 
-### 2. Underlying-vs-actual column (P2)
+### ~~2. Underlying-vs-actual column~~ ✅ done (P2)
 
 Flags players whose returns were luck. `(goals + assists) − (xG + xA)` over the
 recency window. Both sources expose `expected_goals` and `expected_assists`.
@@ -158,7 +167,7 @@ overperformers are traps. Worked example from last season: one forward returned
 5 goals from 2.41 expected in eight gameweeks (+3.59) and looked like the best
 riser on the board on points alone.
 
-### 3. Risers view (P2)
+### ~~3. Risers view~~ ✅ done (P2)
 
 A saved screen rather than a new metric — the combination that found the good
 picks. Filter: `trend == "rising"`, `recent_share >= 60`, `security` in

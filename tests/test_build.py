@@ -117,6 +117,64 @@ class MetricFunctions(unittest.TestCase):
         self.assertEqual(build.projected_minutes(1.0, "i", None), 0)
 
 
+def _gw(start=1, dc=0, ga=0, xga=0.0):
+    return {"start": start, "dc": dc, "ga": ga, "xga": xga}
+
+
+class DefconStats(unittest.TestCase):
+    def test_goalkeepers_are_ineligible(self):
+        self.assertEqual(build.defcon_stats([_gw(dc=12)] * 8, "GKP"), (None, None))
+
+    def test_needs_minimum_starts(self):
+        extras = [_gw(dc=12)] * (build.MIN_DEFCON_STARTS - 1)
+        self.assertEqual(build.defcon_stats(extras, "DEF"), (None, None))
+
+    def test_threshold_is_positional(self):
+        # 11 actions is a hit for a defender (10+) but not a midfielder (12+).
+        extras = [_gw(dc=11)] * 6
+        self.assertEqual(build.defcon_stats(extras, "DEF"), (1.0, 11.0))
+        self.assertEqual(build.defcon_stats(extras, "MID"), (0.0, 11.0))
+
+    def test_nonzero_is_not_a_hit(self):
+        # The gotcha that produced nonsense in an early analysis: a non-zero
+        # count is not a threshold hit.
+        extras = [_gw(dc=3)] * 6
+        rate, avg = build.defcon_stats(extras, "FWD")
+        self.assertEqual(rate, 0.0)
+        self.assertEqual(avg, 3.0)
+
+    def test_bench_games_do_not_dilute(self):
+        extras = [_gw(start=0, dc=0)] * 4 + [_gw(dc=10)] * 4
+        self.assertEqual(build.defcon_stats(extras, "DEF"), (1.0, 10.0))
+
+    def test_windowed_to_recent_gameweeks(self):
+        # A season of hits followed by a window of misses must read as misses.
+        extras = [_gw(dc=14)] * 30 + [_gw(dc=2)] * build.RECENT_WINDOW
+        rate, avg = build.defcon_stats(extras, "DEF")
+        self.assertEqual(rate, 0.0)
+        self.assertEqual(avg, 2.0)
+
+
+class OverperfStats(unittest.TestCase):
+    def test_needs_enough_history(self):
+        self.assertEqual(
+            build.overperf_stats([_gw()] * (build.MIN_RECENT_GWS - 1)), (None, "")
+        )
+
+    def test_hot_and_unlucky_labels(self):
+        hot = [_gw(ga=1, xga=0.5)] * 8       # +4.0 over the window
+        cold = [_gw(ga=0, xga=0.3)] * 8      # -2.4
+        neutral = [_gw(ga=1, xga=0.9)] * 8   # +0.8
+        self.assertEqual(build.overperf_stats(hot), (4.0, "hot"))
+        self.assertEqual(build.overperf_stats(cold), (-2.4, "unlucky"))
+        self.assertEqual(build.overperf_stats(neutral), (0.8, ""))
+
+    def test_windowed_to_recent_gameweeks(self):
+        # A hot autumn must not colour a normal spring.
+        extras = [_gw(ga=2, xga=0.2)] * 20 + [_gw(ga=0, xga=0.0)] * build.RECENT_WINDOW
+        self.assertEqual(build.overperf_stats(extras), (0.0, ""))
+
+
 class Overrides(unittest.TestCase):
     def _row(self, name="Doe", team="ARS"):
         return {

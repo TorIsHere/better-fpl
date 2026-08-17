@@ -1,0 +1,174 @@
+"""Offline tests: API-shape assumptions plus the pure metric functions.
+
+The fixture in tests/bootstrap.json is a real bootstrap-static payload saved
+from the live API (2026-08-18). The shape tests exist because every one of
+these fields was originally an *assumption* — see HANDOFF.md — and each has a
+silent failure mode if the API changes. Run with:
+
+    python3 -m unittest discover tests
+"""
+
+import json
+import pathlib
+import sys
+import unittest
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+
+import build  # noqa: E402
+
+FIXTURE = json.loads((ROOT / "tests" / "bootstrap.json").read_text(encoding="utf-8"))
+
+
+class BootstrapShape(unittest.TestCase):
+    """Each test guards one silent failure mode from the P0 table."""
+
+    def test_now_cost_is_in_tenths(self):
+        # A pre-divided source (one mirror did this) would put every price
+        # off by 10x. Cheapest legal price is £4.0m, premiums under £20m.
+        costs = [e["now_cost"] for e in FIXTURE["elements"]]
+        self.assertGreaterEqual(min(costs), 38)
+        self.assertLess(max(costs), 200)
+
+    def test_element_type_matches_positions_map(self):
+        # Unknown types land players in "?" and they vanish from the UI.
+        api_map = {t["id"]: t["singular_name_short"] for t in FIXTURE["element_types"]}
+        self.assertEqual(api_map, build.POSITIONS)
+        for el in FIXTURE["elements"]:
+            self.assertIn(el["element_type"], build.POSITIONS)
+
+    def test_status_codes_are_known(self):
+        # An unknown code falls through to the minutes-share bands, so an
+        # injured player would read as Nailed.
+        statuses = {e["status"] for e in FIXTURE["elements"]}
+        self.assertTrue(statuses <= {"a", "d", "i", "s", "u"}, statuses)
+
+    def test_chance_of_playing_is_number_or_null(self):
+        for el in FIXTURE["elements"]:
+            chance = el["chance_of_playing_next_round"]
+            self.assertIsInstance(chance, (int, float, type(None)))
+
+    def test_teams_have_stable_code(self):
+        for team in FIXTURE["teams"]:
+            self.assertTrue(team.get("code"), team["short_name"])
+
+    def test_events_finished_is_bool(self):
+        for ev in FIXTURE["events"]:
+            self.assertIsInstance(ev["finished"], bool)
+
+    def test_elements_have_stable_code(self):
+        # Cross-season identity for transfer detection and the archive join.
+        for el in FIXTURE["elements"]:
+            self.assertTrue(el.get("code"))
+
+
+class MetricFunctions(unittest.TestCase):
+    def test_consistency_needs_five_full_games(self):
+        history = [(90, 5)] * 4
+        self.assertEqual(build.consistency_label(history), ("N/A", None))
+
+    def test_consistency_ignores_cameos(self):
+        # Four full games plus a cameo is still only four scoring samples.
+        history = [(90, 5)] * 4 + [(10, 1)]
+        self.assertEqual(build.consistency_label(history), ("N/A", None))
+
+    def test_consistency_flat_returns_are_consistent(self):
+        label, cv = build.consistency_label([(90, 5)] * 6)
+        self.assertEqual(label, "Consistent")
+        self.assertEqual(cv, 0.0)
+
+    def test_consistency_spiky_returns_are_boombust(self):
+        label, _ = build.consistency_label([(90, 2), (90, 15), (90, 1), (90, 12), (90, 2)])
+        self.assertEqual(label, "Boom/bust")
+
+    def test_security_status_beats_minutes_share(self):
+        # A nailed minutes share must not mask the live injury feed.
+        self.assertEqual(build.security_label(0.95, "i", None), "Injured")
+        self.assertEqual(build.security_label(0.95, "s", None), "Suspended")
+        self.assertEqual(build.security_label(0.95, "u", None), "Unavailable")
+        self.assertEqual(build.security_label(0.95, "d", 75), "Doubt")
+
+    def test_security_bands(self):
+        self.assertEqual(build.security_label(0.85, "a", None), "Nailed")
+        self.assertEqual(build.security_label(0.70, "a", None), "Solid starter")
+        self.assertEqual(build.security_label(0.50, "a", None), "Rotation risk")
+        self.assertEqual(build.security_label(0.10, "a", None), "Bench risk")
+
+    def test_recent_share_windows_last_gameweeks(self):
+        # 30 bench GWs then 8 full games: the season says bench, the window
+        # says starter. The window must win.
+        history = [(0, 0)] * 30 + [(90, 6)] * 8
+        self.assertEqual(build.recent_share(history), 1.0)
+
+    def test_recent_share_needs_enough_history(self):
+        self.assertIsNone(build.recent_share([(90, 6)] * (build.MIN_RECENT_GWS - 1)))
+
+    def test_trend_labels(self):
+        self.assertEqual(build.trend_label(0.90, 0.40), "rising")
+        self.assertEqual(build.trend_label(0.10, 0.80), "falling")
+        self.assertEqual(build.trend_label(0.55, 0.50), "")
+        self.assertEqual(build.trend_label(None, 0.50), "")
+
+    def test_projected_minutes_discounts_doubt(self):
+        self.assertEqual(build.projected_minutes(1.0, "a", None), 90)
+        self.assertEqual(build.projected_minutes(1.0, "d", 75), 68)
+        self.assertEqual(build.projected_minutes(1.0, "d", None), 45)
+        self.assertEqual(build.projected_minutes(1.0, "i", None), 0)
+
+
+class Overrides(unittest.TestCase):
+    def _row(self, name="Doe", team="ARS"):
+        return {
+            "name": name, "team": team, "security": "Bench risk",
+            "consistency": "N/A", "proj_min": 10, "overridden": False, "note": "",
+        }
+
+    def test_override_applies_and_marks(self):
+        row = self._row()
+        build.apply_overrides([row], [{"name": "Doe", "security": "Nailed", "note": "x"}])
+        self.assertEqual(row["security"], "Nailed")
+        self.assertTrue(row["overridden"])
+
+    def test_ambiguous_override_is_skipped(self):
+        rows = [self._row(team="ARS"), self._row(team="CHE")]
+        build.apply_overrides(rows, [{"name": "Doe", "security": "Nailed"}])
+        self.assertFalse(any(r["overridden"] for r in rows))
+
+    def test_team_disambiguates(self):
+        rows = [self._row(team="ARS"), self._row(team="CHE")]
+        build.apply_overrides(rows, [{"name": "Doe", "team": "CHE", "security": "Nailed"}])
+        self.assertEqual(rows[1]["security"], "Nailed")
+        self.assertFalse(rows[0]["overridden"])
+
+
+class ContestedKeepers(unittest.TestCase):
+    def _keeper(self, name, team, minutes, recent=None):
+        return {
+            "name": name, "team": team, "pos": "GKP", "minutes": minutes,
+            "recent_share": recent, "security": "Nailed", "proj_min": 90,
+            "contested": [],
+        }
+
+    def test_two_credible_keepers_are_contested(self):
+        rows = [self._keeper("A", "TOT", 3000), self._keeper("B", "TOT", 1500)]
+        build.mark_contested_keepers(rows)
+        for row in rows:
+            self.assertEqual(row["security"], "Contested")
+            self.assertEqual(row["proj_min"], 45)
+
+    def test_recent_starter_counts_without_season_minutes(self):
+        # The keeper who took over in March has few season minutes but holds
+        # the shirt — he is the rival that matters.
+        rows = [self._keeper("A", "MUN", 3000), self._keeper("B", "MUN", 400, recent=80)]
+        build.mark_contested_keepers(rows)
+        self.assertEqual(rows[0]["security"], "Contested")
+
+    def test_clear_number_one_is_untouched(self):
+        rows = [self._keeper("A", "ARS", 3000), self._keeper("B", "ARS", 100)]
+        build.mark_contested_keepers(rows)
+        self.assertEqual(rows[0]["security"], "Nailed")
+
+
+if __name__ == "__main__":
+    unittest.main()

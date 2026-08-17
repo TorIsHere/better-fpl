@@ -123,6 +123,12 @@ the board switches to current-season data.
 - `data/snapshot.json` is committed alongside the site so you can diff what
   changed between days.
 
+## Working on this
+
+See [HANDOFF.md](HANDOFF.md) before changing `scripts/build.py` — it covers the
+current state, unverified API assumptions, the backlog, and the non-obvious
+gotchas found while building it.
+
 ## Testing offline
 
 ```bash

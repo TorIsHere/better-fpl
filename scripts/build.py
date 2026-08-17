@@ -382,8 +382,17 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
         max_minutes = 38 * 90
         min_minutes = MIN_MINUTES_FULL_SEASON
 
-    # Stable club code per current team, for detecting transfers.
-    club_code = {t["id"]: str(t.get("code", t["id"])) for t in bootstrap["teams"]}
+    # Stable club code per current team, for detecting transfers. The season-
+    # local `id` is NOT a substitute — it is reshuffled every year, so falling
+    # back to it would mark essentially every player as transferred. Better to
+    # stop the build than publish that.
+    missing_code = [t["short_name"] for t in bootstrap["teams"] if not t.get("code")]
+    if missing_code:
+        raise SystemExit(
+            f"FATAL: teams missing stable 'code': {', '.join(missing_code)} — "
+            "transfer detection would corrupt; refusing to build"
+        )
+    club_code = {t["id"]: str(t["code"]) for t in bootstrap["teams"]}
 
     rows: list[dict] = []
     unmatched = 0

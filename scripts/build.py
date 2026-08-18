@@ -603,6 +603,8 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
             minutes = int(el.get("minutes", 0))
             history = history_by_id.get(el["id"], [])
             extras = extras_by_id.get(el["id"], [])
+            saves = int(el.get("saves", 0))
+            clean_sheets = int(el.get("clean_sheets", 0))
         else:
             prev = prev_totals.get(code)
             if not prev:
@@ -612,6 +614,8 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
             minutes = int(prev["minutes"])
             history = prev_history.get(code, [])
             extras = prev_extras.get(code, [])
+            saves = int(prev.get("saves") or 0)
+            clean_sheets = int(prev.get("clean_sheets") or 0)
             # Minutes security is not portable. A player who racked up a full
             # season elsewhere tells you he is durable, not that he has won a
             # place in this squad.
@@ -634,6 +638,11 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
         dc_rate, dc_avg = defcon_stats(extras, pos)
         overperf, luck = overperf_stats(extras)
         fix_avg, fix_ops = outlook.get(el["team"], (None, []))
+        # Keepers' two real scoring sources beyond appearance points. 1 pt
+        # per 3 saves means a busy keeper at a bad club out-earns a spectator
+        # at a good one — saves/90 makes that visible next to clean sheets.
+        is_keeper = pos == "GKP"
+        saves_p90 = round(saves / (minutes / 90.0), 2) if is_keeper and minutes else None
 
         rows.append(
             {
@@ -656,6 +665,8 @@ def build_rows(bootstrap: dict) -> tuple[list[dict], dict]:
                 "luck": luck,
                 "fix_avg": fix_avg,
                 "fix_ops": fix_ops,
+                "saves_p90": saves_p90,
+                "cs": clean_sheets if is_keeper else None,
                 "trend": trend_label(recent, season_share),
                 "season_share": round(season_share * 100),
                 "recent_share": round(recent * 100) if recent is not None else None,

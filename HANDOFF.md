@@ -100,6 +100,8 @@ overperf      float  (goals+assists) − (xG+xA) over the recent window, or null
 luck          str    "hot" | "unlucky" | ""
 fix_avg       float  mean FDR over the next 5 gameweeks, or null
 fix_ops       list   upcoming opponents, e.g. ["CHE (A) 4", ...]
+saves_p90     float  saves per 90 on the active basis (keepers), or null
+cs            int    clean sheets on the active basis (keepers), or null
 trend         str    "rising" | "falling" | ""
 season_share  int    % of season minutes
 recent_share  int    % of last-8-GW minutes, or null

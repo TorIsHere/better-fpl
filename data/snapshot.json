@@ -3,7 +3,7 @@
   "basis": "2025-26 final season totals",
   "use_current": false,
   "finished_gws": 0,
-  "built_at": "2026-08-18 03:15 UTC"
+  "built_at": "2026-08-18 03:40 UTC"
  },
  "players": {
   "GKP": [
@@ -33,6 +33,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": 2.79,
+    "cs": 10,
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -68,6 +70,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": 2.95,
+    "cs": 10,
     "trend": "",
     "season_share": 97,
     "recent_share": 100,
@@ -103,6 +107,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": 2.87,
+    "cs": 11,
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -138,6 +144,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": 3.11,
+    "cs": 10,
     "trend": "",
     "season_share": 92,
     "recent_share": 88,
@@ -173,6 +181,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": 2.58,
+    "cs": 9,
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -208,6 +218,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": 1.62,
+    "cs": 19,
     "trend": "",
     "season_share": 97,
     "recent_share": 88,
@@ -243,6 +255,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": 2.86,
+    "cs": 11,
     "trend": "",
     "season_share": 97,
     "recent_share": 100,
@@ -278,6 +292,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": 2.63,
+    "cs": 11,
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -313,6 +329,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": 2.29,
+    "cs": 15,
     "trend": "",
     "season_share": 89,
     "recent_share": 88,
@@ -348,6 +366,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": 3.02,
+    "cs": 7,
     "trend": "",
     "season_share": 83,
     "recent_share": 75,
@@ -383,6 +403,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": 3.63,
+    "cs": 4,
     "trend": "falling",
     "season_share": 92,
     "recent_share": 62,
@@ -421,6 +443,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": 2.9,
+    "cs": 9,
     "trend": "",
     "season_share": 89,
     "recent_share": 84,
@@ -456,6 +480,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": 2.47,
+    "cs": 8,
     "trend": "rising",
     "season_share": 84,
     "recent_share": 100,
@@ -493,6 +519,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": 3.21,
+    "cs": 7,
     "trend": "rising",
     "season_share": 78,
     "recent_share": 100,
@@ -528,6 +556,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": 2.68,
+    "cs": 7,
     "trend": "falling",
     "season_share": 82,
     "recent_share": 12,
@@ -566,6 +596,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": 3.32,
+    "cs": 7,
     "trend": "",
     "season_share": 71,
     "recent_share": 62,
@@ -601,6 +633,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": 2.19,
+    "cs": 8,
     "trend": "falling",
     "season_share": 68,
     "recent_share": 12,
@@ -638,6 +672,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": 2.86,
+    "cs": 5,
     "trend": "rising",
     "season_share": 58,
     "recent_share": 100,
@@ -675,6 +711,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": 2.38,
+    "cs": 3,
     "trend": "falling",
     "season_share": 42,
     "recent_share": 0,
@@ -710,6 +748,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": 3.53,
+    "cs": 2,
     "trend": "rising",
     "season_share": 25,
     "recent_share": 58,
@@ -747,6 +787,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": 1.43,
+    "cs": 2,
     "trend": "rising",
     "season_share": 18,
     "recent_share": 88,
@@ -785,6 +827,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": 2.92,
+    "cs": 1,
     "trend": "",
     "season_share": 17,
     "recent_share": 25,
@@ -820,6 +864,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": 2.17,
+    "cs": 0,
     "trend": "falling",
     "season_share": 16,
     "recent_share": 0,
@@ -857,6 +903,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 99,
     "recent_share": 100,
@@ -892,6 +940,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 95,
     "recent_share": 81,
@@ -927,6 +977,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 92,
     "recent_share": 88,
@@ -962,6 +1014,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 94,
     "recent_share": 100,
@@ -997,6 +1051,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 96,
     "recent_share": 100,
@@ -1032,6 +1088,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 97,
     "recent_share": 100,
@@ -1067,6 +1125,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 81,
     "recent_share": 86,
@@ -1102,6 +1162,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -1137,6 +1199,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 92,
     "recent_share": 100,
@@ -1172,6 +1236,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 76,
     "recent_share": 75,
@@ -1207,6 +1273,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 80,
     "recent_share": 94,
@@ -1242,6 +1310,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 88,
     "recent_share": 92,
@@ -1277,6 +1347,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 90,
     "recent_share": 83,
@@ -1312,6 +1384,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 84,
     "recent_share": 83,
@@ -1347,6 +1421,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 83,
     "recent_share": 68,
@@ -1382,6 +1458,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 94,
     "recent_share": 94,
@@ -1417,6 +1495,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 87,
     "recent_share": 92,
@@ -1452,6 +1532,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 95,
     "recent_share": 100,
@@ -1487,6 +1569,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 94,
     "recent_share": 96,
@@ -1522,6 +1606,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 82,
     "recent_share": 74,
@@ -1557,6 +1643,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 81,
     "recent_share": 32,
@@ -1592,6 +1680,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 70,
     "recent_share": 86,
@@ -1627,6 +1717,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 77,
     "recent_share": 71,
@@ -1662,6 +1754,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 84,
     "recent_share": 70,
@@ -1697,6 +1791,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 89,
     "recent_share": 75,
@@ -1732,6 +1828,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 86,
     "recent_share": 69,
@@ -1767,6 +1865,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 87,
     "recent_share": 100,
@@ -1802,6 +1902,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 91,
     "recent_share": 92,
@@ -1837,6 +1939,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 89,
     "recent_share": 94,
@@ -1872,6 +1976,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 63,
     "recent_share": 19,
@@ -1907,6 +2013,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 72,
     "recent_share": 5,
@@ -1942,6 +2050,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 74,
     "recent_share": 100,
@@ -1977,6 +2087,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 76,
     "recent_share": 88,
@@ -2012,6 +2124,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 81,
     "recent_share": 76,
@@ -2047,6 +2161,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 89,
     "recent_share": 62,
@@ -2082,6 +2198,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 83,
     "recent_share": 50,
@@ -2117,6 +2235,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 76,
     "recent_share": 65,
@@ -2152,6 +2272,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 99,
     "recent_share": 94,
@@ -2187,6 +2309,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 86,
     "recent_share": 82,
@@ -2222,6 +2346,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 54,
     "recent_share": 53,
@@ -2257,6 +2383,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 82,
     "recent_share": 67,
@@ -2292,6 +2420,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 82,
     "recent_share": 100,
@@ -2327,6 +2457,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 87,
     "recent_share": 100,
@@ -2362,6 +2494,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 53,
     "recent_share": 29,
@@ -2397,6 +2531,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 57,
     "recent_share": 9,
@@ -2432,6 +2568,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 55,
     "recent_share": 100,
@@ -2467,6 +2605,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 63,
     "recent_share": 12,
@@ -2502,6 +2642,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 61,
     "recent_share": 100,
@@ -2537,6 +2679,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 50,
     "recent_share": 45,
@@ -2572,6 +2716,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 55,
     "recent_share": 93,
@@ -2607,6 +2753,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 66,
     "recent_share": 79,
@@ -2642,6 +2790,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 56,
     "recent_share": 59,
@@ -2677,6 +2827,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 41,
     "recent_share": 36,
@@ -2712,6 +2864,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 64,
     "recent_share": 66,
@@ -2747,6 +2901,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 55,
     "recent_share": 22,
@@ -2782,6 +2938,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 52,
     "recent_share": 0,
@@ -2817,6 +2975,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 48,
     "recent_share": 73,
@@ -2852,6 +3012,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 54,
     "recent_share": 95,
@@ -2887,6 +3049,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 60,
     "recent_share": 40,
@@ -2922,6 +3086,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 53,
     "recent_share": 25,
@@ -2957,6 +3123,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 57,
     "recent_share": 75,
@@ -2992,6 +3160,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 52,
     "recent_share": 42,
@@ -3027,6 +3197,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 64,
     "recent_share": 72,
@@ -3062,6 +3234,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 66,
     "recent_share": 42,
@@ -3097,6 +3271,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 77,
     "recent_share": 38,
@@ -3132,6 +3308,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 62,
     "recent_share": 31,
@@ -3167,6 +3345,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 46,
     "recent_share": 50,
@@ -3202,6 +3382,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 43,
     "recent_share": 70,
@@ -3237,6 +3419,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 39,
     "recent_share": 88,
@@ -3272,6 +3456,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 40,
     "recent_share": 10,
@@ -3307,6 +3493,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 49,
     "recent_share": 52,
@@ -3342,6 +3530,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 54,
     "recent_share": 99,
@@ -3377,6 +3567,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 50,
     "recent_share": 74,
@@ -3412,6 +3604,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 31,
     "recent_share": 40,
@@ -3447,6 +3641,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 44,
     "recent_share": 90,
@@ -3482,6 +3678,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 34,
     "recent_share": 58,
@@ -3517,6 +3715,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 42,
     "recent_share": 75,
@@ -3552,6 +3752,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 46,
     "recent_share": 47,
@@ -3587,6 +3789,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 39,
     "recent_share": 26,
@@ -3622,6 +3826,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 29,
     "recent_share": 51,
@@ -3657,6 +3863,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 39,
     "recent_share": 0,
@@ -3692,6 +3900,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 30,
     "recent_share": 48,
@@ -3727,6 +3937,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 51,
     "recent_share": 30,
@@ -3762,6 +3974,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 39,
     "recent_share": 50,
@@ -3797,6 +4011,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 28,
     "recent_share": 27,
@@ -3832,6 +4048,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 37,
     "recent_share": 99,
@@ -3867,6 +4085,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 39,
     "recent_share": 56,
@@ -3902,6 +4122,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 36,
     "recent_share": 45,
@@ -3937,6 +4159,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 32,
     "recent_share": 0,
@@ -3972,6 +4196,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 27,
     "recent_share": 39,
@@ -4007,6 +4233,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 37,
     "recent_share": 0,
@@ -4042,6 +4270,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 23,
     "recent_share": 50,
@@ -4077,6 +4307,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 19,
     "recent_share": 12,
@@ -4112,6 +4344,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 27,
     "recent_share": 1,
@@ -4147,6 +4381,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 30,
     "recent_share": 0,
@@ -4182,6 +4418,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 34,
     "recent_share": 0,
@@ -4217,6 +4455,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 27,
     "recent_share": 0,
@@ -4252,6 +4492,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 20,
     "recent_share": 13,
@@ -4287,6 +4529,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 20,
     "recent_share": 40,
@@ -4322,6 +4566,8 @@
      "CRY (A) 3",
      "EVE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 24,
     "recent_share": 31,
@@ -4357,6 +4603,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 23,
     "recent_share": 8,
@@ -4392,6 +4640,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 29,
     "recent_share": 52,
@@ -4427,6 +4677,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 17,
     "recent_share": 14,
@@ -4462,6 +4714,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 17,
     "recent_share": 59,
@@ -4497,6 +4751,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 28,
     "recent_share": 51,
@@ -4532,6 +4788,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 39,
     "recent_share": 75,
@@ -4567,6 +4825,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 20,
     "recent_share": 26,
@@ -4602,6 +4862,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 16,
     "recent_share": 33,
@@ -4637,6 +4899,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 33,
     "recent_share": 82,
@@ -4672,6 +4936,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 15,
     "recent_share": 42,
@@ -4707,6 +4973,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 14,
     "recent_share": 0,
@@ -4744,6 +5012,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 97,
     "recent_share": 90,
@@ -4779,6 +5049,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 100,
     "recent_share": 100,
@@ -4814,6 +5086,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 78,
     "recent_share": 69,
@@ -4849,6 +5123,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 90,
     "recent_share": 84,
@@ -4884,6 +5160,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 86,
     "recent_share": 88,
@@ -4919,6 +5197,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 91,
     "recent_share": 100,
@@ -4954,6 +5234,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 87,
     "recent_share": 65,
@@ -4989,6 +5271,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 87,
     "recent_share": 78,
@@ -5024,6 +5308,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 94,
     "recent_share": 85,
@@ -5059,6 +5345,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 91,
     "recent_share": 77,
@@ -5094,6 +5382,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 77,
     "recent_share": 99,
@@ -5129,6 +5419,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 72,
     "recent_share": 75,
@@ -5164,6 +5456,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 95,
     "recent_share": 100,
@@ -5199,6 +5493,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 80,
     "recent_share": 97,
@@ -5234,6 +5530,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 69,
     "recent_share": 45,
@@ -5269,6 +5567,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 83,
     "recent_share": 88,
@@ -5304,6 +5604,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 85,
     "recent_share": 100,
@@ -5339,6 +5641,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 96,
     "recent_share": 84,
@@ -5374,6 +5678,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 88,
     "recent_share": 99,
@@ -5409,6 +5715,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 91,
     "recent_share": 87,
@@ -5444,6 +5752,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 72,
     "recent_share": 61,
@@ -5479,6 +5789,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 81,
     "recent_share": 100,
@@ -5514,6 +5826,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 79,
     "recent_share": 97,
@@ -5549,6 +5863,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 66,
     "recent_share": 80,
@@ -5584,6 +5900,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 57,
     "recent_share": 100,
@@ -5619,6 +5937,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 80,
     "recent_share": 85,
@@ -5654,6 +5974,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 78,
     "recent_share": 86,
@@ -5689,6 +6011,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 60,
     "recent_share": 67,
@@ -5724,6 +6048,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 75,
     "recent_share": 54,
@@ -5759,6 +6085,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 82,
     "recent_share": 96,
@@ -5794,6 +6122,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 78,
     "recent_share": 79,
@@ -5829,6 +6159,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 90,
     "recent_share": 100,
@@ -5864,6 +6196,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 70,
     "recent_share": 88,
@@ -5899,6 +6233,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 83,
     "recent_share": 86,
@@ -5934,6 +6270,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 62,
     "recent_share": 39,
@@ -5969,6 +6307,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 77,
     "recent_share": 68,
@@ -6004,6 +6344,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 62,
     "recent_share": 67,
@@ -6039,6 +6381,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 71,
     "recent_share": 52,
@@ -6074,6 +6418,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 80,
     "recent_share": 95,
@@ -6109,6 +6455,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 61,
     "recent_share": 38,
@@ -6144,6 +6492,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 76,
     "recent_share": 68,
@@ -6179,6 +6529,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 85,
     "recent_share": 56,
@@ -6214,6 +6566,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 45,
     "recent_share": 40,
@@ -6249,6 +6603,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 64,
     "recent_share": 62,
@@ -6284,6 +6640,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 52,
     "recent_share": 66,
@@ -6319,6 +6677,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 73,
     "recent_share": 70,
@@ -6354,6 +6714,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 65,
     "recent_share": 95,
@@ -6389,6 +6751,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 56,
     "recent_share": 29,
@@ -6424,6 +6788,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 61,
     "recent_share": 55,
@@ -6459,6 +6825,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 57,
     "recent_share": 52,
@@ -6494,6 +6862,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 55,
     "recent_share": 67,
@@ -6529,6 +6899,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 51,
     "recent_share": 43,
@@ -6564,6 +6936,8 @@
      "CRY (A) 3",
      "EVE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 61,
     "recent_share": 62,
@@ -6599,6 +6973,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 69,
     "recent_share": 64,
@@ -6634,6 +7010,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 65,
     "recent_share": 43,
@@ -6669,6 +7047,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 52,
     "recent_share": 77,
@@ -6704,6 +7084,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 85,
     "recent_share": 95,
@@ -6739,6 +7121,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 42,
     "recent_share": 15,
@@ -6774,6 +7158,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 55,
     "recent_share": 66,
@@ -6809,6 +7195,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 52,
     "recent_share": 50,
@@ -6844,6 +7232,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 47,
     "recent_share": 19,
@@ -6879,6 +7269,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 51,
     "recent_share": 40,
@@ -6914,6 +7306,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 56,
     "recent_share": 26,
@@ -6949,6 +7343,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 51,
     "recent_share": 90,
@@ -6984,6 +7380,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 68,
     "recent_share": 71,
@@ -7019,6 +7417,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 45,
     "recent_share": 45,
@@ -7054,6 +7454,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 49,
     "recent_share": 74,
@@ -7089,6 +7491,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 49,
     "recent_share": 66,
@@ -7124,6 +7528,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 42,
     "recent_share": 25,
@@ -7159,6 +7565,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 56,
     "recent_share": 92,
@@ -7194,6 +7602,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 74,
     "recent_share": 69,
@@ -7229,6 +7639,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 54,
     "recent_share": 22,
@@ -7264,6 +7676,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 56,
     "recent_share": 65,
@@ -7299,6 +7713,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 41,
     "recent_share": 22,
@@ -7334,6 +7750,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 48,
     "recent_share": 100,
@@ -7369,6 +7787,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 61,
     "recent_share": 50,
@@ -7404,6 +7824,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 50,
     "recent_share": 66,
@@ -7439,6 +7861,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 47,
     "recent_share": 55,
@@ -7474,6 +7898,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 43,
     "recent_share": 52,
@@ -7509,6 +7935,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 31,
     "recent_share": 17,
@@ -7544,6 +7972,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 56,
     "recent_share": 58,
@@ -7579,6 +8009,8 @@
      "CRY (A) 3",
      "EVE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 51,
     "recent_share": 69,
@@ -7614,6 +8046,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 38,
     "recent_share": 79,
@@ -7649,6 +8083,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 51,
     "recent_share": 25,
@@ -7684,6 +8120,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 48,
     "recent_share": 88,
@@ -7719,6 +8157,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 57,
     "recent_share": 49,
@@ -7754,6 +8194,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 44,
     "recent_share": 50,
@@ -7789,6 +8231,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 39,
     "recent_share": 71,
@@ -7824,6 +8268,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 42,
     "recent_share": 63,
@@ -7859,6 +8305,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 41,
     "recent_share": 0,
@@ -7894,6 +8342,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 43,
     "recent_share": 26,
@@ -7929,6 +8379,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 48,
     "recent_share": 0,
@@ -7964,6 +8416,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 57,
     "recent_share": 87,
@@ -7999,6 +8453,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 41,
     "recent_share": 54,
@@ -8034,6 +8490,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 35,
     "recent_share": 23,
@@ -8069,6 +8527,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 45,
     "recent_share": 0,
@@ -8104,6 +8564,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 38,
     "recent_share": 34,
@@ -8139,6 +8601,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 46,
     "recent_share": 27,
@@ -8174,6 +8638,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 40,
     "recent_share": 41,
@@ -8209,6 +8675,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 54,
     "recent_share": 78,
@@ -8244,6 +8712,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 25,
     "recent_share": 72,
@@ -8279,6 +8749,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 48,
     "recent_share": 53,
@@ -8314,6 +8786,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 29,
     "recent_share": 8,
@@ -8349,6 +8823,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 39,
     "recent_share": 4,
@@ -8384,6 +8860,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 30,
     "recent_share": 4,
@@ -8419,6 +8897,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 35,
     "recent_share": 52,
@@ -8454,6 +8934,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 50,
     "recent_share": 68,
@@ -8489,6 +8971,8 @@
      "BHA (H) 2",
      "NFO (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 37,
     "recent_share": 58,
@@ -8524,6 +9008,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 44,
     "recent_share": 37,
@@ -8559,6 +9045,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 30,
     "recent_share": 28,
@@ -8594,6 +9082,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 50,
     "recent_share": 42,
@@ -8629,6 +9119,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 32,
     "recent_share": 80,
@@ -8664,6 +9156,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 46,
     "recent_share": 38,
@@ -8699,6 +9193,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 34,
     "recent_share": 41,
@@ -8734,6 +9230,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 34,
     "recent_share": 33,
@@ -8769,6 +9267,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 29,
     "recent_share": 47,
@@ -8804,6 +9304,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 36,
     "recent_share": 39,
@@ -8839,6 +9341,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 37,
     "recent_share": 26,
@@ -8874,6 +9378,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 34,
     "recent_share": 2,
@@ -8909,6 +9415,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 25,
     "recent_share": 14,
@@ -8944,6 +9452,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 30,
     "recent_share": 18,
@@ -8979,6 +9489,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 28,
     "recent_share": 22,
@@ -9014,6 +9526,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 31,
     "recent_share": 35,
@@ -9049,6 +9563,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 28,
     "recent_share": 0,
@@ -9084,6 +9600,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 22,
     "recent_share": 29,
@@ -9119,6 +9637,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 30,
     "recent_share": 34,
@@ -9154,6 +9674,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 25,
     "recent_share": 0,
@@ -9189,6 +9711,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 27,
     "recent_share": 4,
@@ -9224,6 +9748,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 38,
     "recent_share": 22,
@@ -9259,6 +9785,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 35,
     "recent_share": 84,
@@ -9294,6 +9822,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 30,
     "recent_share": 46,
@@ -9329,6 +9859,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 26,
     "recent_share": 14,
@@ -9364,6 +9896,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 28,
     "recent_share": 42,
@@ -9399,6 +9933,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 23,
     "recent_share": 27,
@@ -9434,6 +9970,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 20,
     "recent_share": 44,
@@ -9469,6 +10007,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 22,
     "recent_share": 41,
@@ -9504,6 +10044,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 16,
     "recent_share": 49,
@@ -9539,6 +10081,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 28,
     "recent_share": 4,
@@ -9574,6 +10118,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 19,
     "recent_share": 0,
@@ -9609,6 +10155,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 18,
     "recent_share": 30,
@@ -9644,6 +10192,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 24,
     "recent_share": 36,
@@ -9679,6 +10229,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 15,
     "recent_share": 20,
@@ -9714,6 +10266,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 20,
     "recent_share": 2,
@@ -9749,6 +10303,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 20,
     "recent_share": 54,
@@ -9784,6 +10340,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 16,
     "recent_share": 29,
@@ -9819,6 +10377,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 16,
     "recent_share": 21,
@@ -9854,6 +10414,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 15,
     "recent_share": 4,
@@ -9889,6 +10451,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 14,
     "recent_share": 0,
@@ -9924,6 +10488,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 13,
     "recent_share": 19,
@@ -9961,6 +10527,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 80,
     "recent_share": 97,
@@ -9996,6 +10564,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 78,
     "recent_share": 59,
@@ -10031,6 +10601,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 96,
     "recent_share": 100,
@@ -10066,6 +10638,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 66,
     "recent_share": 71,
@@ -10101,6 +10675,8 @@
      "NFO (H) 3",
      "TOT (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 83,
     "recent_share": 88,
@@ -10136,6 +10712,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 57,
     "recent_share": 72,
@@ -10171,6 +10749,8 @@
      "BRE (H) 3",
      "LIV (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 80,
     "recent_share": 89,
@@ -10206,6 +10786,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 67,
     "recent_share": 79,
@@ -10241,6 +10823,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 45,
     "recent_share": 61,
@@ -10276,6 +10860,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 55,
     "recent_share": 42,
@@ -10311,6 +10897,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 65,
     "recent_share": 38,
@@ -10346,6 +10934,8 @@
      "TOT (A) 3",
      "IPS (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 55,
     "recent_share": 39,
@@ -10381,6 +10971,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 65,
     "recent_share": 50,
@@ -10416,6 +11008,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 53,
     "recent_share": 1,
@@ -10451,6 +11045,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 48,
     "recent_share": 44,
@@ -10486,6 +11082,8 @@
      "COV (A) 2",
      "ARS (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 52,
     "recent_share": 26,
@@ -10521,6 +11119,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 86,
     "recent_share": 75,
@@ -10556,6 +11156,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 56,
     "recent_share": 90,
@@ -10591,6 +11193,8 @@
      "BOU (A) 3",
      "CHE (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 36,
     "recent_share": 34,
@@ -10626,6 +11230,8 @@
      "ARS (H) 4",
      "MCI (A) 5"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "falling",
     "season_share": 34,
     "recent_share": 13,
@@ -10661,6 +11267,8 @@
      "NEW (H) 2",
      "CRY (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 31,
     "recent_share": 37,
@@ -10696,6 +11304,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 24,
     "recent_share": 75,
@@ -10731,6 +11341,8 @@
      "IPS (H) 2",
      "LEE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 67,
     "recent_share": 61,
@@ -10766,6 +11378,8 @@
      "HUL (H) 2",
      "BRE (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 32,
     "recent_share": 44,
@@ -10801,6 +11415,8 @@
      "MUN (A) 4",
      "SUN (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 20,
     "recent_share": 17,
@@ -10836,6 +11452,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 14,
     "recent_share": 32,
@@ -10871,6 +11489,8 @@
      "MCI (H) 4",
      "FUL (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 18,
     "recent_share": 14,
@@ -10906,6 +11526,8 @@
      "AVL (A) 4",
      "COV (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 26,
     "recent_share": 50,
@@ -10941,6 +11563,8 @@
      "EVE (H) 3",
      "AVL (H) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 29,
     "recent_share": 43,
@@ -10976,6 +11600,8 @@
      "LIV (A) 4",
      "MUN (H) 4"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 29,
     "recent_share": 69,
@@ -11011,6 +11637,8 @@
      "SUN (A) 3",
      "BHA (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "rising",
     "season_share": 17,
     "recent_share": 52,
@@ -11046,6 +11674,8 @@
      "FUL (H) 2",
      "BOU (A) 3"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 20,
     "recent_share": 27,
@@ -11081,6 +11711,8 @@
      "LEE (A) 3",
      "HUL (H) 2"
     ],
+    "saves_p90": null,
+    "cs": null,
     "trend": "",
     "season_share": 15,
     "recent_share": 13,

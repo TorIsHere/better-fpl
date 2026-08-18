@@ -97,6 +97,7 @@
   .luck{font-family:'JetBrains Mono',monospace;cursor:help}
   .luck.luck-hot{color:var(--red);font-weight:700}
   .luck.luck-cold{color:var(--pitch);font-weight:700}
+  .saves{font-family:'JetBrains Mono',monospace;cursor:help}
   .fix{font-family:'JetBrains Mono',monospace;cursor:help}
   .fix.fix-easy{color:var(--pitch);font-weight:700}
   .fix.fix-hard{color:var(--red);font-weight:700}
@@ -165,6 +166,7 @@
     <b>Security</b> — judged on the <em>final 8 gameweeks</em>, not the season as a whole, so a player who broke into the side late is not written off as a bench player. <span style="color:var(--pitch)">▲</span>/<span style="color:var(--red)">▼</span> marks minutes rising or falling against his season average. Nailed 80%+ of recent available minutes · Solid 60-80% · Rotation risk 35-60% · Bench risk under 35% · Doubt/Injured from the live FPL feed. <b>Contested</b> means the club carries more than one credible goalkeeper, so prior minutes settle nothing.
     <br><b>DefCon</b> — mean defensive actions per start, with the % of starts hitting the 2-pt threshold (10 for defenders, 12 for midfielders and forwards). <span style="color:var(--gold);font-weight:700">Gold</span> marks the interesting band: averaging just under the threshold, one role tweak from regular returns. &nbsp;
     <b>Luck</b> — goal involvements minus expected (xG+xA) over the recent window. <span style="color:var(--red);font-weight:700">Hot</span> (over +2) is a sell-high trap; <span style="color:var(--pitch);font-weight:700">negative</span> (under −1) marks a player finishing normally but unrewarded — a buy-low candidate. &nbsp;
+    <b>Saves / 90 · CS</b> (keepers) — their two real scoring sources: 1 pt per 3 saves, 4 pts a clean sheet. Read them against each other — high saves with few clean sheets is a busy keeper behind a poor defence, the classic budget pick. &nbsp;
     <b>Fix (5)</b> — average fixture difficulty (2 easiest → 5 hardest) over the next five gameweeks; hover for the run of opponents. Early season this outweighs any per-player number. &nbsp;
     <b>★ Risers</b> — the saved screen that found the good picks: minutes rising, 60%+ recent share, secure, no injury news, above the positional median on Pts/90.
     <br><b>↷ moved</b> — changed club since last season, so the security label was <em>earned somewhere else</em>. It says the player is durable, not that he has won a place in this squad. Shown dashed and faded for that reason.
@@ -262,14 +264,19 @@ function renderTabs(){
 // keepers never earn DefCon points and their xG involvement is ~0, and
 // forwards hit the DefCon threshold about once a season league-wide. The
 // data is still computed and emitted; the "All columns" chip reveals it.
+// `posOnly` hides a column on tabs where the metric carries little signal;
+// the "All columns" chip reveals those. `exclusive` columns are structural
+// (Pos) or undefined for other positions (keeper saves) and never leak out.
 const baseCols = [
   {key:'name',        label:'Player',     align:'left'},
   {key:'team',        label:'Team',       align:'left'},
-  {key:'pos',         label:'Pos',        align:'left',  posOnly:['RISERS']},
+  {key:'pos',         label:'Pos',        align:'left',  posOnly:['RISERS'], exclusive:true},
   {key:'price',       label:'Price',      align:'right'},
   {key:'points',      label:'Pts',        align:'right'},
   {key:'ratio',       label:'Pts / £m',   align:'right'},
   {key:'p90',         label:'Pts / 90',   align:'right'},
+  {key:'saves_p90',   label:'Saves / 90', align:'right', posOnly:['GKP'], exclusive:true},
+  {key:'cs',          label:'CS',         align:'right', posOnly:['GKP'], exclusive:true},
   {key:'defcon_avg',  label:'DefCon',     align:'right', posOnly:['DEF','MID','RISERS']},
   {key:'overperf',    label:'Luck',       align:'right', posOnly:['DEF','MID','FWD','RISERS']},
   {key:'fix_avg',     label:'Fix (5)',    align:'right'},
@@ -281,7 +288,7 @@ const baseCols = [
 function activeCols(){
   return baseCols.filter(c =>
     !c.posOnly || c.posOnly.includes(currentPos) ||
-    (showAllCols && c.key !== 'pos'));  // Pos outside Risers is pure noise
+    (showAllCols && !c.exclusive));
 }
 
 function renderHead(){
@@ -360,6 +367,12 @@ function cellFor(r, key){
     case 'points':      return `<td class="num">${r.points}</td>`;
     case 'ratio':       return `<td class="num ratio">${r.ratio.toFixed(2)}</td>`;
     case 'p90':         return `<td class="num p90">${r.p90.toFixed(2)}</td>`;
+    case 'saves_p90':   return r.saves_p90 === null || r.saves_p90 === undefined
+      ? '<td class="num"><span class="none">—</span></td>'
+      : `<td class="num"><span class="saves" title="${esc(`${r.saves_p90} saves per 90 — 1 pt per 3 saves, so this is worth ~${(r.saves_p90/3).toFixed(1)} pts a game. A busy keeper at a modest club often out-earns a spectator at a top one.`)}">${r.saves_p90.toFixed(1)}</span></td>`;
+    case 'cs':          return r.cs === null || r.cs === undefined
+      ? '<td class="num"><span class="none">—</span></td>'
+      : `<td class="num">${r.cs}</td>`;
     case 'defcon_avg':  return `<td class="num">${defconCell(r)}</td>`;
     case 'overperf':    return `<td class="num">${luckCell(r)}</td>`;
     case 'fix_avg':     return `<td class="num">${fixCell(r)}</td>`;

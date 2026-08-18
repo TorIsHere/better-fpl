@@ -50,13 +50,14 @@ elements, and the archive `merged_gw.csv` carries `defensive_contribution`,
 `starts`, `expected_goals` and `expected_assists` per gameweek — so backlog
 items 1 and 2 are implementable exactly as specced.
 
-### Remaining P0: the Action may be IP-blocked
+### ~~Remaining P0: the Action may be IP-blocked~~ ✅ verified working
 
-FPL rate-limits datacentre ranges. The workflow has never run. If it fails on
-fetch, the fallback is documented in the README (run locally, commit), but a
-better fix is a retry with longer backoff, or moving the fetch to a scheduled
-local job. `fetch()` already retries 3× with linear backoff — that may not be
-enough.
+The workflow ran successfully on GitHub's runners on 2026-08-18 (push
+trigger): all three fetches — bootstrap-static, fixtures, and the archive —
+succeeded from the datacentre IP, and the run committed its own refresh.
+FPL does rate-limit datacentre ranges, so a future block is still possible;
+if a scheduled run fails on fetch, the fallback is documented in the README
+(run locally, commit), and `fetch()` retries 3× with linear backoff.
 
 ---
 

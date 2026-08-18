@@ -3,7 +3,7 @@
   "basis": "2025-26 final season totals",
   "use_current": false,
   "finished_gws": 0,
-  "built_at": "2026-08-18 02:59 UTC"
+  "built_at": "2026-08-18 03:14 UTC"
  },
  "players": {
   "GKP": [
@@ -1372,7 +1372,7 @@
     "security": "Nailed",
     "defcon_rate": 0.0,
     "defcon_avg": 6.7,
-    "overperf": 1.6,
+    "overperf": 1.5,
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
@@ -5469,7 +5469,7 @@
     "security": "Nailed",
     "defcon_rate": 0.12,
     "defcon_avg": 7.4,
-    "overperf": -1.1,
+    "overperf": -1.0,
     "luck": "unlucky",
     "fix_avg": 3.0,
     "fix_ops": [
@@ -6519,7 +6519,7 @@
     "security": "Rotation risk",
     "defcon_rate": 0.33,
     "defcon_avg": 10.3,
-    "overperf": 0.1,
+    "overperf": 0.2,
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
@@ -8409,7 +8409,7 @@
     "security": "Rotation risk",
     "defcon_rate": 0.0,
     "defcon_avg": 3.8,
-    "overperf": -0.1,
+    "overperf": -0.2,
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
@@ -9494,7 +9494,7 @@
     "security": "Rotation risk",
     "defcon_rate": 0.0,
     "defcon_avg": 4.5,
-    "overperf": 0.7,
+    "overperf": 0.8,
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
@@ -10931,7 +10931,7 @@
     "security": "Rotation risk",
     "defcon_rate": 0.0,
     "defcon_avg": 6.0,
-    "overperf": -1.0,
+    "overperf": -0.9,
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [

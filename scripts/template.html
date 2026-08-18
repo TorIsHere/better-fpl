@@ -154,6 +154,7 @@
   <div class="controls">
     <div class="tabs" id="tabs"></div>
     <button class="chip" id="secureChip">Secure minutes only</button>
+    <button class="chip" id="colsChip" title="Show the metric columns hidden on this tab because they carry little signal for the position — DefCon for keepers and forwards, Luck for keepers.">All columns</button>
     <div class="search"><input type="text" id="searchbox" placeholder="Search player or team…"></div>
   </div>
 
@@ -224,7 +225,8 @@ const badgeClass = {
 const securityRank = {'Nailed':0,'Solid starter':1,'Rotation risk':2,'Contested':3,
   'Bench risk':4,'Doubt':5,'Suspended':6,'Injured':7,'Unavailable':8};
 
-let currentPos = 'MID', sortKey = 'ratio', sortDir = -1, query = '', onlySecure = false;
+let currentPos = 'MID', sortKey = 'ratio', sortDir = -1, query = '', onlySecure = false,
+    showAllCols = false;
 
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')
   .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
@@ -256,27 +258,30 @@ function renderTabs(){
   });
 }
 
+// `posOnly` hides a column on tabs where the metric carries no signal —
+// keepers never earn DefCon points and their xG involvement is ~0, and
+// forwards hit the DefCon threshold about once a season league-wide. The
+// data is still computed and emitted; the "All columns" chip reveals it.
 const baseCols = [
   {key:'name',        label:'Player',     align:'left'},
   {key:'team',        label:'Team',       align:'left'},
+  {key:'pos',         label:'Pos',        align:'left',  posOnly:['RISERS']},
   {key:'price',       label:'Price',      align:'right'},
   {key:'points',      label:'Pts',        align:'right'},
   {key:'ratio',       label:'Pts / £m',   align:'right'},
   {key:'p90',         label:'Pts / 90',   align:'right'},
-  {key:'defcon_avg',  label:'DefCon',     align:'right'},
-  {key:'overperf',    label:'Luck',       align:'right'},
+  {key:'defcon_avg',  label:'DefCon',     align:'right', posOnly:['DEF','MID','RISERS']},
+  {key:'overperf',    label:'Luck',       align:'right', posOnly:['DEF','MID','FWD','RISERS']},
   {key:'fix_avg',     label:'Fix (5)',    align:'right'},
   {key:'consistency', label:'Consistency',align:'left'},
   {key:'proj_min',    label:'Proj min',   align:'right'},
   {key:'security',    label:'Security',   align:'left'}
 ];
 
-// The risers view mixes positions, so it needs a position column.
 function activeCols(){
-  if(currentPos !== 'RISERS') return baseCols;
-  const cols = [...baseCols];
-  cols.splice(2, 0, {key:'pos', label:'Pos', align:'left'});
-  return cols;
+  return baseCols.filter(c =>
+    !c.posOnly || c.posOnly.includes(currentPos) ||
+    (showAllCols && c.key !== 'pos'));  // Pos outside Risers is pure noise
 }
 
 function renderHead(){
@@ -334,6 +339,44 @@ function luckCell(r){
   return `<span class="luck ${cls}" title="${esc(title)}">${v}</span>`;
 }
 
+function cellFor(r, key){
+  switch(key){
+    case 'name': {
+      const newsDot = r.news ? `<span class="dot news" title="${esc(r.news)}"></span>` : '';
+      const ovrDot  = r.overridden ? `<span class="dot ovr" title="${esc(r.note || 'Manually overridden')}"></span>` : '';
+      const moved = (r.moved_from && !r.overridden)
+        ? `<span class="moved" title="Moved from ${esc(r.moved_from)}. Minutes and security below were earned there, not here — treat them as evidence of durability, not of a starting place.">↷ ${esc(r.moved_from)}</span>`
+        : '';
+      const arrow = r.trend === 'rising'
+        ? `<span class="trend rising" title="Minutes rising: ${r.season_share}% of the season overall, but ${r.recent_share}% across the final gameweeks. Security below reflects the recent window.">▲</span>`
+        : (r.trend === 'falling'
+        ? `<span class="trend falling" title="Minutes falling: ${r.season_share}% of the season overall, but only ${r.recent_share}% across the final gameweeks. Security below reflects the recent window.">▼</span>`
+        : '');
+      return `<td class="player">${esc(r.name)}${newsDot}${ovrDot}${arrow}${moved}</td>`;
+    }
+    case 'team':        return `<td class="team">${esc(r.team)}</td>`;
+    case 'pos':         return `<td class="team">${esc(r.pos)}</td>`;
+    case 'price':       return `<td class="num">£${r.price.toFixed(1)}</td>`;
+    case 'points':      return `<td class="num">${r.points}</td>`;
+    case 'ratio':       return `<td class="num ratio">${r.ratio.toFixed(2)}</td>`;
+    case 'p90':         return `<td class="num p90">${r.p90.toFixed(2)}</td>`;
+    case 'defcon_avg':  return `<td class="num">${defconCell(r)}</td>`;
+    case 'overperf':    return `<td class="num">${luckCell(r)}</td>`;
+    case 'fix_avg':     return `<td class="num">${fixCell(r)}</td>`;
+    case 'consistency': return `<td><span class="badge ${badgeClass[r.consistency] || 'na'}">${esc(r.consistency)}</span></td>`;
+    case 'proj_min':    return `<td class="num">${minbar(r)}</td>`;
+    case 'security': {
+      const contested = (r.contested && r.contested.length)
+        ? ` title="Competing with ${esc(r.contested.join(', '))} for one shirt"`
+        : '';
+      const secClass = (badgeClass[r.security] || 'na')
+        + ((r.moved_from && !r.overridden) ? ' inherited' : '');
+      return `<td><span class="badge ${secClass}"${contested}>${esc(r.security)}</span></td>`;
+    }
+    default: return '<td></td>';
+  }
+}
+
 function fixCell(r){
   if(r.fix_avg === null || r.fix_avg === undefined)
     return '<span class="none">—</span>';
@@ -352,9 +395,13 @@ function minbar(row){
 }
 
 function render(){
+  // If the sorted column just got hidden by a tab switch, fall back to the
+  // default rather than sorting invisibly.
+  if(!activeCols().some(c => c.key === sortKey)){ sortKey = 'ratio'; sortDir = -1; }
   renderTabs();
   renderHead();
   document.getElementById('secureChip').className = 'chip' + (onlySecure ? ' on' : '');
+  document.getElementById('colsChip').className = 'chip' + (showAllCols ? ' on' : '');
 
   let rows = currentPos === 'RISERS' ? riserRows() : [...(DATA[currentPos] || [])];
   if(query){
@@ -378,35 +425,7 @@ function render(){
   tbody.innerHTML = '';
   rows.forEach(r => {
     const tr = document.createElement('tr');
-    const newsDot = r.news ? `<span class="dot news" title="${esc(r.news)}"></span>` : '';
-    const ovrDot  = r.overridden ? `<span class="dot ovr" title="${esc(r.note || 'Manually overridden')}"></span>` : '';
-    const moved = (r.moved_from && !r.overridden)
-      ? `<span class="moved" title="Moved from ${esc(r.moved_from)}. Minutes and security below were earned there, not here — treat them as evidence of durability, not of a starting place.">↷ ${esc(r.moved_from)}</span>`
-      : '';
-    const tr_ = r.trend === 'rising'
-      ? `<span class="trend rising" title="Minutes rising: ${r.season_share}% of the season overall, but ${r.recent_share}% across the final gameweeks. Security below reflects the recent window.">▲</span>`
-      : (r.trend === 'falling'
-      ? `<span class="trend falling" title="Minutes falling: ${r.season_share}% of the season overall, but only ${r.recent_share}% across the final gameweeks. Security below reflects the recent window.">▼</span>`
-      : '');
-    const contested = (r.contested && r.contested.length)
-      ? ` title="Competing with ${esc(r.contested.join(', '))} for one shirt"`
-      : '';
-    const secClass = (badgeClass[r.security] || 'na')
-      + ((r.moved_from && !r.overridden) ? ' inherited' : '');
-    tr.innerHTML =
-      `<td class="player">${esc(r.name)}${newsDot}${ovrDot}${tr_}${moved}</td>` +
-      `<td class="team">${esc(r.team)}</td>` +
-      (currentPos === 'RISERS' ? `<td class="team">${esc(r.pos)}</td>` : '') +
-      `<td class="num">£${r.price.toFixed(1)}</td>` +
-      `<td class="num">${r.points}</td>` +
-      `<td class="num ratio">${r.ratio.toFixed(2)}</td>` +
-      `<td class="num p90">${r.p90.toFixed(2)}</td>` +
-      `<td class="num">${defconCell(r)}</td>` +
-      `<td class="num">${luckCell(r)}</td>` +
-      `<td class="num">${fixCell(r)}</td>` +
-      `<td><span class="badge ${badgeClass[r.consistency] || 'na'}">${esc(r.consistency)}</span></td>` +
-      `<td class="num">${minbar(r)}</td>` +
-      `<td><span class="badge ${secClass}"${contested}>${esc(r.security)}</span></td>`;
+    tr.innerHTML = activeCols().map(c => cellFor(r, c.key)).join('');
     tbody.appendChild(tr);
   });
 
@@ -417,6 +436,7 @@ function render(){
 
 document.getElementById('searchbox').addEventListener('input', e => { query = e.target.value; render(); });
 document.getElementById('secureChip').onclick = () => { onlySecure = !onlySecure; render(); };
+document.getElementById('colsChip').onclick = () => { showAllCols = !showAllCols; render(); };
 
 renderStats();
 render();

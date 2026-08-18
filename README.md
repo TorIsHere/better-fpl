@@ -21,6 +21,12 @@ the official FPL API. Static site, no backend — everything is baked into
 | **▲ ▼** | Minutes rising or falling against the player's season average — hover for both figures. |
 | **↷ moved** | Changed club since last season, so the security label was earned *somewhere else*. |
 
+Columns that carry no signal for a position stay hidden on that tab —
+goalkeepers never earn DefCon points and their xG involvement is ~0, and
+forwards hit the DefCon threshold about once a season league-wide — so the
+keeper tab shows neither and the forward tab hides DefCon. The **All
+columns** chip reveals them; the data is always computed and emitted.
+
 The **★ Risers** tab is a saved screen, not a metric: minutes trending up,
 60%+ recent share, secure starting spot, no injury news, and above the
 positional median on Pts / 90 — the combination that surfaced last season's

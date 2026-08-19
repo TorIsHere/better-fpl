@@ -3,7 +3,7 @@
   "basis": "2025-26 final season totals",
   "use_current": false,
   "finished_gws": 0,
-  "built_at": "2026-08-18 07:02 UTC"
+  "built_at": "2026-08-19 07:03 UTC"
  },
  "players": {
   "GKP": [
@@ -3035,8 +3035,8 @@
     "p90": 3.43,
     "consistency": "Boom/bust",
     "cv": 0.82,
-    "proj_min": 36,
-    "security": "Rotation risk",
+    "proj_min": 0,
+    "security": "Unavailable",
     "defcon_rate": 0.0,
     "defcon_avg": 5.0,
     "overperf": -0.1,
@@ -3056,7 +3056,7 @@
     "recent_share": 40,
     "moved_from": "",
     "contested": [],
-    "news": "",
+    "news": "Has joined Internazionale permanently",
     "overridden": false,
     "note": ""
    },
@@ -5056,7 +5056,7 @@
     "recent_share": 100,
     "moved_from": "",
     "contested": [],
-    "news": "Groin injury - Expected back 22 Aug",
+    "news": "Groin injury - Unknown return date",
     "overridden": false,
     "note": ""
    },
@@ -7033,8 +7033,8 @@
     "p90": 6.09,
     "consistency": "Balanced",
     "cv": 0.68,
-    "proj_min": 69,
-    "security": "Solid starter",
+    "proj_min": 52,
+    "security": "Doubt",
     "defcon_rate": 0.0,
     "defcon_avg": 7.2,
     "overperf": 2.7,
@@ -7054,7 +7054,7 @@
     "recent_share": 77,
     "moved_from": "",
     "contested": [],
-    "news": "",
+    "news": "Calf injury - 75% chance of playing",
     "overridden": false,
     "note": ""
    },
@@ -11429,7 +11429,7 @@
    {
     "name": "Awoniyi",
     "code": 210156,
-    "team": "NFO",
+    "team": "COV",
     "pos": "FWD",
     "price": 5.5,
     "points": 43,
@@ -11444,20 +11444,20 @@
     "defcon_avg": null,
     "overperf": 2.5,
     "luck": "hot",
-    "fix_avg": 3.0,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (H) 2",
-     "LIV (A) 4",
-     "TOT (H) 3",
-     "AVL (A) 4",
-     "COV (H) 2"
+     "ARS (A) 5",
+     "HUL (H) 2",
+     "MCI (A) 5",
+     "BHA (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
     "trend": "rising",
     "season_share": 14,
     "recent_share": 32,
-    "moved_from": "",
+    "moved_from": "NFO",
     "contested": [],
     "news": "",
     "overridden": false,

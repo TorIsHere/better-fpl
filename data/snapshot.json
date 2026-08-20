@@ -3,7 +3,7 @@
   "basis": "2025-26 final season totals",
   "use_current": false,
   "finished_gws": 0,
-  "built_at": "2026-08-19 07:03 UTC"
+  "built_at": "2026-08-20 07:04 UTC"
  },
  "players": {
   "GKP": [
@@ -542,7 +542,7 @@
     "p90": 2.9,
     "consistency": "Boom/bust",
     "cv": 0.87,
-    "proj_min": 4,
+    "proj_min": 0,
     "security": "Contested",
     "defcon_rate": null,
     "defcon_avg": null,
@@ -566,7 +566,7 @@
      "Dubravka",
      "Kinsky"
     ],
-    "news": "",
+    "news": "Has joined Juventus on loan for the rest of the season",
     "overridden": false,
     "note": ""
    },
@@ -8995,7 +8995,7 @@
     "consistency": "Consistent",
     "cv": 0.46,
     "proj_min": 0,
-    "security": "Injured",
+    "security": "Unavailable",
     "defcon_rate": 0.33,
     "defcon_avg": 10.3,
     "overperf": 0.3,
@@ -9015,7 +9015,7 @@
     "recent_share": 37,
     "moved_from": "",
     "contested": [],
-    "news": "Back injury - Unknown return date",
+    "news": "Has joined Barcelona permanently",
     "overridden": false,
     "note": ""
    },

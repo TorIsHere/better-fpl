@@ -3,7 +3,7 @@
   "basis": "2025-26 final season totals",
   "use_current": false,
   "finished_gws": 1,
-  "built_at": "2026-08-31 13:42 UTC"
+  "built_at": "2026-09-01 11:35 UTC"
  },
  "players": {
   "GKP": [
@@ -25,13 +25,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": 2.79,
     "cs": 10,
@@ -62,13 +62,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": 2.95,
     "cs": 10,
@@ -99,13 +99,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": 2.87,
     "cs": 11,
@@ -136,13 +136,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": 3.11,
     "cs": 10,
@@ -173,13 +173,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": 2.58,
     "cs": 9,
@@ -210,13 +210,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": 1.62,
     "cs": 19,
@@ -247,13 +247,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": 2.86,
     "cs": 11,
@@ -284,13 +284,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": 2.63,
     "cs": 11,
@@ -321,13 +321,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": 2.29,
     "cs": 15,
@@ -358,13 +358,13 @@
     "defcon_avg": null,
     "overperf": 1.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": 3.02,
     "cs": 7,
@@ -399,11 +399,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": 3.63,
     "cs": 4,
@@ -424,10 +424,10 @@
     "code": 215059,
     "team": "CHE",
     "pos": "GKP",
-    "price": 5.0,
+    "price": 4.9,
     "points": 113,
     "minutes": 3040,
-    "ratio": 22.6,
+    "ratio": 23.06,
     "p90": 3.35,
     "consistency": "Balanced",
     "cv": 0.74,
@@ -437,13 +437,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": 2.9,
     "cs": 9,
@@ -476,13 +476,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": 2.47,
     "cs": 8,
@@ -517,11 +517,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": 3.21,
     "cs": 7,
@@ -554,11 +554,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": 2.68,
     "cs": 7,
@@ -594,11 +594,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": 3.32,
     "cs": 7,
@@ -631,11 +631,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": 2.19,
     "cs": 8,
@@ -668,13 +668,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": 2.86,
     "cs": 5,
@@ -707,13 +707,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": 2.38,
     "cs": 3,
@@ -746,11 +746,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": 3.53,
     "cs": 2,
@@ -785,11 +785,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": 1.43,
     "cs": 2,
@@ -823,13 +823,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": 2.92,
     "cs": 1,
@@ -860,13 +860,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": 2.17,
     "cs": 0,
@@ -899,13 +899,13 @@
     "defcon_avg": 6.8,
     "overperf": 3.3,
     "luck": "hot",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -936,13 +936,13 @@
     "defcon_avg": 6.8,
     "overperf": 0.6,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -973,13 +973,13 @@
     "defcon_avg": 7.4,
     "overperf": 1.2,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1012,11 +1012,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1049,11 +1049,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1084,13 +1084,13 @@
     "defcon_avg": 9.0,
     "overperf": 1.7,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1121,13 +1121,13 @@
     "defcon_avg": 6.9,
     "overperf": 0.8,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1160,11 +1160,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1195,13 +1195,13 @@
     "defcon_avg": 4.4,
     "overperf": -0.5,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1232,13 +1232,13 @@
     "defcon_avg": 9.0,
     "overperf": 0.4,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1269,13 +1269,13 @@
     "defcon_avg": 8.3,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1306,13 +1306,13 @@
     "defcon_avg": 5.0,
     "overperf": 0.4,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1343,13 +1343,13 @@
     "defcon_avg": 10.6,
     "overperf": -0.4,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1380,13 +1380,13 @@
     "defcon_avg": 5.0,
     "overperf": 0.6,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1417,13 +1417,13 @@
     "defcon_avg": 8.6,
     "overperf": -1.4,
     "luck": "unlucky",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1456,11 +1456,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1493,11 +1493,11 @@
     "luck": "unlucky",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1528,13 +1528,13 @@
     "defcon_avg": 6.8,
     "overperf": 0.9,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1565,13 +1565,13 @@
     "defcon_avg": 7.9,
     "overperf": 0.3,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1602,13 +1602,13 @@
     "defcon_avg": 7.6,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1639,13 +1639,13 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1676,13 +1676,13 @@
     "defcon_avg": 5.2,
     "overperf": -1.1,
     "luck": "unlucky",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1713,13 +1713,13 @@
     "defcon_avg": 8.7,
     "overperf": -0.5,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1750,13 +1750,13 @@
     "defcon_avg": 4.4,
     "overperf": 0.1,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1787,13 +1787,13 @@
     "defcon_avg": 4.3,
     "overperf": 0.3,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1824,13 +1824,13 @@
     "defcon_avg": 6.2,
     "overperf": -0.5,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1861,13 +1861,13 @@
     "defcon_avg": 5.0,
     "overperf": 1.0,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1898,13 +1898,13 @@
     "defcon_avg": 9.1,
     "overperf": -1.1,
     "luck": "unlucky",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1937,11 +1937,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -1972,13 +1972,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2009,13 +2009,13 @@
     "defcon_avg": 5.4,
     "overperf": -0.9,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2025,6 +2025,43 @@
     "moved_from": "WHU",
     "contested": [],
     "news": "",
+    "overridden": false,
+    "note": ""
+   },
+   {
+    "name": "Van den Berg",
+    "code": 444765,
+    "team": "BRE",
+    "pos": "DEF",
+    "price": 4.9,
+    "points": 113,
+    "minutes": 2761,
+    "ratio": 23.06,
+    "p90": 3.68,
+    "consistency": "Consistent",
+    "cv": 0.64,
+    "proj_min": 0,
+    "security": "Injured",
+    "defcon_rate": 0.33,
+    "defcon_avg": 8.0,
+    "overperf": -0.1,
+    "luck": "",
+    "fix_avg": 3.4,
+    "fix_ops": [
+     "SUN (H) 2",
+     "BOU (A) 3",
+     "CHE (H) 4",
+     "AVL (A) 4",
+     "LIV (H) 4"
+    ],
+    "saves_p90": null,
+    "cs": null,
+    "trend": "",
+    "season_share": 81,
+    "recent_share": 76,
+    "moved_from": "",
+    "contested": [],
+    "news": "Groin injury - Unknown return date",
     "overridden": false,
     "note": ""
    },
@@ -2046,13 +2083,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2083,13 +2120,13 @@
     "defcon_avg": 6.0,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2120,13 +2157,13 @@
     "defcon_avg": 7.9,
     "overperf": -0.6,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2157,13 +2194,13 @@
     "defcon_avg": 4.4,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2173,43 +2210,6 @@
     "moved_from": "AVL",
     "contested": [],
     "news": "",
-    "overridden": false,
-    "note": ""
-   },
-   {
-    "name": "Van den Berg",
-    "code": 444765,
-    "team": "BRE",
-    "pos": "DEF",
-    "price": 5.0,
-    "points": 113,
-    "minutes": 2761,
-    "ratio": 22.6,
-    "p90": 3.68,
-    "consistency": "Consistent",
-    "cv": 0.64,
-    "proj_min": 0,
-    "security": "Injured",
-    "defcon_rate": 0.33,
-    "defcon_avg": 8.0,
-    "overperf": -0.1,
-    "luck": "",
-    "fix_avg": 3.2,
-    "fix_ops": [
-     "LEE (A) 3",
-     "SUN (H) 2",
-     "BOU (A) 3",
-     "CHE (H) 4",
-     "AVL (A) 4"
-    ],
-    "saves_p90": null,
-    "cs": null,
-    "trend": "",
-    "season_share": 81,
-    "recent_share": 76,
-    "moved_from": "",
-    "contested": [],
-    "news": "Groin injury - Unknown return date",
     "overridden": false,
     "note": ""
    },
@@ -2231,13 +2231,13 @@
     "defcon_avg": 4.2,
     "overperf": 0.4,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2268,13 +2268,13 @@
     "defcon_avg": 7.0,
     "overperf": -0.8,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2307,11 +2307,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2342,13 +2342,13 @@
     "defcon_avg": 8.0,
     "overperf": -0.8,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2379,13 +2379,13 @@
     "defcon_avg": 6.0,
     "overperf": 1.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2416,13 +2416,13 @@
     "defcon_avg": 5.5,
     "overperf": 0.4,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2455,11 +2455,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2490,13 +2490,13 @@
     "defcon_avg": 7.4,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2527,13 +2527,13 @@
     "defcon_avg": null,
     "overperf": 0.5,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2564,13 +2564,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2601,13 +2601,13 @@
     "defcon_avg": 9.6,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2638,13 +2638,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2675,13 +2675,13 @@
     "defcon_avg": 10.2,
     "overperf": -0.4,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2712,13 +2712,13 @@
     "defcon_avg": 10.8,
     "overperf": 0.7,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2749,13 +2749,13 @@
     "defcon_avg": 1.8,
     "overperf": -0.9,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2786,13 +2786,13 @@
     "defcon_avg": 4.6,
     "overperf": -1.2,
     "luck": "unlucky",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2825,11 +2825,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2860,56 +2860,19 @@
     "defcon_avg": 6.2,
     "overperf": 1.5,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
     "trend": "",
     "season_share": 56,
     "recent_share": 59,
-    "moved_from": "",
-    "contested": [],
-    "news": "",
-    "overridden": false,
-    "note": ""
-   },
-   {
-    "name": "De Cuyper",
-    "code": 465730,
-    "team": "BHA",
-    "pos": "DEF",
-    "price": 4.6,
-    "points": 84,
-    "minutes": 1404,
-    "ratio": 18.26,
-    "p90": 5.38,
-    "consistency": "Boom/bust",
-    "cv": 1.04,
-    "proj_min": 32,
-    "security": "Rotation risk",
-    "defcon_rate": 0.0,
-    "defcon_avg": 2.7,
-    "overperf": 1.0,
-    "luck": "",
-    "fix_avg": 3.0,
-    "fix_ops": [
-     "CHE (A) 4",
-     "LEE (H) 2",
-     "COV (A) 2",
-     "ARS (H) 4",
-     "SUN (A) 3"
-    ],
-    "saves_p90": null,
-    "cs": null,
-    "trend": "",
-    "season_share": 41,
-    "recent_share": 36,
     "moved_from": "",
     "contested": [],
     "news": "",
@@ -2936,11 +2899,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -2971,13 +2934,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3008,19 +2971,56 @@
     "defcon_avg": 10.7,
     "overperf": 0.3,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
     "trend": "rising",
     "season_share": 48,
     "recent_share": 73,
+    "moved_from": "",
+    "contested": [],
+    "news": "",
+    "overridden": false,
+    "note": ""
+   },
+   {
+    "name": "De Cuyper",
+    "code": 465730,
+    "team": "BHA",
+    "pos": "DEF",
+    "price": 4.7,
+    "points": 84,
+    "minutes": 1404,
+    "ratio": 17.87,
+    "p90": 5.38,
+    "consistency": "Boom/bust",
+    "cv": 1.04,
+    "proj_min": 32,
+    "security": "Rotation risk",
+    "defcon_rate": 0.0,
+    "defcon_avg": 2.7,
+    "overperf": 1.0,
+    "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "LEE (H) 2",
+     "COV (A) 2",
+     "ARS (H) 4",
+     "SUN (A) 3",
+     "CRY (H) 3"
+    ],
+    "saves_p90": null,
+    "cs": null,
+    "trend": "",
+    "season_share": 41,
+    "recent_share": 36,
     "moved_from": "",
     "contested": [],
     "news": "",
@@ -3047,11 +3047,11 @@
     "luck": "unlucky",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3084,11 +3084,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3119,13 +3119,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3156,13 +3156,13 @@
     "defcon_avg": 6.3,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3193,13 +3193,13 @@
     "defcon_avg": 9.7,
     "overperf": 0.6,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3232,11 +3232,11 @@
     "luck": "unlucky",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3269,11 +3269,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3304,13 +3304,13 @@
     "defcon_avg": 7.3,
     "overperf": -0.9,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3343,11 +3343,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3378,13 +3378,13 @@
     "defcon_avg": 4.0,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3417,11 +3417,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3452,13 +3452,13 @@
     "defcon_avg": 8.0,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3489,13 +3489,13 @@
     "defcon_avg": 10.4,
     "overperf": -0.8,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3526,13 +3526,13 @@
     "defcon_avg": 3.8,
     "overperf": 0.2,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3563,13 +3563,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3600,13 +3600,13 @@
     "defcon_avg": 5.9,
     "overperf": -0.4,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3637,13 +3637,13 @@
     "defcon_avg": 8.4,
     "overperf": 0.8,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3674,13 +3674,13 @@
     "defcon_avg": 5.7,
     "overperf": 1.0,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3713,11 +3713,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3750,11 +3750,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3785,13 +3785,13 @@
     "defcon_avg": 7.0,
     "overperf": -1.3,
     "luck": "unlucky",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3822,13 +3822,13 @@
     "defcon_avg": 6.8,
     "overperf": 0.2,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3861,11 +3861,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3896,13 +3896,13 @@
     "defcon_avg": 6.8,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3933,13 +3933,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3972,11 +3972,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -3994,10 +3994,10 @@
     "code": 550864,
     "team": "MUN",
     "pos": "DEF",
-    "price": 5.0,
+    "price": 4.9,
     "points": 56,
     "minutes": 1730,
-    "ratio": 11.2,
+    "ratio": 11.43,
     "p90": 2.91,
     "consistency": "Balanced",
     "cv": 0.75,
@@ -4007,13 +4007,13 @@
     "defcon_avg": null,
     "overperf": -0.6,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4044,13 +4044,13 @@
     "defcon_avg": 6.8,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4081,13 +4081,13 @@
     "defcon_avg": null,
     "overperf": -0.5,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4118,13 +4118,13 @@
     "defcon_avg": 6.9,
     "overperf": -0.4,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4157,11 +4157,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4192,13 +4192,13 @@
     "defcon_avg": 7.5,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4231,11 +4231,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4266,13 +4266,13 @@
     "defcon_avg": 6.7,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4303,13 +4303,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4340,13 +4340,13 @@
     "defcon_avg": 9.2,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4377,13 +4377,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4414,13 +4414,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4453,11 +4453,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4488,13 +4488,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4527,11 +4527,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4562,13 +4562,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4599,13 +4599,13 @@
     "defcon_avg": 4.0,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4636,13 +4636,13 @@
     "defcon_avg": null,
     "overperf": 0.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "MUN (A) 4",
      "LIV (H) 4",
      "CRY (A) 3",
      "EVE (A) 3",
-     "FUL (H) 2"
+     "FUL (H) 2",
+     "MCI (A) 5"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4673,13 +4673,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4710,13 +4710,13 @@
     "defcon_avg": 7.3,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4749,11 +4749,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4784,13 +4784,13 @@
     "defcon_avg": 5.8,
     "overperf": 0.8,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4821,13 +4821,13 @@
     "defcon_avg": 3.6,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4860,11 +4860,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4895,13 +4895,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4932,13 +4932,13 @@
     "defcon_avg": 9.0,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -4969,13 +4969,13 @@
     "defcon_avg": 7.1,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5008,11 +5008,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5043,13 +5043,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5082,13 +5082,13 @@
     "defcon_avg": 13.7,
     "overperf": 2.2,
     "luck": "hot",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5119,13 +5119,13 @@
     "defcon_avg": 11.2,
     "overperf": 0.3,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5156,13 +5156,13 @@
     "defcon_avg": 5.2,
     "overperf": 0.3,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5193,13 +5193,13 @@
     "defcon_avg": 9.7,
     "overperf": -0.7,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5230,13 +5230,13 @@
     "defcon_avg": 9.8,
     "overperf": -0.4,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5267,13 +5267,13 @@
     "defcon_avg": 9.6,
     "overperf": -1.2,
     "luck": "unlucky",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5304,13 +5304,13 @@
     "defcon_avg": 11.4,
     "overperf": 0.8,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5343,11 +5343,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5380,11 +5380,11 @@
     "luck": "hot",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5415,13 +5415,13 @@
     "defcon_avg": 3.5,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5452,13 +5452,13 @@
     "defcon_avg": 8.5,
     "overperf": 1.4,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5489,13 +5489,13 @@
     "defcon_avg": 5.4,
     "overperf": 0.9,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5528,11 +5528,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5565,11 +5565,11 @@
     "luck": "hot",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5600,13 +5600,13 @@
     "defcon_avg": 7.8,
     "overperf": -1.6,
     "luck": "unlucky",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5637,13 +5637,13 @@
     "defcon_avg": 7.5,
     "overperf": 0.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5674,13 +5674,13 @@
     "defcon_avg": 5.4,
     "overperf": 0.3,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5711,13 +5711,13 @@
     "defcon_avg": 12.7,
     "overperf": -0.8,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5748,13 +5748,13 @@
     "defcon_avg": 11.6,
     "overperf": -0.8,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5785,13 +5785,13 @@
     "defcon_avg": 6.1,
     "overperf": 2.5,
     "luck": "hot",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5816,19 +5816,19 @@
     "p90": 5.64,
     "consistency": "Balanced",
     "cv": 0.7,
-    "proj_min": 41,
-    "security": "Doubt",
+    "proj_min": 55,
+    "security": "Solid starter",
     "defcon_rate": 0.4,
     "defcon_avg": 9.4,
     "overperf": -1.1,
     "luck": "unlucky",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5837,7 +5837,7 @@
     "recent_share": 61,
     "moved_from": "NEW",
     "contested": [],
-    "news": "Thigh injury - 75% chance of playing",
+    "news": "",
     "overridden": false,
     "note": ""
    },
@@ -5859,13 +5859,13 @@
     "defcon_avg": 7.4,
     "overperf": -1.1,
     "luck": "unlucky",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5896,13 +5896,13 @@
     "defcon_avg": 5.4,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5933,13 +5933,13 @@
     "defcon_avg": 5.3,
     "overperf": -0.4,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -5970,13 +5970,13 @@
     "defcon_avg": 3.9,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6007,13 +6007,13 @@
     "defcon_avg": 4.4,
     "overperf": -0.6,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6044,13 +6044,13 @@
     "defcon_avg": 11.6,
     "overperf": 0.8,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6081,13 +6081,13 @@
     "defcon_avg": 10.0,
     "overperf": -1.1,
     "luck": "unlucky",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6118,13 +6118,13 @@
     "defcon_avg": 8.9,
     "overperf": -0.6,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6155,13 +6155,13 @@
     "defcon_avg": 12.3,
     "overperf": -0.6,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6192,13 +6192,13 @@
     "defcon_avg": 6.1,
     "overperf": -1.4,
     "luck": "unlucky",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6231,11 +6231,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6266,13 +6266,13 @@
     "defcon_avg": 6.8,
     "overperf": 4.9,
     "luck": "hot",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6303,13 +6303,13 @@
     "defcon_avg": 10.7,
     "overperf": 0.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6340,13 +6340,13 @@
     "defcon_avg": 9.0,
     "overperf": -0.7,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6377,13 +6377,13 @@
     "defcon_avg": 3.2,
     "overperf": 0.5,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6414,13 +6414,13 @@
     "defcon_avg": 3.3,
     "overperf": 1.7,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6451,13 +6451,13 @@
     "defcon_avg": 7.6,
     "overperf": -1.6,
     "luck": "unlucky",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6490,11 +6490,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6525,13 +6525,13 @@
     "defcon_avg": null,
     "overperf": 0.5,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6562,13 +6562,13 @@
     "defcon_avg": 4.3,
     "overperf": -2.8,
     "luck": "unlucky",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6599,13 +6599,13 @@
     "defcon_avg": 6.5,
     "overperf": 3.6,
     "luck": "hot",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6636,13 +6636,13 @@
     "defcon_avg": 3.5,
     "overperf": -0.4,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6673,13 +6673,13 @@
     "defcon_avg": 7.4,
     "overperf": 0.4,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6710,13 +6710,13 @@
     "defcon_avg": 8.0,
     "overperf": 1.9,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6747,13 +6747,13 @@
     "defcon_avg": 9.6,
     "overperf": -1.4,
     "luck": "unlucky",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6784,13 +6784,13 @@
     "defcon_avg": null,
     "overperf": 0.8,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6823,11 +6823,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6837,43 +6837,6 @@
     "moved_from": "",
     "contested": [],
     "news": "Calf injury - Unknown return date",
-    "overridden": false,
-    "note": ""
-   },
-   {
-    "name": "Cherki",
-    "code": 466052,
-    "team": "MCI",
-    "pos": "MID",
-    "price": 7.6,
-    "points": 135,
-    "minutes": 1772,
-    "ratio": 17.76,
-    "p90": 6.86,
-    "consistency": "Consistent",
-    "cv": 0.48,
-    "proj_min": 59,
-    "security": "Solid starter",
-    "defcon_rate": 0.0,
-    "defcon_avg": 3.0,
-    "overperf": 1.3,
-    "luck": "",
-    "fix_avg": 3.0,
-    "fix_ops": [
-     "CRY (A) 3",
-     "COV (H) 2",
-     "MUN (A) 4",
-     "SUN (H) 2",
-     "LIV (A) 4"
-    ],
-    "saves_p90": null,
-    "cs": null,
-    "trend": "",
-    "season_share": 52,
-    "recent_share": 66,
-    "moved_from": "",
-    "contested": [],
-    "news": "",
     "overridden": false,
     "note": ""
    },
@@ -6897,11 +6860,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -6932,19 +6895,56 @@
     "defcon_avg": 3.5,
     "overperf": -1.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
     "trend": "",
     "season_share": 55,
     "recent_share": 67,
+    "moved_from": "",
+    "contested": [],
+    "news": "",
+    "overridden": false,
+    "note": ""
+   },
+   {
+    "name": "Cherki",
+    "code": 466052,
+    "team": "MCI",
+    "pos": "MID",
+    "price": 7.7,
+    "points": 135,
+    "minutes": 1772,
+    "ratio": 17.53,
+    "p90": 6.86,
+    "consistency": "Consistent",
+    "cv": 0.48,
+    "proj_min": 59,
+    "security": "Solid starter",
+    "defcon_rate": 0.0,
+    "defcon_avg": 3.0,
+    "overperf": 1.3,
+    "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "COV (H) 2",
+     "MUN (A) 4",
+     "SUN (H) 2",
+     "LIV (A) 4",
+     "IPS (H) 2"
+    ],
+    "saves_p90": null,
+    "cs": null,
+    "trend": "",
+    "season_share": 52,
+    "recent_share": 66,
     "moved_from": "",
     "contested": [],
     "news": "",
@@ -6969,13 +6969,13 @@
     "defcon_avg": 10.3,
     "overperf": 0.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7006,13 +7006,13 @@
     "defcon_avg": 12.0,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "MUN (A) 4",
      "LIV (H) 4",
      "CRY (A) 3",
      "EVE (A) 3",
-     "FUL (H) 2"
+     "FUL (H) 2",
+     "MCI (A) 5"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7045,11 +7045,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7080,13 +7080,13 @@
     "defcon_avg": 6.8,
     "overperf": 0.8,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7117,13 +7117,13 @@
     "defcon_avg": 7.2,
     "overperf": 2.7,
     "luck": "hot",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7154,13 +7154,13 @@
     "defcon_avg": null,
     "overperf": 1.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7191,13 +7191,13 @@
     "defcon_avg": 6.9,
     "overperf": -0.5,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7230,11 +7230,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7265,13 +7265,13 @@
     "defcon_avg": 5.5,
     "overperf": -1.4,
     "luck": "unlucky",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7302,19 +7302,56 @@
     "defcon_avg": 10.7,
     "overperf": 0.7,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
     "trend": "",
     "season_share": 52,
     "recent_share": 50,
+    "moved_from": "",
+    "contested": [],
+    "news": "",
+    "overridden": false,
+    "note": ""
+   },
+   {
+    "name": "Talbi",
+    "code": 549912,
+    "team": "SUN",
+    "pos": "MID",
+    "price": 5.4,
+    "points": 83,
+    "minutes": 1553,
+    "ratio": 15.37,
+    "p90": 4.81,
+    "consistency": "Balanced",
+    "cv": 0.67,
+    "proj_min": 40,
+    "security": "Rotation risk",
+    "defcon_rate": 0.0,
+    "defcon_avg": 4.0,
+    "overperf": 0.1,
+    "luck": "",
+    "fix_avg": 3.4,
+    "fix_ops": [
+     "BRE (A) 3",
+     "ARS (H) 4",
+     "MCI (A) 5",
+     "BHA (H) 2",
+     "BOU (A) 3"
+    ],
+    "saves_p90": null,
+    "cs": null,
+    "trend": "",
+    "season_share": 45,
+    "recent_share": 45,
     "moved_from": "",
     "contested": [],
     "news": "",
@@ -7339,13 +7376,13 @@
     "defcon_avg": null,
     "overperf": 0.3,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7376,13 +7413,13 @@
     "defcon_avg": 3.1,
     "overperf": 1.2,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7413,13 +7450,13 @@
     "defcon_avg": 12.0,
     "overperf": -0.7,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7450,13 +7487,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7466,6 +7503,43 @@
     "moved_from": "BRE",
     "contested": [],
     "news": "Wrist injury - 75% chance of playing",
+    "overridden": false,
+    "note": ""
+   },
+   {
+    "name": "Hutchinson",
+    "code": 503301,
+    "team": "NFO",
+    "pos": "MID",
+    "price": 5.4,
+    "points": 82,
+    "minutes": 1676,
+    "ratio": 15.19,
+    "p90": 4.4,
+    "consistency": "Consistent",
+    "cv": 0.57,
+    "proj_min": 60,
+    "security": "Solid starter",
+    "defcon_rate": 0.0,
+    "defcon_avg": 5.3,
+    "overperf": 0.8,
+    "luck": "",
+    "fix_avg": 3.2,
+    "fix_ops": [
+     "TOT (H) 3",
+     "AVL (A) 4",
+     "COV (H) 2",
+     "CRY (A) 3",
+     "ARS (H) 4"
+    ],
+    "saves_p90": null,
+    "cs": null,
+    "trend": "rising",
+    "season_share": 49,
+    "recent_share": 66,
+    "moved_from": "",
+    "contested": [],
+    "news": "",
     "overridden": false,
     "note": ""
    },
@@ -7487,13 +7561,13 @@
     "defcon_avg": 3.4,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7507,37 +7581,37 @@
     "note": ""
    },
    {
-    "name": "Talbi",
-    "code": 549912,
-    "team": "SUN",
+    "name": "Tonali",
+    "code": 432422,
+    "team": "TOT",
     "pos": "MID",
-    "price": 5.5,
-    "points": 83,
-    "minutes": 1553,
-    "ratio": 15.09,
-    "p90": 4.81,
-    "consistency": "Balanced",
-    "cv": 0.67,
-    "proj_min": 40,
-    "security": "Rotation risk",
+    "price": 5.4,
+    "points": 81,
+    "minutes": 2534,
+    "ratio": 15.0,
+    "p90": 2.88,
+    "consistency": "Consistent",
+    "cv": 0.45,
+    "proj_min": 62,
+    "security": "Solid starter",
     "defcon_rate": 0.0,
-    "defcon_avg": 4.0,
-    "overperf": 0.1,
+    "defcon_avg": 7.7,
+    "overperf": -0.7,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "FUL (H) 2",
-     "BRE (A) 3",
-     "ARS (H) 4",
-     "MCI (A) 5",
-     "BHA (H) 2"
+     "NFO (A) 3",
+     "EVE (H) 3",
+     "AVL (H) 3",
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
     "trend": "",
-    "season_share": 45,
-    "recent_share": 45,
-    "moved_from": "",
+    "season_share": 74,
+    "recent_share": 69,
+    "moved_from": "NEW",
     "contested": [],
     "news": "",
     "overridden": false,
@@ -7563,54 +7637,17 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
     "trend": "falling",
     "season_share": 54,
     "recent_share": 22,
-    "moved_from": "",
-    "contested": [],
-    "news": "",
-    "overridden": false,
-    "note": ""
-   },
-   {
-    "name": "Hutchinson",
-    "code": 503301,
-    "team": "NFO",
-    "pos": "MID",
-    "price": 5.5,
-    "points": 82,
-    "minutes": 1676,
-    "ratio": 14.91,
-    "p90": 4.4,
-    "consistency": "Consistent",
-    "cv": 0.57,
-    "proj_min": 60,
-    "security": "Solid starter",
-    "defcon_rate": 0.0,
-    "defcon_avg": 5.3,
-    "overperf": 0.8,
-    "luck": "",
-    "fix_avg": 3.2,
-    "fix_ops": [
-     "LIV (A) 4",
-     "TOT (H) 3",
-     "AVL (A) 4",
-     "COV (H) 2",
-     "CRY (A) 3"
-    ],
-    "saves_p90": null,
-    "cs": null,
-    "trend": "rising",
-    "season_share": 49,
-    "recent_share": 66,
     "moved_from": "",
     "contested": [],
     "news": "",
@@ -7635,13 +7672,13 @@
     "defcon_avg": null,
     "overperf": -0.4,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7674,11 +7711,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7688,43 +7725,6 @@
     "moved_from": "",
     "contested": [],
     "news": "Has joined Internazionale permanently",
-    "overridden": false,
-    "note": ""
-   },
-   {
-    "name": "Tonali",
-    "code": 432422,
-    "team": "TOT",
-    "pos": "MID",
-    "price": 5.5,
-    "points": 81,
-    "minutes": 2534,
-    "ratio": 14.73,
-    "p90": 2.88,
-    "consistency": "Consistent",
-    "cv": 0.45,
-    "proj_min": 62,
-    "security": "Solid starter",
-    "defcon_rate": 0.0,
-    "defcon_avg": 7.7,
-    "overperf": -0.7,
-    "luck": "",
-    "fix_avg": 3.0,
-    "fix_ops": [
-     "NEW (H) 2",
-     "NFO (A) 3",
-     "EVE (H) 3",
-     "AVL (H) 3",
-     "MUN (A) 4"
-    ],
-    "saves_p90": null,
-    "cs": null,
-    "trend": "",
-    "season_share": 74,
-    "recent_share": 69,
-    "moved_from": "NEW",
-    "contested": [],
-    "news": "",
     "overridden": false,
     "note": ""
    },
@@ -7746,13 +7746,13 @@
     "defcon_avg": 5.3,
     "overperf": -0.7,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7785,11 +7785,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7820,13 +7820,13 @@
     "defcon_avg": 6.8,
     "overperf": 1.6,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7857,19 +7857,56 @@
     "defcon_avg": 5.6,
     "overperf": -0.9,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
     "trend": "",
     "season_share": 61,
     "recent_share": 50,
+    "moved_from": "",
+    "contested": [],
+    "news": "",
+    "overridden": false,
+    "note": ""
+   },
+   {
+    "name": "J.Murphy",
+    "code": 114243,
+    "team": "NEW",
+    "pos": "MID",
+    "price": 5.9,
+    "points": 82,
+    "minutes": 1606,
+    "ratio": 13.9,
+    "p90": 4.6,
+    "consistency": "Consistent",
+    "cv": 0.59,
+    "proj_min": 49,
+    "security": "Rotation risk",
+    "defcon_rate": 0.0,
+    "defcon_avg": 3.4,
+    "overperf": 0.5,
+    "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2",
+     "COV (A) 2",
+     "AVL (H) 3"
+    ],
+    "saves_p90": null,
+    "cs": null,
+    "trend": "",
+    "season_share": 47,
+    "recent_share": 55,
     "moved_from": "",
     "contested": [],
     "news": "",
@@ -7894,13 +7931,13 @@
     "defcon_avg": 11.0,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7931,13 +7968,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -7951,36 +7988,36 @@
     "note": ""
    },
    {
-    "name": "J.Murphy",
-    "code": 114243,
-    "team": "NEW",
+    "name": "Tanaka",
+    "code": 248056,
+    "team": "LEE",
     "pos": "MID",
-    "price": 6.0,
-    "points": 82,
-    "minutes": 1606,
+    "price": 4.9,
+    "points": 67,
+    "minutes": 1307,
     "ratio": 13.67,
-    "p90": 4.6,
+    "p90": 4.61,
     "consistency": "Consistent",
-    "cv": 0.59,
-    "proj_min": 49,
-    "security": "Rotation risk",
-    "defcon_rate": 0.0,
-    "defcon_avg": 3.4,
-    "overperf": 0.5,
+    "cv": 0.53,
+    "proj_min": 71,
+    "security": "Solid starter",
+    "defcon_rate": 0.29,
+    "defcon_avg": 9.1,
+    "overperf": -0.4,
     "luck": "",
-    "fix_avg": 2.6,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "TOT (A) 3",
-     "BOU (H) 3",
-     "LEE (A) 3",
-     "HUL (H) 2",
-     "COV (A) 2"
+     "BHA (A) 3",
+     "NEW (H) 2",
+     "CRY (H) 3",
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
-    "trend": "",
-    "season_share": 47,
-    "recent_share": 55,
+    "trend": "rising",
+    "season_share": 38,
+    "recent_share": 79,
     "moved_from": "",
     "contested": [],
     "news": "",
@@ -8005,13 +8042,13 @@
     "defcon_avg": 9.8,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8021,6 +8058,43 @@
     "moved_from": "",
     "contested": [],
     "news": "",
+    "overridden": false,
+    "note": ""
+   },
+   {
+    "name": "Joelinton",
+    "code": 180974,
+    "team": "NEW",
+    "pos": "MID",
+    "price": 5.4,
+    "points": 73,
+    "minutes": 1950,
+    "ratio": 13.52,
+    "p90": 3.37,
+    "consistency": "Consistent",
+    "cv": 0.55,
+    "proj_min": 0,
+    "security": "Injured",
+    "defcon_rate": 0.5,
+    "defcon_avg": 11.0,
+    "overperf": -0.5,
+    "luck": "",
+    "fix_avg": 2.6,
+    "fix_ops": [
+     "BOU (H) 3",
+     "LEE (A) 3",
+     "HUL (H) 2",
+     "COV (A) 2",
+     "AVL (H) 3"
+    ],
+    "saves_p90": null,
+    "cs": null,
+    "trend": "",
+    "season_share": 57,
+    "recent_share": 49,
+    "moved_from": "",
+    "contested": [],
+    "news": "Unspecified injury - Unknown return date",
     "overridden": false,
     "note": ""
    },
@@ -8042,13 +8116,13 @@
     "defcon_avg": 8.0,
     "overperf": -1.4,
     "luck": "unlucky",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8079,13 +8153,13 @@
     "defcon_avg": 9.2,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "MUN (A) 4",
      "LIV (H) 4",
      "CRY (A) 3",
      "EVE (A) 3",
-     "FUL (H) 2"
+     "FUL (H) 2",
+     "MCI (A) 5"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8093,43 +8167,6 @@
     "season_share": 51,
     "recent_share": 69,
     "moved_from": "FUL",
-    "contested": [],
-    "news": "",
-    "overridden": false,
-    "note": ""
-   },
-   {
-    "name": "Tanaka",
-    "code": 248056,
-    "team": "LEE",
-    "pos": "MID",
-    "price": 5.0,
-    "points": 67,
-    "minutes": 1307,
-    "ratio": 13.4,
-    "p90": 4.61,
-    "consistency": "Consistent",
-    "cv": 0.53,
-    "proj_min": 71,
-    "security": "Solid starter",
-    "defcon_rate": 0.29,
-    "defcon_avg": 9.1,
-    "overperf": -0.4,
-    "luck": "",
-    "fix_avg": 3.2,
-    "fix_ops": [
-     "BRE (H) 3",
-     "BHA (A) 3",
-     "NEW (H) 2",
-     "CRY (H) 3",
-     "ARS (A) 5"
-    ],
-    "saves_p90": null,
-    "cs": null,
-    "trend": "rising",
-    "season_share": 38,
-    "recent_share": 79,
-    "moved_from": "",
     "contested": [],
     "news": "",
     "overridden": false,
@@ -8155,11 +8192,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8190,13 +8227,13 @@
     "defcon_avg": 10.7,
     "overperf": 0.2,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8206,43 +8243,6 @@
     "moved_from": "",
     "contested": [],
     "news": "",
-    "overridden": false,
-    "note": ""
-   },
-   {
-    "name": "Joelinton",
-    "code": 180974,
-    "team": "NEW",
-    "pos": "MID",
-    "price": 5.5,
-    "points": 73,
-    "minutes": 1950,
-    "ratio": 13.27,
-    "p90": 3.37,
-    "consistency": "Consistent",
-    "cv": 0.55,
-    "proj_min": 0,
-    "security": "Injured",
-    "defcon_rate": 0.5,
-    "defcon_avg": 11.0,
-    "overperf": -0.5,
-    "luck": "",
-    "fix_avg": 2.6,
-    "fix_ops": [
-     "TOT (A) 3",
-     "BOU (H) 3",
-     "LEE (A) 3",
-     "HUL (H) 2",
-     "COV (A) 2"
-    ],
-    "saves_p90": null,
-    "cs": null,
-    "trend": "",
-    "season_share": 57,
-    "recent_share": 49,
-    "moved_from": "",
-    "contested": [],
-    "news": "Unspecified injury - Unknown return date",
     "overridden": false,
     "note": ""
    },
@@ -8266,11 +8266,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8303,11 +8303,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8340,11 +8340,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8375,13 +8375,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8414,11 +8414,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8449,13 +8449,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8486,13 +8486,13 @@
     "defcon_avg": 5.0,
     "overperf": -1.7,
     "luck": "unlucky",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8523,13 +8523,13 @@
     "defcon_avg": 5.0,
     "overperf": 1.4,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8560,13 +8560,13 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8599,11 +8599,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8634,13 +8634,13 @@
     "defcon_avg": null,
     "overperf": 1.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8673,11 +8673,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8708,13 +8708,13 @@
     "defcon_avg": null,
     "overperf": -0.4,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8745,13 +8745,13 @@
     "defcon_avg": 9.0,
     "overperf": -0.9,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8782,13 +8782,13 @@
     "defcon_avg": 3.8,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8819,13 +8819,13 @@
     "defcon_avg": 6.3,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8856,13 +8856,13 @@
     "defcon_avg": 4.7,
     "overperf": 0.6,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8893,13 +8893,13 @@
     "defcon_avg": null,
     "overperf": 0.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8930,13 +8930,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8967,13 +8967,13 @@
     "defcon_avg": 11.5,
     "overperf": -0.7,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -8991,10 +8991,10 @@
     "code": 242898,
     "team": "EVE",
     "pos": "MID",
-    "price": 6.0,
+    "price": 5.9,
     "points": 65,
     "minutes": 1710,
-    "ratio": 10.83,
+    "ratio": 11.02,
     "p90": 3.42,
     "consistency": "Boom/bust",
     "cv": 0.81,
@@ -9004,13 +9004,13 @@
     "defcon_avg": 5.5,
     "overperf": -1.0,
     "luck": "unlucky",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9041,13 +9041,13 @@
     "defcon_avg": 4.2,
     "overperf": 1.4,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "HUL (H) 2",
      "MCI (A) 5",
      "BHA (H) 2",
      "NFO (A) 3",
-     "NEW (H) 2"
+     "NEW (H) 2",
+     "TOT (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9078,13 +9078,13 @@
     "defcon_avg": 10.3,
     "overperf": 0.3,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9115,13 +9115,13 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9152,13 +9152,13 @@
     "defcon_avg": 6.0,
     "overperf": -0.5,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9189,13 +9189,13 @@
     "defcon_avg": 6.9,
     "overperf": 1.5,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9226,13 +9226,13 @@
     "defcon_avg": 5.8,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9263,13 +9263,13 @@
     "defcon_avg": 6.8,
     "overperf": -1.4,
     "luck": "unlucky",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9302,11 +9302,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9337,13 +9337,13 @@
     "defcon_avg": null,
     "overperf": -0.5,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9374,13 +9374,13 @@
     "defcon_avg": 7.2,
     "overperf": 0.4,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9411,13 +9411,13 @@
     "defcon_avg": 6.0,
     "overperf": 0.6,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9450,11 +9450,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9485,13 +9485,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9522,13 +9522,13 @@
     "defcon_avg": null,
     "overperf": 1.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9559,13 +9559,13 @@
     "defcon_avg": null,
     "overperf": 0.8,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9598,11 +9598,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9635,11 +9635,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9670,13 +9670,13 @@
     "defcon_avg": null,
     "overperf": 0.3,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9709,11 +9709,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9744,13 +9744,13 @@
     "defcon_avg": 3.3,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9781,13 +9781,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9818,13 +9818,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9857,11 +9857,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9892,13 +9892,13 @@
     "defcon_avg": 4.5,
     "overperf": -1.6,
     "luck": "unlucky",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9929,13 +9929,13 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -9968,17 +9968,54 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
     "trend": "",
     "season_share": 28,
     "recent_share": 42,
+    "moved_from": "",
+    "contested": [],
+    "news": "",
+    "overridden": false,
+    "note": ""
+   },
+   {
+    "name": "Ngumoha",
+    "code": 611922,
+    "team": "LIV",
+    "pos": "MID",
+    "price": 5.9,
+    "points": 43,
+    "minutes": 547,
+    "ratio": 7.29,
+    "p90": 7.07,
+    "consistency": "Balanced",
+    "cv": 0.71,
+    "proj_min": 44,
+    "security": "Rotation risk",
+    "defcon_rate": 0.0,
+    "defcon_avg": 4.5,
+    "overperf": 0.7,
+    "luck": "",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "IPS (A) 2",
+     "FUL (H) 2",
+     "BOU (A) 3",
+     "MCI (H) 4",
+     "BRE (A) 3"
+    ],
+    "saves_p90": null,
+    "cs": null,
+    "trend": "rising",
+    "season_share": 16,
+    "recent_share": 49,
     "moved_from": "",
     "contested": [],
     "news": "",
@@ -10003,13 +10040,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10040,13 +10077,13 @@
     "defcon_avg": 5.0,
     "overperf": 1.7,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10077,56 +10114,19 @@
     "defcon_avg": 5.2,
     "overperf": 1.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
     "trend": "rising",
     "season_share": 22,
     "recent_share": 41,
-    "moved_from": "",
-    "contested": [],
-    "news": "",
-    "overridden": false,
-    "note": ""
-   },
-   {
-    "name": "Ngumoha",
-    "code": 611922,
-    "team": "LIV",
-    "pos": "MID",
-    "price": 6.0,
-    "points": 43,
-    "minutes": 547,
-    "ratio": 7.17,
-    "p90": 7.07,
-    "consistency": "Balanced",
-    "cv": 0.71,
-    "proj_min": 44,
-    "security": "Rotation risk",
-    "defcon_rate": 0.0,
-    "defcon_avg": 4.5,
-    "overperf": 0.7,
-    "luck": "",
-    "fix_avg": 2.8,
-    "fix_ops": [
-     "NFO (H) 3",
-     "IPS (A) 2",
-     "FUL (H) 2",
-     "BOU (A) 3",
-     "MCI (H) 4"
-    ],
-    "saves_p90": null,
-    "cs": null,
-    "trend": "rising",
-    "season_share": 16,
-    "recent_share": 49,
     "moved_from": "",
     "contested": [],
     "news": "",
@@ -10151,13 +10151,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10188,13 +10188,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10227,11 +10227,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10264,11 +10264,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10299,13 +10299,13 @@
     "defcon_avg": null,
     "overperf": 0.7,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10336,13 +10336,13 @@
     "defcon_avg": null,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10373,13 +10373,13 @@
     "defcon_avg": 2.5,
     "overperf": -0.2,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10412,11 +10412,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10447,13 +10447,13 @@
     "defcon_avg": null,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10484,13 +10484,13 @@
     "defcon_avg": null,
     "overperf": 0.0,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10521,13 +10521,13 @@
     "defcon_avg": null,
     "overperf": -0.0,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10558,13 +10558,13 @@
     "defcon_avg": null,
     "overperf": 0.5,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "ARS (H) 4",
      "HUL (A) 2",
      "NFO (H) 3",
      "TOT (A) 3",
-     "BRE (H) 3"
+     "BRE (H) 3",
+     "NEW (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10597,13 +10597,13 @@
     "defcon_avg": 4.0,
     "overperf": -0.4,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10634,13 +10634,13 @@
     "defcon_avg": 2.6,
     "overperf": -0.7,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10671,19 +10671,56 @@
     "defcon_avg": 7.0,
     "overperf": -0.3,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
     "trend": "",
     "season_share": 96,
     "recent_share": 100,
+    "moved_from": "",
+    "contested": [],
+    "news": "",
+    "overridden": false,
+    "note": ""
+   },
+   {
+    "name": "Watkins",
+    "code": 178301,
+    "team": "AVL",
+    "pos": "FWD",
+    "price": 7.8,
+    "points": 167,
+    "minutes": 2833,
+    "ratio": 21.41,
+    "p90": 5.31,
+    "consistency": "Boom/bust",
+    "cv": 0.9,
+    "proj_min": 79,
+    "security": "Nailed",
+    "defcon_rate": 0.0,
+    "defcon_avg": 2.7,
+    "overperf": 4.4,
+    "luck": "hot",
+    "fix_avg": 2.8,
+    "fix_ops": [
+     "HUL (A) 2",
+     "NFO (H) 3",
+     "TOT (A) 3",
+     "BRE (H) 3",
+     "NEW (A) 3"
+    ],
+    "saves_p90": null,
+    "cs": null,
+    "trend": "",
+    "season_share": 83,
+    "recent_share": 88,
     "moved_from": "",
     "contested": [],
     "news": "",
@@ -10708,13 +10745,13 @@
     "defcon_avg": 4.0,
     "overperf": 0.6,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "BHA (H) 2",
      "ARS (A) 5",
      "HUL (H) 2",
      "BRE (A) 3",
-     "BOU (H) 3"
+     "BOU (H) 3",
+     "EVE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10722,43 +10759,6 @@
     "season_share": 66,
     "recent_share": 71,
     "moved_from": "BHA",
-    "contested": [],
-    "news": "",
-    "overridden": false,
-    "note": ""
-   },
-   {
-    "name": "Watkins",
-    "code": 178301,
-    "team": "AVL",
-    "pos": "FWD",
-    "price": 7.9,
-    "points": 167,
-    "minutes": 2833,
-    "ratio": 21.14,
-    "p90": 5.31,
-    "consistency": "Boom/bust",
-    "cv": 0.9,
-    "proj_min": 79,
-    "security": "Nailed",
-    "defcon_rate": 0.0,
-    "defcon_avg": 2.7,
-    "overperf": 4.4,
-    "luck": "hot",
-    "fix_avg": 3.0,
-    "fix_ops": [
-     "ARS (H) 4",
-     "HUL (A) 2",
-     "NFO (H) 3",
-     "TOT (A) 3",
-     "BRE (H) 3"
-    ],
-    "saves_p90": null,
-    "cs": null,
-    "trend": "",
-    "season_share": 83,
-    "recent_share": 88,
-    "moved_from": "",
     "contested": [],
     "news": "",
     "overridden": false,
@@ -10784,11 +10784,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10819,13 +10819,13 @@
     "defcon_avg": 3.0,
     "overperf": 3.6,
     "luck": "hot",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10856,13 +10856,13 @@
     "defcon_avg": 5.5,
     "overperf": 1.2,
     "luck": "",
-    "fix_avg": 3.4,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "EVE (H) 3",
      "NEW (A) 3",
      "BRE (H) 3",
      "LIV (H) 4",
-     "CHE (A) 4"
+     "CHE (A) 4",
+     "SUN (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10895,11 +10895,11 @@
     "luck": "hot",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10917,10 +10917,10 @@
     "code": 470313,
     "team": "NEW",
     "pos": "FWD",
-    "price": 6.0,
+    "price": 5.9,
     "points": 108,
     "minutes": 1896,
-    "ratio": 18.0,
+    "ratio": 18.31,
     "p90": 5.13,
     "consistency": "Balanced",
     "cv": 0.69,
@@ -10932,11 +10932,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -10954,10 +10954,10 @@
     "code": 231747,
     "team": "CRY",
     "pos": "FWD",
-    "price": 6.5,
+    "price": 6.4,
     "points": 114,
     "minutes": 2210,
-    "ratio": 17.54,
+    "ratio": 17.81,
     "p90": 4.64,
     "consistency": "Boom/bust",
     "cv": 0.98,
@@ -10967,13 +10967,13 @@
     "defcon_avg": null,
     "overperf": 1.5,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11004,13 +11004,13 @@
     "defcon_avg": 2.0,
     "overperf": 0.8,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11041,13 +11041,13 @@
     "defcon_avg": null,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "BOU (A) 3",
      "MUN (H) 4",
      "TOT (A) 3",
      "IPS (H) 2",
-     "HUL (A) 2"
+     "HUL (A) 2",
+     "CHE (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11080,11 +11080,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11115,13 +11115,13 @@
     "defcon_avg": 2.5,
     "overperf": -0.1,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11152,13 +11152,13 @@
     "defcon_avg": null,
     "overperf": 0.7,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CHE (A) 4",
      "LEE (H) 2",
      "COV (A) 2",
      "ARS (H) 4",
-     "SUN (A) 3"
+     "SUN (A) 3",
+     "CRY (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11189,13 +11189,13 @@
     "defcon_avg": 3.2,
     "overperf": 0.8,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "CRY (A) 3",
      "COV (H) 2",
      "MUN (A) 4",
      "SUN (H) 2",
-     "LIV (A) 4"
+     "LIV (A) 4",
+     "IPS (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11226,13 +11226,13 @@
     "defcon_avg": 2.8,
     "overperf": -0.6,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11263,13 +11263,13 @@
     "defcon_avg": null,
     "overperf": 0.6,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "LEE (A) 3",
      "SUN (H) 2",
      "BOU (A) 3",
      "CHE (H) 4",
-     "AVL (A) 4"
+     "AVL (A) 4",
+     "LIV (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11300,13 +11300,13 @@
     "defcon_avg": null,
     "overperf": 0.8,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "FUL (H) 2",
      "BRE (A) 3",
      "ARS (H) 4",
      "MCI (A) 5",
-     "BHA (H) 2"
+     "BHA (H) 2",
+     "BOU (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11337,13 +11337,13 @@
     "defcon_avg": null,
     "overperf": -1.7,
     "luck": "unlucky",
-    "fix_avg": 3.2,
+    "fix_avg": 3.4,
     "fix_ops": [
-     "BRE (H) 3",
      "BHA (A) 3",
      "NEW (H) 2",
      "CRY (H) 3",
-     "ARS (A) 5"
+     "ARS (A) 5",
+     "MUN (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11376,11 +11376,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11411,13 +11411,13 @@
     "defcon_avg": 2.8,
     "overperf": -1.6,
     "luck": "unlucky",
-    "fix_avg": 3.0,
+    "fix_avg": 2.8,
     "fix_ops": [
-     "MCI (H) 4",
      "FUL (A) 3",
      "IPS (H) 2",
      "LEE (A) 3",
-     "NFO (H) 3"
+     "NFO (H) 3",
+     "BHA (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11450,11 +11450,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11487,11 +11487,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11522,13 +11522,13 @@
     "defcon_avg": null,
     "overperf": 2.5,
     "luck": "hot",
-    "fix_avg": 2.8,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "HUL (H) 2",
      "MCI (A) 5",
      "BHA (H) 2",
      "NFO (A) 3",
-     "NEW (H) 2"
+     "NEW (H) 2",
+     "TOT (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11559,13 +11559,13 @@
     "defcon_avg": null,
     "overperf": -0.6,
     "luck": "",
-    "fix_avg": 3.0,
+    "fix_avg": 3.2,
     "fix_ops": [
-     "IPS (H) 2",
      "EVE (A) 3",
      "MCI (H) 4",
      "FUL (A) 3",
-     "TOT (H) 3"
+     "TOT (H) 3",
+     "LEE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11598,11 +11598,11 @@
     "luck": "",
     "fix_avg": 3.2,
     "fix_ops": [
-     "LIV (A) 4",
      "TOT (H) 3",
      "AVL (A) 4",
      "COV (H) 2",
-     "CRY (A) 3"
+     "CRY (A) 3",
+     "ARS (H) 4"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11620,10 +11620,10 @@
     "code": 154566,
     "team": "TOT",
     "pos": "FWD",
-    "price": 6.0,
+    "price": 5.9,
     "points": 40,
     "minutes": 997,
-    "ratio": 6.67,
+    "ratio": 6.78,
     "p90": 3.61,
     "consistency": "Boom/bust",
     "cv": 0.91,
@@ -11635,11 +11635,11 @@
     "luck": "",
     "fix_avg": 3.0,
     "fix_ops": [
-     "NEW (H) 2",
      "NFO (A) 3",
      "EVE (H) 3",
      "AVL (H) 3",
-     "MUN (A) 4"
+     "MUN (A) 4",
+     "COV (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11670,13 +11670,13 @@
     "defcon_avg": 3.2,
     "overperf": -2.1,
     "luck": "unlucky",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "SUN (A) 3",
      "CRY (H) 3",
      "LIV (A) 4",
      "MUN (H) 4",
-     "IPS (A) 2"
+     "IPS (A) 2",
+     "HUL (H) 2"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11707,13 +11707,13 @@
     "defcon_avg": 2.6,
     "overperf": 0.4,
     "luck": "",
-    "fix_avg": 3.2,
+    "fix_avg": 3.0,
     "fix_ops": [
-     "AVL (A) 4",
      "CHE (H) 4",
      "SUN (A) 3",
      "BHA (A) 3",
-     "LEE (H) 2"
+     "LEE (H) 2",
+     "NFO (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11746,11 +11746,11 @@
     "luck": "",
     "fix_avg": 2.8,
     "fix_ops": [
-     "NFO (H) 3",
      "IPS (A) 2",
      "FUL (H) 2",
      "BOU (A) 3",
-     "MCI (H) 4"
+     "MCI (H) 4",
+     "BRE (A) 3"
     ],
     "saves_p90": null,
     "cs": null,
@@ -11783,11 +11783,11 @@
     "luck": "",
     "fix_avg": 2.6,
     "fix_ops": [
-     "TOT (A) 3",
      "BOU (H) 3",
      "LEE (A) 3",
      "HUL (H) 2",
-     "COV (A) 2"
+     "COV (A) 2",
+     "AVL (H) 3"
     ],
     "saves_p90": null,
     "cs": null,

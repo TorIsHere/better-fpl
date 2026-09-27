@@ -3,7 +3,7 @@
   "basis": "2025-26 final season totals",
   "use_current": false,
   "finished_gws": 5,
-  "built_at": "2026-09-26 11:20 UTC"
+  "built_at": "2026-09-27 11:58 UTC"
  },
  "players": {
   "GKP": [
@@ -11775,8 +11775,8 @@
     "p90": 5.32,
     "consistency": "Consistent",
     "cv": 0.64,
-    "proj_min": 24,
-    "security": "Bench risk",
+    "proj_min": 18,
+    "security": "Doubt",
     "defcon_rate": null,
     "defcon_avg": null,
     "overperf": 0.4,
@@ -11796,7 +11796,7 @@
     "recent_share": 27,
     "moved_from": "",
     "contested": [],
-    "news": "",
+    "news": "Foot injury - 75% chance of playing",
     "overridden": false,
     "note": ""
    },

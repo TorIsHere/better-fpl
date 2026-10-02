@@ -3,7 +3,7 @@
   "basis": "2025-26 final season totals",
   "use_current": false,
   "finished_gws": 5,
-  "built_at": "2026-10-01 13:08 UTC"
+  "built_at": "2026-10-02 12:28 UTC"
  },
  "players": {
   "GKP": [
@@ -1596,8 +1596,8 @@
     "p90": 5.45,
     "consistency": "Balanced",
     "cv": 0.76,
-    "proj_min": 64,
-    "security": "Solid starter",
+    "proj_min": 48,
+    "security": "Doubt",
     "defcon_rate": 0.0,
     "defcon_avg": 5.2,
     "overperf": -1.1,
@@ -1617,7 +1617,7 @@
     "recent_share": 71,
     "moved_from": "",
     "contested": [],
-    "news": "",
+    "news": "Unspecified injury - 75% chance of playing",
     "overridden": false,
     "note": ""
    },
@@ -2595,8 +2595,8 @@
     "p90": 2.89,
     "consistency": "Boom/bust",
     "cv": 0.84,
-    "proj_min": 90,
-    "security": "Nailed",
+    "proj_min": 68,
+    "security": "Doubt",
     "defcon_rate": 0.25,
     "defcon_avg": 7.4,
     "overperf": -0.2,
@@ -2616,7 +2616,7 @@
     "recent_share": 100,
     "moved_from": "",
     "contested": [],
-    "news": "",
+    "news": "Leg injury - 75% chance of playing",
     "overridden": false,
     "note": ""
    },
@@ -8295,8 +8295,8 @@
     "p90": 4.34,
     "consistency": "Boom/bust",
     "cv": 0.81,
-    "proj_min": 45,
-    "security": "Rotation risk",
+    "proj_min": 34,
+    "security": "Doubt",
     "defcon_rate": 0.25,
     "defcon_avg": 8.0,
     "overperf": 0.9,
@@ -8316,7 +8316,7 @@
     "recent_share": 50,
     "moved_from": "",
     "contested": [],
-    "news": "",
+    "news": "Unspecified injury - 75% chance of playing",
     "overridden": false,
     "note": ""
    },

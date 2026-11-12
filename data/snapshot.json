@@ -3,7 +3,7 @@
   "basis": "2026-27 season, gameweeks 1-10",
   "use_current": true,
   "finished_gws": 10,
-  "built_at": "2026-11-11 14:13 UTC"
+  "built_at": "2026-11-12 15:05 UTC"
  },
  "players": {
   "GKP": [
@@ -6498,8 +6498,8 @@
     "p90": 7.81,
     "consistency": "Balanced",
     "cv": 0.67,
-    "proj_min": 58,
-    "security": "Solid starter",
+    "proj_min": 43,
+    "security": "Doubt",
     "defcon_rate": 0.0,
     "defcon_avg": 5.8,
     "overperf": 2.5,
@@ -6519,7 +6519,7 @@
     "recent_share": 64,
     "moved_from": "",
     "contested": [],
-    "news": "",
+    "news": "Calf injury - 75% chance of playing",
     "overridden": false,
     "note": ""
    },
@@ -9858,10 +9858,10 @@
     "code": 636852,
     "team": "NEW",
     "pos": "MID",
-    "price": 4.8,
+    "price": 4.7,
     "points": 13,
     "minutes": 327,
-    "ratio": 2.71,
+    "ratio": 2.77,
     "p90": 3.58,
     "consistency": "N/A",
     "cv": null,
